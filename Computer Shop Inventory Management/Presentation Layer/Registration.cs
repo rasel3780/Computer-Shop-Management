@@ -64,6 +64,10 @@ namespace Computer_Shop_Inventory_Management
             {
                 typeWarning.Visible = true;
             }
+            else if(salaryTextBox.Text == "")
+            {
+                salaryWarning.Visible = true;
+            }
             else
             {
                 if (passTextBox.Text != cpassTextBox.Text)
@@ -158,9 +162,18 @@ namespace Computer_Shop_Inventory_Management
             }
         }
 
+
         private void Registration_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void salaryTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if(salaryWarning.Visible == true)
+            {
+                salaryWarning.Visible = false;
+            }
         }
     }
 }

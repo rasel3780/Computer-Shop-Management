@@ -34,7 +34,7 @@ namespace Computer_Shop_Inventory_Management
             this.modifyButton = new System.Windows.Forms.Button();
             this.sellButton = new System.Windows.Forms.Button();
             this.adminGroupBox = new System.Windows.Forms.GroupBox();
-            this.backButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.adminGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,7 @@ namespace Computer_Shop_Inventory_Management
             this.modifyButton.TabIndex = 4;
             this.modifyButton.Text = "Update Employee";
             this.modifyButton.UseVisualStyleBackColor = true;
+            this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
             // 
             // sellButton
             // 
@@ -81,34 +82,35 @@ namespace Computer_Shop_Inventory_Management
             // 
             // adminGroupBox
             // 
+            this.adminGroupBox.Controls.Add(this.logoutButton);
             this.adminGroupBox.Controls.Add(this.button1);
             this.adminGroupBox.Controls.Add(this.sellButton);
             this.adminGroupBox.Controls.Add(this.productButton);
             this.adminGroupBox.Controls.Add(this.modifyButton);
-            this.adminGroupBox.Location = new System.Drawing.Point(92, 26);
+            this.adminGroupBox.Location = new System.Drawing.Point(66, 12);
             this.adminGroupBox.Name = "adminGroupBox";
             this.adminGroupBox.Size = new System.Drawing.Size(641, 381);
             this.adminGroupBox.TabIndex = 6;
             this.adminGroupBox.TabStop = false;
             this.adminGroupBox.Text = "Admin";
             // 
-            // backButton
+            // logoutButton
             // 
-            this.backButton.BackColor = System.Drawing.SystemColors.Control;
-            this.backButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(12, 415);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 23);
-            this.backButton.TabIndex = 7;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
+            this.logoutButton.BackColor = System.Drawing.SystemColors.Control;
+            this.logoutButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.Location = new System.Drawing.Point(551, 346);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(84, 29);
+            this.logoutButton.TabIndex = 7;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.adminGroupBox);
             this.Name = "AdminHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -125,6 +127,6 @@ namespace Computer_Shop_Inventory_Management
         private System.Windows.Forms.Button modifyButton;
         private System.Windows.Forms.Button sellButton;
         private System.Windows.Forms.GroupBox adminGroupBox;
-        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button logoutButton;
     }
 }

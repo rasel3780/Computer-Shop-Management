@@ -16,7 +16,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.employeeDataAccess = new EmployeeDataAccess();
         }
 
-        public int AddEmployee(string name, string userName, string password, string email, string address, string dateOfBirth, string bloodGroup, string gender, string employeeType)
+        public int AddEmployee(string name, string userName, string password, string email, string address, string dateOfBirth, string bloodGroup, string gender, string employeeType, float salary)
         {
             Employee employee = new Employee()
             {
@@ -28,7 +28,8 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                 DateOfBirth = dateOfBirth,
                 BloodGroup = bloodGroup,
                 Gender = gender,
-                EmployeeType = employeeType
+                EmployeeType = employeeType,
+                Salary = salary
             };
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.AddEmployee(employee);

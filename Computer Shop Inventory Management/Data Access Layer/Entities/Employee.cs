@@ -17,5 +17,6 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer.Entities
         public string BloodGroup { set; get; }
         public string Email { set; get; }
         public string EmployeeType { set; get; }
+        public float Salary { set; get; }
     }
 }

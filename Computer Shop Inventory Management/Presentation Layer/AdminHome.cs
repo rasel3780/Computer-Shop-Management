@@ -28,5 +28,17 @@ namespace Computer_Shop_Inventory_Management
             registration.Show();
             this.Hide();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void modifyButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
