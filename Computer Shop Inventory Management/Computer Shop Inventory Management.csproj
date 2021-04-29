@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Businees Logic Layer\EmployeeServices.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\EmployeeDataAccess.cs" />
     <Compile Include="Data Access Layer\Entities\Employee.cs" />
     <Compile Include="Presentation Layer\AdminHome.cs">
       <SubType>Form</SubType>
