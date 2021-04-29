@@ -52,7 +52,7 @@ namespace Computer_Shop_Inventory_Management
             // productButton
             // 
             this.productButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productButton.Location = new System.Drawing.Point(139, 247);
+            this.productButton.Location = new System.Drawing.Point(139, 180);
             this.productButton.Name = "productButton";
             this.productButton.Size = new System.Drawing.Size(164, 47);
             this.productButton.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace Computer_Shop_Inventory_Management
             // sellButton
             // 
             this.sellButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellButton.Location = new System.Drawing.Point(139, 171);
+            this.sellButton.Location = new System.Drawing.Point(139, 257);
             this.sellButton.Name = "sellButton";
             this.sellButton.Size = new System.Drawing.Size(164, 47);
             this.sellButton.TabIndex = 5;

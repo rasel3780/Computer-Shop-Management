@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +39,9 @@ namespace Computer_Shop_Inventory_Management
 
         private void modifyButton_Click(object sender, EventArgs e)
         {
-
+            UpdateEmployee updateEmployee = new UpdateEmployee();
+            updateEmployee.Show();
+            this.Hide();
         }
     }
 }
