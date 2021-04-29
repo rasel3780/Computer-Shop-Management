@@ -16,5 +16,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
