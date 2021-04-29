@@ -16,5 +16,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
