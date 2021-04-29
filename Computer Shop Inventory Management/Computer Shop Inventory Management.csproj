@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\Entities\Employee.cs" />
     <Compile Include="Presentation Layer\AdminHome.cs">
       <SubType>Form</SubType>
     </Compile>
