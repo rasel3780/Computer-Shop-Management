@@ -82,8 +82,8 @@ namespace Computer_Shop_Inventory_Management
                         gender = "Female";
                     }
                 }
-                Login login = new Login();
-                login.Show();
+                AdminHome admin = new AdminHome();
+                admin.Show();
                 this.Hide();
 
                 MessageBox.Show("Account Created. Go Back to Login Page.");
