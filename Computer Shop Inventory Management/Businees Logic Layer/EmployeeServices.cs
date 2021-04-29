@@ -33,7 +33,6 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             };
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.AddEmployee(employee);
-
         }
     }
 }

@@ -87,9 +87,9 @@ namespace Computer_Shop_Inventory_Management
             this.adminGroupBox.Controls.Add(this.sellButton);
             this.adminGroupBox.Controls.Add(this.productButton);
             this.adminGroupBox.Controls.Add(this.modifyButton);
-            this.adminGroupBox.Location = new System.Drawing.Point(66, 12);
+            this.adminGroupBox.Location = new System.Drawing.Point(64, 12);
             this.adminGroupBox.Name = "adminGroupBox";
-            this.adminGroupBox.Size = new System.Drawing.Size(641, 381);
+            this.adminGroupBox.Size = new System.Drawing.Size(678, 411);
             this.adminGroupBox.TabIndex = 6;
             this.adminGroupBox.TabStop = false;
             this.adminGroupBox.Text = "Admin";
