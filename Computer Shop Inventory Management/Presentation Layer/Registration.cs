@@ -68,30 +68,12 @@ namespace Computer_Shop_Inventory_Management
             {
                 salaryWarning.Visible = true;
             }
-            else
+            else if (passTextBox.Text != cpassTextBox.Text)
             {
-                if (passTextBox.Text != cpassTextBox.Text)
-                {
                     MessageBox.Show("Password Did Not Match!!");
-                }
-                else
-                {
-                    string gender = "";
-                    if (maleRadioButton.Checked)
-                    {
-                        gender = "Male";
-                    }
-                    else
-                    {
-                        gender = "Female";
-                    }
-                }
-                AdminHome admin = new AdminHome();
-                admin.Show();
-                this.Hide();
-
-                MessageBox.Show("Account Created. Go Back to Login Page.");
             }
+
+  
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

@@ -1,6 +1,7 @@
 ﻿using Computer_Shop_Inventory_Management.Data_Access_Layer.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,16 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
         {
             string sql = "DELETE FROM Employees WHERE UserName='" + userName + "' ";
             return this.ExecuteQuery(sql);
+        }
+        public string CheckUserName(Employee employee)
+        {
+            string query = "SELECT * FROM Employees WHERE UserName= '" + employee.UserName + "'";
+            SqlDataReader reader = GetData(query);
+            if (reader.Read())
+            {
+                return (string)reader["Username"];
+            }
+            return null;
         }
     }
 }

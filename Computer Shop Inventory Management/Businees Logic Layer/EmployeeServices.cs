@@ -57,5 +57,13 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.RemoveEmployee(userName);
         }
+        public string CheckUserName(string userName)
+        {
+            Employee employee = new Employee()
+            {
+                UserName = userName
+            };
+            return this.employeeDataAccess.CheckUserName(employee);
+        }
     }
 }
