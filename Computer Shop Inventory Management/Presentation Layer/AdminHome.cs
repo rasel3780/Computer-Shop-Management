@@ -43,5 +43,10 @@ namespace Computer_Shop_Inventory_Management
             updateEmployee.Show();
             this.Hide();
         }
+
+        private void addProductButton_Click(object sender, EventArgs e)
+        {
+            AddProducts addProducts = new AddProducts();
+        }
     }
 }

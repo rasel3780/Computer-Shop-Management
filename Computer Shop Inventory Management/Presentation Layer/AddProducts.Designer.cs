@@ -1,7 +1,7 @@
 ﻿
 namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
-    partial class Product
+    partial class AddProducts
     {
         /// <summary>
         /// Required designer variable.

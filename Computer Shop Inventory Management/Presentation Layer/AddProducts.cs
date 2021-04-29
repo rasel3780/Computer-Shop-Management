@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
-    public partial class Product : Form
+    public partial class AddProducts : Form
     {
-        public Product()
+        public AddProducts()
         {
             InitializeComponent();
         }
