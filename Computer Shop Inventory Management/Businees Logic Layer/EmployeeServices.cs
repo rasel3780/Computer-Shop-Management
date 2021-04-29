@@ -65,5 +65,10 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             };
             return this.employeeDataAccess.CheckUserName(employee);
         }
+        public List<Employee> GetAllEmployees()
+        {
+            this.employeeDataAccess = new EmployeeDataAccess();
+            return this.employeeDataAccess.GetAllEmployees();
+        }
     }
 }
