@@ -23,3 +23,16 @@ E:\AIUB Semester 08\C#\Final\Project\Computer Shop Inventory Management\Computer
 E:\AIUB Semester 08\C#\Final\Project\Computer Shop Inventory Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.CoreCompileInputs.cache
 E:\AIUB Semester 08\C#\Final\Project\Computer Shop Inventory Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.exe
 E:\AIUB Semester 08\C#\Final\Project\Computer Shop Inventory Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.pdb
+G:\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.exe.config
+G:\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.exe
+G:\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.pdb
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csprojAssemblyReference.cache
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.AdminHome.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Welcome.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Login.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Properties.Resources.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Registration.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.GenerateResource.cache
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.CoreCompileInputs.cache
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.exe
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.pdb
