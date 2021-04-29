@@ -21,5 +21,21 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
 
         }
+
+        private void addProductGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddProducts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddProducts_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

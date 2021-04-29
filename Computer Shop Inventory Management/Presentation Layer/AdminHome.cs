@@ -47,6 +47,8 @@ namespace Computer_Shop_Inventory_Management
         private void addProductButton_Click(object sender, EventArgs e)
         {
             AddProducts addProducts = new AddProducts();
+            addProducts.Show();
+            this.Hide();
         }
     }
 }
