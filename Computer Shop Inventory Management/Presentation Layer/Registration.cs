@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,8 +73,51 @@ namespace Computer_Shop_Inventory_Management
             {
                     MessageBox.Show("Password Did Not Match!!");
             }
+            else
+            {
 
-  
+
+                EmployeeServices employeeServices = new EmployeeServices();
+                string gender = "";
+                if (maleRadioButton.Checked)
+                {
+                    gender = "Male";
+                }
+                else
+                {
+                    gender = "Female";
+                }
+
+                //Checking if Username already exists in Table
+                string userExists = employeeServices.CheckUserName(usernameTextBox.Text);
+                if (userExists == usernameTextBox.Text)
+                {
+                    MessageBox.Show("Username is already taken, please try different Username");
+                }
+                // add new Employee
+                else
+                {
+                    EmployeeServices employeeServices1 = new EmployeeServices();
+                    float salary = Convert.ToSingle(salaryTextBox.Text);
+                    int res = employeeServices1.AddEmployee(nameTextBox.Text, usernameTextBox.Text, passTextBox.Text, emailTextBox.Text, addressTextBox.Text, dateTimePicker.Text, bloodgroupTextBox.Text, gender, typeComboBox.Text, salary);
+
+                    if (res > 0)
+                    {
+                        MessageBox.Show("Employee Added");
+                        nameTextBox.Text = usernameTextBox.Text = emailTextBox.Text = passTextBox.Text = cpassTextBox.Text = addressTextBox.Text= salaryTextBox.Text="";
+                        maleRadioButton.Checked = femaleRadioButton.Checked = termscheckBox.Checked  = false;
+                        bloodgroupTextBox.Text = null;
+                    }
+                    else
+                    {
+                        MessageBox.Show("There was an Error could not create the user");
+                    }
+
+                }
+            }
+
+
+
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
