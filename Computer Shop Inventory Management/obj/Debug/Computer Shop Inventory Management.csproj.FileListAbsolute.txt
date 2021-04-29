@@ -49,3 +49,4 @@ D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Compute
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.CoreCompileInputs.cache
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.exe
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.pdb
+D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateEmployee.resources
