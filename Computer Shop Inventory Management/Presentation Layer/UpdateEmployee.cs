@@ -26,5 +26,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
 
         }
+
+        private void UpdateEmployee_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

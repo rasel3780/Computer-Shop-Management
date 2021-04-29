@@ -105,6 +105,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UpdateEmployee";
             this.Text = "UpdateEmployee";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateEmployee_FormClosing);
+            this.Load += new System.EventHandler(this.UpdateEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
