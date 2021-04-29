@@ -47,7 +47,9 @@ namespace Computer_Shop_Inventory_Management
             }
             else
             {
-
+                AdminHome admin = new AdminHome();
+                admin.Show();
+                this.Hide();
             }
         }
 
