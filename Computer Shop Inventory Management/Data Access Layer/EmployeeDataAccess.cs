@@ -17,7 +17,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
         }
         public int UpdateEmployee(Employee employee)
         {
-            string sql = "UPDATE Employees SET Name='" + employee.Name + "',UserName=" + employee.UserName + ",Password=" + employee.Password + ",,Email=" + employee.Email + ",Address=" + employee.Address + ",DateOfBirth=" + employee.DateOfBirth + ",BloodGroup=" + employee.BloodGroup + ",Gender=" + employee.Gender + ",EmployeeType=" + employee.EmployeeType + ",Salary=" + employee.Salary + " WHERE UserName=" + employee.Name;
+            string sql = "UPDATE Employees SET Name='" + employee.Name + "', UserName='" + employee.UserName + "', Password='" + employee.Password + "', Email='" + employee.Email + "', Address='" + employee.Address + "', DateOfBirth='" + employee.DateOfBirth + "', BloodGroup='" + employee.BloodGroup + "', Gender='" + employee.Gender + "', EmployeeType='" + employee.EmployeeType + "', Salary=" + employee.Salary + " WHERE UserName='" + employee.Name+"'";
             return this.ExecuteQuery(sql);
         }
         public int RemoveEmployee(string userName)
