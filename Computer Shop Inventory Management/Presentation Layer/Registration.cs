@@ -41,10 +41,6 @@ namespace Computer_Shop_Inventory_Management
             {
                 cpassWarning.Visible = true;
             }
-            else if (emailTextBox.Text == "")
-            {
-                emailWarning.Visible = true;
-            }
             else if (dateTimePicker.Text == "")
             {
                 dobWarning.Visible = true;
@@ -53,14 +49,22 @@ namespace Computer_Shop_Inventory_Management
             {
                 genderWarning.Visible = true;
             }
-            else if (bloodgroupTextBox.Text == "")
-            {
-                bgWarning.Visible = true;
-            }
+
             else if (addressTextBox.Text == "")
             {
                 addressWarning.Visible = true;
             }
+
+            else if (emailTextBox.Text == "")
+            {
+                emailWarning.Visible = true;
+            }
+            
+            else if (bloodgroupTextBox.Text == "")
+            {
+                bgWarning.Visible = true;
+            }
+            
             else if(typeComboBox.Text == "")
             {
                 typeWarning.Visible = true;
@@ -76,17 +80,17 @@ namespace Computer_Shop_Inventory_Management
             
             else
             {
-
-
                 EmployeeServices employeeServices = new EmployeeServices();
                 string gender = "";
                 if (maleRadioButton.Checked)
                 {
                     gender = "Male";
+                    //genderWarning.Visible = false;
                 }
                 else
                 {
                     gender = "Female";
+                    //genderWarning.Visible = false;
                 }
 
                 //Checking if Username already exists in Table
@@ -115,61 +119,6 @@ namespace Computer_Shop_Inventory_Management
                     }
 
                 }
-            }
-
-
-
-        }
-
-        private void nameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (nameWarning.Visible == true)
-            {
-                nameWarning.Visible = false;
-            }
-        }
-        private void usernameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (usernameWarning.Visible == true)
-            {
-                usernameWarning.Visible = false;
-            }
-        }
-        private void passTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (passWarning.Visible == true)
-            {
-                passWarning.Visible = false;
-            }
-        }
-        private void cpassTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (cpassWarning.Visible == true)
-            {
-                cpassWarning.Visible = false;
-            }
-        }
-        private void emailTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (emailWarning.Visible == true)
-            {
-                emailWarning.Visible = false;
-            }
-        }
-
-        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            if (dobWarning.Visible == true)
-            {
-                dobWarning.Visible = false;
-            }
-        }
-
-        private void bloodgroupTextBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (bgWarning.Visible == true)
-            {
-                bgWarning.Visible = false;
             }
         }
 
@@ -210,11 +159,6 @@ namespace Computer_Shop_Inventory_Management
             this.Hide();
         }
 
-        private void termscheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (termscheckBox.Checked == true) submitButton.Enabled = true;
-        }
-
         private void termscheckBox_CheckedChanged_1(object sender, EventArgs e)
         {
             if (termscheckBox.Checked)
@@ -223,6 +167,80 @@ namespace Computer_Shop_Inventory_Management
             }
             else
                 submitButton.Enabled = false;
+        }
+
+        private void nameTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (nameWarning.Visible == true)
+            {
+                nameWarning.Visible = false;
+            }
+        }
+
+        private void usernameTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (usernameWarning.Visible == true)
+            {
+                usernameWarning.Visible = false;
+            }
+        }
+
+        private void passTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (passWarning.Visible == true)
+            {
+                passWarning.Visible = false;
+            }
+        }
+
+        private void cpassTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (cpassWarning.Visible == true)
+            {
+                cpassWarning.Visible = false;
+            }
+        }
+
+        private void dateTimePicker_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (dobWarning.Visible == true)
+            {
+                dobWarning.Visible = false;
+            }
+        }
+
+
+
+        private void emailTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (emailWarning.Visible == true)
+            {
+                emailWarning.Visible = false;
+            }
+        }
+
+        private void bloodgroupTextBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (bgWarning.Visible == true)
+            {
+                bgWarning.Visible = false;
+            }
+        }
+
+        private void femaleRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (femaleRadioButton.Checked = true)
+            {
+                genderWarning.Visible = false;
+            }
+        }
+
+        private void maleRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (maleRadioButton.Checked = true)
+            {
+                genderWarning.Visible = false;
+            }
         }
     }
     
