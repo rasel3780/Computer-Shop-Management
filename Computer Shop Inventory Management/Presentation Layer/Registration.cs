@@ -201,5 +201,12 @@ namespace Computer_Shop_Inventory_Management
                 salaryWarning.Visible = false;
             }
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AdminHome admin = new AdminHome();
+            admin.Show();
+            this.Hide();
+        }
     }
 }

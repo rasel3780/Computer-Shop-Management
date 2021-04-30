@@ -64,5 +64,31 @@ namespace Computer_Shop_Inventory_Management
         {
             Application.Exit();
         }
+
+        private void typeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(typeWarning.Visible == true)
+            {
+                typeWarning.Visible = false;
+            }
+            
+           
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (nameWarning.Visible == true)
+            {
+                nameWarning.Visible = false;
+            }
+        }
+
+        private void passTextBox_TextChanged(object sender, EventArgs e)
+        {
+             if (passWarning.Visible == true)
+             {
+                passWarning.Visible = false;
+             }
+        }
     }
 }

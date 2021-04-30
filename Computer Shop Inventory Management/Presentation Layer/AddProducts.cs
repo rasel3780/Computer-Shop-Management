@@ -85,27 +85,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.MemoryType();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.MemoryType();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.MemoryType();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.MemoryType();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.MemoryType();
                         }
                         check++;
                     }
@@ -114,27 +114,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.BusSpeed();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.BusSpeed();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.BusSpeed();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.BusSpeed();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.BusSpeed();
                         }
                         check++;
                     }
@@ -143,27 +143,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.ScreenSize();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.ScreenSize();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.ScreenSize();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.ScreenSize();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.ScreenSize();
                         }
                         check++;
                     }
@@ -172,27 +172,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.RefreshRate();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.RefreshRate();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.RefreshRate();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.RefreshRate();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.RefreshRate();
                         }
                         check++;
                     }
@@ -201,27 +201,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.Wattage();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.Wattage();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.Wattage();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.Wattage();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.Wattage();
                         }
                         check++;
                     }
@@ -230,27 +230,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.MotherBoardType();
                         }
                         check++;
                     }
@@ -259,27 +259,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.ClockSpeed();
                         }
                         check++;
                     }
@@ -288,27 +288,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         if (check == 0)
                         {
                             label1.Text = s;
-                            comboBox1.DataSource = productList.Capacity();
+                            comboBox1.DataSource = productList.ConnectionType();
                         }
                         else if (check == 1)
                         {
                             label2.Text = s;
-                            comboBox2.DataSource = productList.Capacity();
+                            comboBox2.DataSource = productList.ConnectionType();
                         }
                         else if (check == 2)
                         {
                             label3.Text = s;
-                            comboBox3.DataSource = productList.Capacity();
+                            comboBox3.DataSource = productList.ConnectionType();
                         }
                         else if (check == 3)
                         {
                             label4.Text = s;
-                            comboBox4.DataSource = productList.Capacity();
+                            comboBox4.DataSource = productList.ConnectionType();
                         }
                         else if (check == 4)
                         {
                             label5.Text = s;
-                            comboBox5.DataSource = productList.Capacity();
+                            comboBox5.DataSource = productList.ConnectionType();
                         }
                         check++;
                     }
@@ -317,6 +317,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
 
 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AdminHome admin = new AdminHome();
+            admin.Show();
+            this.Hide();
         }
     }
 }

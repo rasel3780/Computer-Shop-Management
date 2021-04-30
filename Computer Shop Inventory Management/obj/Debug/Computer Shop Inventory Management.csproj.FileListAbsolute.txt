@@ -53,3 +53,18 @@ D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Compute
 G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateEmployee.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.AddProducts.resources
 G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.AddProducts.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.exe.config
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.exe
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\bin\Debug\Computer Shop Inventory Management.pdb
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csprojAssemblyReference.cache
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.AdminHome.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Welcome.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Login.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.AddProducts.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateEmployee.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Properties.Resources.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Registration.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.GenerateResource.cache
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.CoreCompileInputs.cache
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.exe
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.pdb

@@ -30,6 +30,9 @@ namespace Computer_Shop_Inventory_Management
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.salaryTextBox = new System.Windows.Forms.TextBox();
+            this.salaryWarning = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.typeWarning = new System.Windows.Forms.Label();
             this.typeComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,14 +66,13 @@ namespace Computer_Shop_Inventory_Management
             this.label2 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.salaryWarning = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.salaryTextBox = new System.Windows.Forms.TextBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.backButton);
             this.groupBox1.Controls.Add(this.salaryTextBox);
             this.groupBox1.Controls.Add(this.salaryWarning);
             this.groupBox1.Controls.Add(this.label12);
@@ -113,7 +115,37 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox1.Size = new System.Drawing.Size(727, 473);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "User Registration";
+            this.groupBox1.Text = "Registration";
+            // 
+            // salaryTextBox
+            // 
+            this.salaryTextBox.Location = new System.Drawing.Point(477, 321);
+            this.salaryTextBox.Multiline = true;
+            this.salaryTextBox.Name = "salaryTextBox";
+            this.salaryTextBox.Size = new System.Drawing.Size(166, 30);
+            this.salaryTextBox.TabIndex = 40;
+            this.salaryTextBox.TextChanged += new System.EventHandler(this.salaryTextBox_TextChanged);
+            // 
+            // salaryWarning
+            // 
+            this.salaryWarning.AutoSize = true;
+            this.salaryWarning.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salaryWarning.ForeColor = System.Drawing.Color.Red;
+            this.salaryWarning.Location = new System.Drawing.Point(474, 355);
+            this.salaryWarning.Name = "salaryWarning";
+            this.salaryWarning.Size = new System.Drawing.Size(144, 14);
+            this.salaryWarning.TabIndex = 39;
+            this.salaryWarning.Text = "*This Field is Required*";
+            this.salaryWarning.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(390, 322);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 16);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Salary";
             // 
             // typeWarning
             // 
@@ -458,35 +490,15 @@ namespace Computer_Shop_Inventory_Management
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // salaryWarning
+            // backButton
             // 
-            this.salaryWarning.AutoSize = true;
-            this.salaryWarning.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salaryWarning.ForeColor = System.Drawing.Color.Red;
-            this.salaryWarning.Location = new System.Drawing.Point(474, 355);
-            this.salaryWarning.Name = "salaryWarning";
-            this.salaryWarning.Size = new System.Drawing.Size(144, 14);
-            this.salaryWarning.TabIndex = 39;
-            this.salaryWarning.Text = "*This Field is Required*";
-            this.salaryWarning.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(390, 322);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 16);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Salary";
-            // 
-            // salaryTextBox
-            // 
-            this.salaryTextBox.Location = new System.Drawing.Point(477, 321);
-            this.salaryTextBox.Multiline = true;
-            this.salaryTextBox.Name = "salaryTextBox";
-            this.salaryTextBox.Size = new System.Drawing.Size(166, 30);
-            this.salaryTextBox.TabIndex = 40;
-            this.salaryTextBox.TextChanged += new System.EventHandler(this.salaryTextBox_TextChanged);
+            this.backButton.Location = new System.Drawing.Point(8, 436);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(78, 27);
+            this.backButton.TabIndex = 41;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // Registration
             // 
@@ -544,5 +556,6 @@ namespace Computer_Shop_Inventory_Management
         private System.Windows.Forms.TextBox salaryTextBox;
         private System.Windows.Forms.Label salaryWarning;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button backButton;
     }
 }

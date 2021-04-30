@@ -59,6 +59,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.quantityLabel = new System.Windows.Forms.Label();
             this.categoryLabel = new System.Windows.Forms.Label();
             this.warrentyComboBox = new System.Windows.Forms.ComboBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.addProductGroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.featureGroupBox.SuspendLayout();
@@ -95,6 +96,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // addProductGroupBox1
             // 
+            this.addProductGroupBox1.Controls.Add(this.backButton);
             this.addProductGroupBox1.Controls.Add(this.groupBox1);
             this.addProductGroupBox1.Controls.Add(this.featureGroupBox);
             this.addProductGroupBox1.Controls.Add(this.pictureAddButton);
@@ -414,6 +416,16 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.warrentyComboBox.TabIndex = 2;
             this.warrentyComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(6, 477);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 27);
+            this.backButton.TabIndex = 6;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // AddProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,5 +478,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Label warrantyLabel;
         private System.Windows.Forms.ComboBox warrentyComboBox;
         private System.Windows.Forms.Button selectButton;
+        private System.Windows.Forms.Button backButton;
     }
 }

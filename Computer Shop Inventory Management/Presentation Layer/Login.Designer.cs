@@ -88,6 +88,7 @@ namespace Computer_Shop_Inventory_Management
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(204, 21);
             this.typeComboBox.TabIndex = 36;
+            this.typeComboBox.SelectedIndexChanged += new System.EventHandler(this.typeComboBox_SelectedIndexChanged);
             // 
             // loginType
             // 
@@ -130,6 +131,7 @@ namespace Computer_Shop_Inventory_Management
             this.passTextBox.PasswordChar = '*';
             this.passTextBox.Size = new System.Drawing.Size(204, 33);
             this.passTextBox.TabIndex = 32;
+            this.passTextBox.TextChanged += new System.EventHandler(this.passTextBox_TextChanged);
             // 
             // passLabel
             // 
@@ -160,6 +162,7 @@ namespace Computer_Shop_Inventory_Management
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(204, 33);
             this.nameTextBox.TabIndex = 25;
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // nameLabel
             // 

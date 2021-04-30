@@ -60,5 +60,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 }
             }
         }
+
+        private void removeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            AdminHome admin = new AdminHome();
+            admin.Show();
+            this.Hide();
+        }
     }
 }
