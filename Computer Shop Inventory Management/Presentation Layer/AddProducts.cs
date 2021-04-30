@@ -18,6 +18,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             InitializeComponent();
             ProductList productList = new ProductList();
             categoryComboBox.DataSource = productList.Category();
+            brandComboBox.DataSource = productList.Brand();
         }
 
         private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,6 +39,39 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void AddProducts_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            int check = 0;
+            ProductList productList = new ProductList();
+            for (int i = 0; i <= (checkedListBox1.Items.Count - 1); i++)
+            {
+                if (checkedListBox1.GetItemChecked(i))
+                {
+                    string s = checkedListBox1.Items[i].ToString();
+                    if(s == "Capacity")
+                    {
+                        if(check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+
+
+
+                        check++;
+                    }
+                }
+            }
+
+
 
         }
     }
