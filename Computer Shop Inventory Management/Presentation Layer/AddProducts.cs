@@ -63,9 +63,253 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                             label2.Text = s;
                             comboBox2.DataSource = productList.Capacity();
                         }
-
-
-
+                        else if(check==2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s == "Memory Type")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s == "Bus Speed")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s == "Screen Size")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s== "Refresh Rate")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s=="Wattage")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s=="Motherboard Type")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s =="Clock Speed")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
+                        check++;
+                    }
+                    else if(s=="Connection Type")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.Capacity();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.Capacity();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.Capacity();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.Capacity();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.Capacity();
+                        }
                         check++;
                     }
                 }
