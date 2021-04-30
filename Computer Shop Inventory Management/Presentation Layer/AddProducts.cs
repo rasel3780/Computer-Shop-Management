@@ -484,8 +484,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 picture = openFile.FileName;
                 Size size = pictureBox1.Size;
-                size.Height = 220;
-                size.Width = 220;
+                size.Height = 200;
+                size.Width = 200;
                 pictureBox1.Size = size;
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = Image.FromFile(picture);
@@ -495,8 +495,29 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void addProductButton_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(" "+check);
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            for(int i = 0; i < check; i++)
+            {
+                if(i==0) dictionary.Add(Label1, ComboBox1);
+                if (i == 1) dictionary.Add(Label2, ComboBox2);
+                if (i == 2) dictionary.Add(Label3, ComboBox3);
+                if (i == 3) dictionary.Add(Label4, ComboBox4);
+                if (i == 4) dictionary.Add(Label5, ComboBox5);
+            }
             ProductServices productServices = new ProductServices();
-            //productServices.AddProduct();
+           int addChecking =  productServices.AddProduct(Category,Brand,Convert.ToInt32(Quantity),Convert.ToSingle(Price),Warranty,Description,dictionary);
+
+            if (addChecking > 0)
+            {
+                MessageBox.Show("Product Add Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Not Added...");
+            }
+            AdminHome adminHome = new AdminHome();
+            this.Hide();
+            adminHome.Show();
         }
     }
 }

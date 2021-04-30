@@ -11,7 +11,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
     {
         public int AddProduct(Product product)
         {
-            string sql = "INSERT INTO Products(Catagory,Brand,Quantity,Price,Waranty,Capacity,MemoryType,BusSpeed,ScreenSize,RefreshRate,Wattage,MotherBoardType,ClockSpeed,ConnectionType,ResponseTime,Picture,Desciption) VALUES('" + product.Category + "'," + product.Brand + "," + product.Quantity + ",'" + product.Price + "','" + product.Warranty + "','" + product.Capacity + "','" + product.MemoryType + "','" + product.BusSpeed + "','" + product.ScreenSize + "' ,'" + product.RefreshRate + "','" + product.Wattage + "','" + product.MotherBoardType + "','" + product.ClockSpeed + "','" + product.ConnectionType + "','" + product.ResponseTime + "','" + product.Picture + "','" + product.Desciption + "')";
+            string sql = "INSERT INTO Products(Category,Brand,Quantity,Price,Warranty,Capacity,MemoryType,BusSpeed,ScreenSize,RefreshRate,Wattage,MotherBoardType,ClockSpeed,ConnectionType,ResponseTime,Picture,Desciption) VALUES('" + product.Category + "','" + product.Brand + "','" + product.Quantity + "','" + product.Price + "','" + product.Warranty + "','" + product.Capacity + "','" + product.MemoryType + "','" + product.BusSpeed + "','" + product.ScreenSize + "' ,'" + product.RefreshRate + "','" + product.Wattage + "','" + product.MotherBoardType + "','" + product.ClockSpeed + "','" + product.ConnectionType + "','" + product.ResponseTime + "','" + product.Picture + "','" + product.Desciption + "')";
             return this.ExecuteQuery(sql);
         }
     }
