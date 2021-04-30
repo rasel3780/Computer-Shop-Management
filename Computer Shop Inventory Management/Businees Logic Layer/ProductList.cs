@@ -241,6 +241,50 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
         {
             return category;
         }
-       
+        public List<string> Brand()
+        {
+            return brand;
+        }
+        public List<string> Capacity()
+        {
+            return capacity;
+        }
+        public List<string> MemoryType()
+        {
+            return memoryType;
+        }
+        public List<string> BusSpeed()
+        {
+            return busSpeed;
+        }
+        public List<string> ScreenSize()
+        {
+            return screenSize;
+        }
+        public List<string> RefreshRate()
+        {
+            return refreshRate;
+        }
+        public List<string> Wattage()
+        {
+            return wattage;
+        }
+        public List<string> MotherBoardType()
+        {
+            return motherboardType;
+        }
+        public List<string> ClockSpeed()
+        {
+            return clockSpeed;
+        }
+        public List<string> ConnectionType()
+        {
+            return connectionType;
+        }
+        public List<string> ResponseTime()
+        {
+            return responseTime;
+        }
+
     }
 }
