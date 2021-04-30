@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using Computer_Shop_Inventory_Management.Data_Access_Layer.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,27 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class ModifyEmployeeInformation : Form
     {
-        public ModifyEmployeeInformation()
+        private string userName;
+        public ModifyEmployeeInformation(string userName)
         {
             InitializeComponent();
+            this.userName = userName;
+            Employee employee = new Employee();
+            EmployeeServices employeeServices = new EmployeeServices();
+            employee =  employeeServices.ReadEmployee(userName);
+
+            nameTextBox.Text = employee.Name;
+            passTextBox.Text = employee.Password;
+            dateTimePicker.Text = employee.DateOfBirth;
+            //MessageBox.Show("" + employee.Gender);
+            if (employee.Gender == "Male") maleRadioButton.Checked = true;
+            else femaleRadioButton.Checked = true;
+
+            addressTextBox.Text = employee.Address;
+            emailTextBox.Text = employee.Email;
+            bloodgroupTextBox.Text = employee.BloodGroup;
+            typeComboBox.Text = employee.EmployeeType;
+            salaryTextBox.Text = employee.Salary.ToString();
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -25,6 +45,28 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void ModifyEmployeeInformation_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ModifyEmployeeInformation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            string gender = "";
+            if (MaleRadioButton == true) gender = "Male";
+            else gender = "Female";
+            EmployeeServices employeeServices = new EmployeeServices();
+            int res = employeeServices.UpdateEmployee(NameTextBox,userName,PasswordTextBox,EmailTextBox,AddressTextBox,DateTimePicker,BloodGroupTextBox,gender,TypeTextBox,Convert.ToSingle(SalaryTextBox));
+            if(res> 0)
+            {
+                MessageBox.Show("Employee Updated....");
+            }
+            else
+            {
+                MessageBox.Show("Could Not Update....");
+            }
         }
     }
 }

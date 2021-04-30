@@ -50,8 +50,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.passTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -79,8 +77,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.passTextBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.usernameTextBox);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.nameTextBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -166,7 +162,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // updateButton
             // 
-            this.updateButton.Enabled = false;
             this.updateButton.Location = new System.Drawing.Point(419, 530);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
@@ -174,6 +169,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateButton.TabIndex = 22;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // bloodgroupTextBox
             // 
@@ -206,7 +202,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // femaleRadioButton
             // 
             this.femaleRadioButton.AutoSize = true;
-            this.femaleRadioButton.Location = new System.Drawing.Point(312, 330);
+            this.femaleRadioButton.Location = new System.Drawing.Point(312, 255);
             this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.femaleRadioButton.Name = "femaleRadioButton";
             this.femaleRadioButton.Size = new System.Drawing.Size(87, 24);
@@ -218,7 +214,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // maleRadioButton
             // 
             this.maleRadioButton.AutoSize = true;
-            this.maleRadioButton.Location = new System.Drawing.Point(204, 330);
+            this.maleRadioButton.Location = new System.Drawing.Point(204, 255);
             this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.maleRadioButton.Name = "maleRadioButton";
             this.maleRadioButton.Size = new System.Drawing.Size(70, 24);
@@ -230,7 +226,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(103, 330);
+            this.label7.Location = new System.Drawing.Point(103, 255);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 20);
@@ -239,7 +235,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(204, 259);
+            this.dateTimePicker.Location = new System.Drawing.Point(204, 184);
             this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker.MaxDate = new System.DateTime(2021, 4, 16, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
@@ -250,7 +246,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 265);
+            this.label4.Location = new System.Drawing.Point(52, 190);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 20);
@@ -278,7 +274,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // passTextBox
             // 
-            this.passTextBox.Location = new System.Drawing.Point(201, 178);
+            this.passTextBox.Location = new System.Drawing.Point(201, 103);
             this.passTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passTextBox.Multiline = true;
             this.passTextBox.Name = "passTextBox";
@@ -289,7 +285,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(85, 178);
+            this.label6.Location = new System.Drawing.Point(85, 103);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
@@ -304,25 +300,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 8;
-            // 
-            // usernameTextBox
-            // 
-            this.usernameTextBox.Location = new System.Drawing.Point(201, 112);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.usernameTextBox.Multiline = true;
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(220, 36);
-            this.usernameTextBox.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "User Name";
             // 
             // nameTextBox
             // 
@@ -353,6 +330,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyEmployeeInformation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModifyEmployeeInformation_FormClosing);
+            this.Load += new System.EventHandler(this.ModifyEmployeeInformation_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -382,9 +360,51 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.TextBox passTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox usernameTextBox;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label1;
+
+        public string NameTextBox
+        {
+            get { return this.nameTextBox.Text; }
+        }
+       
+        public string PasswordTextBox
+        {
+            get { return this.passTextBox.Text; }
+        }
+        public string DateTimePicker
+        {
+            get { return this.dateTimePicker.Text; }
+        }
+        public bool MaleRadioButton
+        {
+            get { return this.maleRadioButton.Checked; }
+        }
+        public bool FemaleRadioButton
+        {
+            get { return this.femaleRadioButton.Checked; }
+        }
+        public string AddressTextBox
+        {
+            get { return this.addressTextBox.Text; }
+        }
+        public string EmailTextBox
+        {
+            get { return this.emailTextBox.Text; }
+        }
+        public string BloodGroupTextBox
+        {
+            get { return this.bloodgroupTextBox.Text; }
+        }
+        public string TypeTextBox
+        {
+            get { return this.typeComboBox.Text; }
+        }
+        public string SalaryTextBox
+        {
+            get { return this.salaryTextBox.Text; }
+        }
+
+
     }
 }

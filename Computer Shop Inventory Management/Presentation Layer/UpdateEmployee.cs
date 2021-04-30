@@ -24,11 +24,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             string name = employeeServices.CheckUserName(UpdateNameTextBox);
             if(name==UpdateNameTextBox)
             {
-                ModifyEmployeeInformation modifyEmployeeInformation = new ModifyEmployeeInformation();
+                ModifyEmployeeInformation modifyEmployeeInformation = new ModifyEmployeeInformation(UpdateNameTextBox);
                 modifyEmployeeInformation.Show();
                 this.Hide();
-
-            
             }
             else
             {

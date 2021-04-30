@@ -68,3 +68,4 @@ E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inve
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.csproj.CoreCompileInputs.cache
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.exe
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer Shop Inventory Management.pdb
+D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ModifyEmployeeInformation.resources

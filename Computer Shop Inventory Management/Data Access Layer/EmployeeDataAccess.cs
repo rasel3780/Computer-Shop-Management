@@ -17,7 +17,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
         }
         public int UpdateEmployee(Employee employee)
         {
-            string sql = "UPDATE Employees SET Name='" + employee.Name + "', UserName='" + employee.UserName + "', Password='" + employee.Password + "', Email='" + employee.Email + "', Address='" + employee.Address + "', DateOfBirth='" + employee.DateOfBirth + "', BloodGroup='" + employee.BloodGroup + "', Gender='" + employee.Gender + "', EmployeeType='" + employee.EmployeeType + "', Salary=" + employee.Salary + " WHERE UserName='" + employee.Name+"'";
+            string sql = "UPDATE Employees SET Name='" + employee.Name + "', UserName='" + employee.UserName + "', Password='" + employee.Password + "', Email='" + employee.Email + "', Address='" + employee.Address + "', DateOfBirth='" + employee.DateOfBirth + "', BloodGroup='" + employee.BloodGroup + "', Gender='" + employee.Gender + "', EmployeeType='" + employee.EmployeeType + "', Salary='" + employee.Salary + "' WHERE UserName='" + employee.UserName+"'";
             return this.ExecuteQuery(sql);
         }
         public int RemoveEmployee(string userName)
@@ -57,5 +57,28 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             }
             return employees;
         }
+
+        public Employee ReadEmployee(Employee employee)
+        {
+            string query = "SELECT * FROM Employees WHERE UserName= '" + employee.UserName + "'";
+            SqlDataReader reader = GetData(query);
+            if (reader.Read())
+            {
+                Employee employee1 = new Employee();
+                employee1.Name = reader["Name"].ToString();
+                employee1.UserName = reader["UserName"].ToString();
+                employee1.Password = reader["Password"].ToString();
+                employee1.Email = reader["Email"].ToString();
+                employee1.Address = reader["Address"].ToString();
+                employee1.DateOfBirth = reader["DateOfBirth"].ToString();
+                employee1.BloodGroup = reader["bloodGroup"].ToString();
+                employee1.Gender = reader["Gender"].ToString();
+                employee1.EmployeeType = reader["EmployeeType"].ToString();
+                employee1.Salary = Convert.ToSingle(reader["Salary"]);
+                return employee1;
+            }
+            else return null;
+        }
+
     }
 }
