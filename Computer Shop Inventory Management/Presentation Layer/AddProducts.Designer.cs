@@ -127,7 +127,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // backButton
             // 
             this.backButton.Location = new System.Drawing.Point(8, 587);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 33);
             this.backButton.TabIndex = 6;
@@ -316,6 +316,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.pictureAddButton.TabIndex = 3;
             this.pictureAddButton.Text = "Add Picture";
             this.pictureAddButton.UseVisualStyleBackColor = true;
+            this.pictureAddButton.Click += new System.EventHandler(this.pictureAddButton_Click);
             // 
             // pictureBox1
             // 
@@ -354,6 +355,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductButton.TabIndex = 3;
             this.addProductButton.Text = "Add Product";
             this.addProductButton.UseVisualStyleBackColor = true;
+            this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
             // 
             // brandComboBox
             // 
@@ -433,7 +435,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 647);
             this.Controls.Add(this.addProductGroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProducts";
             this.Text = "Product";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddProducts_FormClosing);
@@ -481,5 +483,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.ComboBox warrentyComboBox;
         private System.Windows.Forms.Button selectButton;
         private System.Windows.Forms.Button backButton;
+
+        public string Category 
+        {
+            get { return this.categoryComboBox.Text; }
+        }
+
     }
 }

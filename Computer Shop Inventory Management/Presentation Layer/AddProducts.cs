@@ -13,6 +13,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class AddProducts : Form
     {
+        string picture = "";
         public AddProducts()
         {
             InitializeComponent();
@@ -420,6 +421,29 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureAddButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.jpg; *.jpeg; *.png; .bmp)|.jpg; *.jpeg; *.png; *.bmp";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picture = openFile.FileName;
+                Size size = pictureBox1.Size;
+                size.Height = 220;
+                size.Width = 220;
+                pictureBox1.Size = size;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = Image.FromFile(picture);
+            }
+        }
+
+        private void addProductButton_Click(object sender, EventArgs e)
+        {
+            ProductServices productServices = new ProductServices();
+           // productServices.AddProduct();
         }
     }
 }
