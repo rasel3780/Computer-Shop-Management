@@ -47,5 +47,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             Application.Exit();
         }
+
+        private void ViewProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

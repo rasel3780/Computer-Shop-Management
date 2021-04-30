@@ -13,7 +13,6 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer.Entities
         public string Brand { set; get; }
         public int Quantity { set; get; }
         public float Price { set; get; }
-
         public string Warranty { set; get; }
         public string Capacity { set; get; }
         public string MemoryType { set; get; }
