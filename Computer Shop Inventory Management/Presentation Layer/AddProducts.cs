@@ -13,6 +13,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class AddProducts : Form
     {
+        int check = 0;
         string picture = "";
         public AddProducts()
         {
@@ -42,10 +43,25 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             Application.Exit();
 
         }
-
+        
         private void selectButton_Click(object sender, EventArgs e)
         {
-            int check = 0;
+            check = 0;
+            label1.Visible = false;
+            comboBox1.Visible = false;
+
+            label2.Visible = false;
+            comboBox2.Visible = false;
+
+            label3.Visible = false;
+            comboBox3.Visible = false;
+
+            label4.Visible = false;
+            comboBox4.Visible = false;
+
+            label5.Visible = false;
+            comboBox5.Visible = false;
+
             ProductList productList = new ProductList();
             for (int i = 0; i <= (checkedListBox1.Items.Count - 1); i++)
             {
@@ -404,11 +420,47 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                         }
                         check++;
                     }
+                    else if (s == "Response Time")
+                    {
+                        if (check == 0)
+                        {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
+                            label1.Text = s;
+                            comboBox1.DataSource = productList.ResponseTime();
+                        }
+                        else if (check == 1)
+                        {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
+                            label2.Text = s;
+                            comboBox2.DataSource = productList.ResponseTime();
+                        }
+                        else if (check == 2)
+                        {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
+                            label3.Text = s;
+                            comboBox3.DataSource = productList.ResponseTime();
+                        }
+                        else if (check == 3)
+                        {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
+                            label4.Text = s;
+                            comboBox4.DataSource = productList.ResponseTime();
+                        }
+                        else if (check == 4)
+                        {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
+                            label5.Text = s;
+                            comboBox5.DataSource = productList.ResponseTime();
+                        }
+                        check++;
+                    }
                 }
             }
-
-
-
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -442,8 +494,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void addProductButton_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(" "+check);
             ProductServices productServices = new ProductServices();
-           // productServices.AddProduct();
+            //productServices.AddProduct();
         }
     }
 }
