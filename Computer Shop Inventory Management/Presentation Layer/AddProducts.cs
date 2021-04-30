@@ -48,6 +48,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             ProductList productList = new ProductList();
             for (int i = 0; i <= (checkedListBox1.Items.Count - 1); i++)
             {
+                featureGroupBox.Visible = true;
                 if (checkedListBox1.GetItemChecked(i))
                 {
                     string s = checkedListBox1.Items[i].ToString();
@@ -55,26 +56,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if(check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.Capacity();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.Capacity();
                         }
                         else if(check==2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.Capacity();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.Capacity();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.Capacity();
                         }
@@ -84,26 +95,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.MemoryType();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.MemoryType();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.MemoryType();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.MemoryType();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.MemoryType();
                         }
@@ -113,26 +134,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.BusSpeed();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.BusSpeed();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.BusSpeed();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.BusSpeed();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.BusSpeed();
                         }
@@ -142,26 +173,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.ScreenSize();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.ScreenSize();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.ScreenSize();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.ScreenSize();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.ScreenSize();
                         }
@@ -171,26 +212,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.RefreshRate();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.RefreshRate();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.RefreshRate();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.RefreshRate();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.RefreshRate();
                         }
@@ -200,26 +251,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.Wattage();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.Wattage();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.Wattage();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.Wattage();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.Wattage();
                         }
@@ -229,26 +290,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.MotherBoardType();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.MotherBoardType();
                         }
@@ -258,26 +329,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.ClockSpeed();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.ClockSpeed();
                         }
@@ -287,26 +368,36 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                     {
                         if (check == 0)
                         {
+                            label1.Visible = true;
+                            comboBox1.Visible = true;
                             label1.Text = s;
                             comboBox1.DataSource = productList.ConnectionType();
                         }
                         else if (check == 1)
                         {
+                            label2.Visible = true;
+                            comboBox2.Visible = true;
                             label2.Text = s;
                             comboBox2.DataSource = productList.ConnectionType();
                         }
                         else if (check == 2)
                         {
+                            label3.Visible = true;
+                            comboBox3.Visible = true;
                             label3.Text = s;
                             comboBox3.DataSource = productList.ConnectionType();
                         }
                         else if (check == 3)
                         {
+                            label4.Visible = true;
+                            comboBox4.Visible = true;
                             label4.Text = s;
                             comboBox4.DataSource = productList.ConnectionType();
                         }
                         else if (check == 4)
                         {
+                            label5.Visible = true;
+                            comboBox5.Visible = true;
                             label5.Text = s;
                             comboBox5.DataSource = productList.ConnectionType();
                         }
@@ -324,6 +415,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             AdminHome admin = new AdminHome();
             admin.Show();
             this.Hide();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
