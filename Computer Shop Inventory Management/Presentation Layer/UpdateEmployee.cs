@@ -64,10 +64,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             else
             {
 
-                int res = employeeServices.RemoveEmployee(removeNameTextBox.Text);
+                int res = employeeServices.RemoveEmployee(RemoveNameTextBox);
                 if(res > 0)
                 {
                     MessageBox.Show("Employee Removed.");
+                    EmployeeServices employeeServices1 = new EmployeeServices();
+                    employeeDataGridView.DataSource = employeeServices1.GetAllEmployees();
                 }
                 else
                 {
