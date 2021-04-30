@@ -126,6 +126,7 @@ namespace Computer_Shop_Inventory_Management
             this.viewProdcutButton.TabIndex = 2;
             this.viewProdcutButton.Text = "View Product";
             this.viewProdcutButton.UseVisualStyleBackColor = true;
+            this.viewProdcutButton.Click += new System.EventHandler(this.viewProdcutButton_Click);
             // 
             // AdminHome
             // 

@@ -50,5 +50,12 @@ namespace Computer_Shop_Inventory_Management
             addProducts.Show();
             this.Hide();
         }
+
+        private void viewProdcutButton_Click(object sender, EventArgs e)
+        {
+            ViewProduct viewProduct = new ViewProduct();
+            viewProduct.Show();
+            this.Hide();
+        }
     }
 }
