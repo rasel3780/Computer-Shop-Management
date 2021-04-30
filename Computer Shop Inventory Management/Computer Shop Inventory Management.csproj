@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Businees Logic Layer\EmployeeServices.cs" />
+    <Compile Include="Businees Logic Layer\ProductList.cs" />
     <Compile Include="Businees Logic Layer\ProductServices.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\EmployeeDataAccess.cs" />

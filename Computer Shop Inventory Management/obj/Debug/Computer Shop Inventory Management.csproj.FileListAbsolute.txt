@@ -52,3 +52,4 @@ D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Compute
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateEmployee.resources
 G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateEmployee.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.AddProducts.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.AddProducts.resources
