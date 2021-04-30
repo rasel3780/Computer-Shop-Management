@@ -242,6 +242,11 @@ namespace Computer_Shop_Inventory_Management
                 genderWarning.Visible = false;
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

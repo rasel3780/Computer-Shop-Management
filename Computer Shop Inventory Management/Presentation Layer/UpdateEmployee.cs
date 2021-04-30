@@ -20,6 +20,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ModifyEmployeeInformation modifyEmployeeInformation = new ModifyEmployeeInformation();
+            modifyEmployeeInformation.Show();
+            this.Hide();
 
         }
 

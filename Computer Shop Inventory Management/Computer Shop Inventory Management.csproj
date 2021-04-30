@@ -61,6 +61,12 @@
     <Compile Include="Presentation Layer\AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\ModifyEmployeeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ModifyEmployeeInformation.Designer.cs">
+      <DependentUpon>ModifyEmployeeInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Opening.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="Presentation Layer\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ModifyEmployeeInformation.resx">
+      <DependentUpon>ModifyEmployeeInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Opening.resx">
       <DependentUpon>Opening.cs</DependentUpon>
