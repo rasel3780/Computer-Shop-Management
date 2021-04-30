@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         public AddProducts()
         {
             InitializeComponent();
+            ProductList productList = new ProductList();
+            categoryComboBox.DataSource = productList.Category();
         }
 
         private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)

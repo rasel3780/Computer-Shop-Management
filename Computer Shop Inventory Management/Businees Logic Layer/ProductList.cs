@@ -237,5 +237,10 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             "GDDR6X"
         };
 
+        public List<string> Category()
+        {
+            return category;
+        }
+       
     }
 }
