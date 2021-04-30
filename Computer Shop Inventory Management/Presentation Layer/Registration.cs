@@ -106,7 +106,7 @@ namespace Computer_Shop_Inventory_Management
                     {
                         MessageBox.Show("Employee Added");
                         nameTextBox.Text = usernameTextBox.Text = emailTextBox.Text = passTextBox.Text = cpassTextBox.Text = addressTextBox.Text= salaryTextBox.Text="";
-                        maleRadioButton.Checked = femaleRadioButton.Checked = termscheckBox.Checked  = false;
+                        maleRadioButton.Checked = femaleRadioButton.Checked = termscheckBox.Checked  = submitButton.Enabled = false;
                         bloodgroupTextBox.Text = null;
                     }
                     else
@@ -210,9 +210,20 @@ namespace Computer_Shop_Inventory_Management
             this.Hide();
         }
 
-        /*private void termscheckBox_CheckedChanged(object sender, EventArgs e)
+        private void termscheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (termscheckBox.Checked == true) submitButton.Enabled = true;
-        }*/
+        }
+
+        private void termscheckBox_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (termscheckBox.Checked)
+            {
+                submitButton.Enabled = true;
+            }
+            else
+                submitButton.Enabled = false;
+        }
     }
+    
 }

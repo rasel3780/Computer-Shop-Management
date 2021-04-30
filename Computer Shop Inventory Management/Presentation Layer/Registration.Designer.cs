@@ -111,9 +111,9 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(48, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(969, 582);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -122,7 +122,7 @@ namespace Computer_Shop_Inventory_Management
             // backButton
             // 
             this.backButton.Location = new System.Drawing.Point(11, 537);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(104, 33);
             this.backButton.TabIndex = 41;
@@ -133,7 +133,7 @@ namespace Computer_Shop_Inventory_Management
             // salaryTextBox
             // 
             this.salaryTextBox.Location = new System.Drawing.Point(636, 395);
-            this.salaryTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salaryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.salaryTextBox.Multiline = true;
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(220, 36);
@@ -184,7 +184,7 @@ namespace Computer_Shop_Inventory_Management
             "Manager",
             "Salesman"});
             this.typeComboBox.Location = new System.Drawing.Point(636, 331);
-            this.typeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.typeComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(220, 27);
             this.typeComboBox.TabIndex = 35;
@@ -216,7 +216,7 @@ namespace Computer_Shop_Inventory_Management
             // addressTextBox
             // 
             this.addressTextBox.Location = new System.Drawing.Point(636, 34);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.addressTextBox.Multiline = true;
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(299, 105);
@@ -341,7 +341,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.submitButton.Enabled = false;
             this.submitButton.Location = new System.Drawing.Point(419, 530);
-            this.submitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(155, 39);
             this.submitButton.TabIndex = 22;
@@ -353,13 +353,13 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.termscheckBox.AutoSize = true;
             this.termscheckBox.Location = new System.Drawing.Point(321, 498);
-            this.termscheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.termscheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.termscheckBox.Name = "termscheckBox";
             this.termscheckBox.Size = new System.Drawing.Size(323, 24);
             this.termscheckBox.TabIndex = 21;
             this.termscheckBox.Text = "Agree to the Terms and Conditions";
             this.termscheckBox.UseVisualStyleBackColor = true;
-            //this.termscheckBox.CheckedChanged += new System.EventHandler(this.termscheckBox_CheckedChanged);
+            this.termscheckBox.CheckedChanged += new System.EventHandler(this.termscheckBox_CheckedChanged_1);
             // 
             // bloodgroupTextBox
             // 
@@ -374,7 +374,7 @@ namespace Computer_Shop_Inventory_Management
             "AB+",
             "AB-"});
             this.bloodgroupTextBox.Location = new System.Drawing.Point(636, 258);
-            this.bloodgroupTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bloodgroupTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.bloodgroupTextBox.Name = "bloodgroupTextBox";
             this.bloodgroupTextBox.Size = new System.Drawing.Size(220, 27);
             this.bloodgroupTextBox.TabIndex = 20;
@@ -393,7 +393,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.femaleRadioButton.AutoSize = true;
             this.femaleRadioButton.Location = new System.Drawing.Point(309, 396);
-            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.femaleRadioButton.Name = "femaleRadioButton";
             this.femaleRadioButton.Size = new System.Drawing.Size(87, 24);
             this.femaleRadioButton.TabIndex = 18;
@@ -405,7 +405,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.maleRadioButton.AutoSize = true;
             this.maleRadioButton.Location = new System.Drawing.Point(201, 396);
-            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.maleRadioButton.Name = "maleRadioButton";
             this.maleRadioButton.Size = new System.Drawing.Size(70, 24);
             this.maleRadioButton.TabIndex = 17;
@@ -426,7 +426,7 @@ namespace Computer_Shop_Inventory_Management
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(201, 325);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker.MaxDate = new System.DateTime(2021, 4, 16, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(220, 27);
@@ -446,7 +446,7 @@ namespace Computer_Shop_Inventory_Management
             // emailTextBox
             // 
             this.emailTextBox.Location = new System.Drawing.Point(636, 178);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Multiline = true;
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(299, 36);
@@ -465,7 +465,7 @@ namespace Computer_Shop_Inventory_Management
             // passTextBox
             // 
             this.passTextBox.Location = new System.Drawing.Point(201, 178);
-            this.passTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passTextBox.Multiline = true;
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.PasswordChar = '*';
@@ -485,7 +485,7 @@ namespace Computer_Shop_Inventory_Management
             // cpassTextBox
             // 
             this.cpassTextBox.Location = new System.Drawing.Point(201, 251);
-            this.cpassTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cpassTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cpassTextBox.Multiline = true;
             this.cpassTextBox.Name = "cpassTextBox";
             this.cpassTextBox.PasswordChar = '*';
@@ -505,7 +505,7 @@ namespace Computer_Shop_Inventory_Management
             // usernameTextBox
             // 
             this.usernameTextBox.Location = new System.Drawing.Point(201, 112);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTextBox.Multiline = true;
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(220, 36);
@@ -524,7 +524,7 @@ namespace Computer_Shop_Inventory_Management
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(201, 34);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nameTextBox.Multiline = true;
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(220, 36);
@@ -546,7 +546,7 @@ namespace Computer_Shop_Inventory_Management
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 612);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
