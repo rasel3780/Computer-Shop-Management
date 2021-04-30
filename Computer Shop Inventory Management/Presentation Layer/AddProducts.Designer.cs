@@ -39,7 +39,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.memoryTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.capacityTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.busSpeedComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,14 +53,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.warrentyComboBox = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.addProductGroupBox1.SuspendLayout();
             this.featureGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(699, 66);
+            this.priceTextBox.Location = new System.Drawing.Point(588, 65);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(221, 22);
             this.priceTextBox.TabIndex = 0;
@@ -69,7 +74,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(571, 71);
+            this.label1.Location = new System.Drawing.Point(460, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 17);
             this.label1.TabIndex = 1;
@@ -86,6 +91,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // addProductGroupBox1
             // 
+            this.addProductGroupBox1.Controls.Add(this.groupBox1);
             this.addProductGroupBox1.Controls.Add(this.featureGroupBox);
             this.addProductGroupBox1.Controls.Add(this.pictureAddButton);
             this.addProductGroupBox1.Controls.Add(this.pictureBox1);
@@ -95,14 +101,16 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.brandComboBox);
             this.addProductGroupBox1.Controls.Add(this.label3);
             this.addProductGroupBox1.Controls.Add(this.quantityTextBox);
+            this.addProductGroupBox1.Controls.Add(this.label11);
             this.addProductGroupBox1.Controls.Add(this.label1);
             this.addProductGroupBox1.Controls.Add(this.label5);
             this.addProductGroupBox1.Controls.Add(this.priceTextBox);
             this.addProductGroupBox1.Controls.Add(this.label2);
+            this.addProductGroupBox1.Controls.Add(this.warrentyComboBox);
             this.addProductGroupBox1.Controls.Add(this.categoryComboBox);
-            this.addProductGroupBox1.Location = new System.Drawing.Point(56, 12);
+            this.addProductGroupBox1.Location = new System.Drawing.Point(42, 12);
             this.addProductGroupBox1.Name = "addProductGroupBox1";
-            this.addProductGroupBox1.Size = new System.Drawing.Size(1072, 676);
+            this.addProductGroupBox1.Size = new System.Drawing.Size(1235, 676);
             this.addProductGroupBox1.TabIndex = 3;
             this.addProductGroupBox1.TabStop = false;
             this.addProductGroupBox1.Text = "Add Products";
@@ -112,17 +120,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.featureGroupBox.Controls.Add(this.screenSizeComboBox);
             this.featureGroupBox.Controls.Add(this.refreshRateComboBox);
+            this.featureGroupBox.Controls.Add(this.comboBox1);
             this.featureGroupBox.Controls.Add(this.memoryTypeComboBox);
             this.featureGroupBox.Controls.Add(this.label9);
             this.featureGroupBox.Controls.Add(this.label10);
-            this.featureGroupBox.Controls.Add(this.capacityTextBox);
             this.featureGroupBox.Controls.Add(this.label6);
             this.featureGroupBox.Controls.Add(this.busSpeedComboBox);
             this.featureGroupBox.Controls.Add(this.label7);
             this.featureGroupBox.Controls.Add(this.label8);
-            this.featureGroupBox.Location = new System.Drawing.Point(15, 167);
+            this.featureGroupBox.Location = new System.Drawing.Point(428, 210);
             this.featureGroupBox.Name = "featureGroupBox";
-            this.featureGroupBox.Size = new System.Drawing.Size(423, 344);
+            this.featureGroupBox.Size = new System.Drawing.Size(405, 271);
             this.featureGroupBox.TabIndex = 4;
             this.featureGroupBox.TabStop = false;
             this.featureGroupBox.Text = "Features";
@@ -173,13 +181,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.label10.TabIndex = 1;
             this.label10.Text = "Refresh Rate";
             // 
-            // capacityTextBox
-            // 
-            this.capacityTextBox.Location = new System.Drawing.Point(162, 24);
-            this.capacityTextBox.Name = "capacityTextBox";
-            this.capacityTextBox.Size = new System.Drawing.Size(221, 22);
-            this.capacityTextBox.TabIndex = 0;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -218,7 +219,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // pictureAddButton
             // 
-            this.pictureAddButton.Location = new System.Drawing.Point(745, 381);
+            this.pictureAddButton.Location = new System.Drawing.Point(1006, 382);
             this.pictureAddButton.Name = "pictureAddButton";
             this.pictureAddButton.Size = new System.Drawing.Size(146, 30);
             this.pictureAddButton.TabIndex = 3;
@@ -228,7 +229,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(699, 154);
+            this.pictureBox1.Location = new System.Drawing.Point(960, 155);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(221, 221);
             this.pictureBox1.TabIndex = 3;
@@ -236,7 +237,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(699, 472);
+            this.descriptionTextBox.Location = new System.Drawing.Point(960, 473);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(269, 118);
@@ -245,7 +246,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(696, 607);
+            this.label4.Location = new System.Drawing.Point(957, 608);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 17);
             this.label4.TabIndex = 1;
@@ -253,9 +254,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // addProductButton
             // 
-            this.addProductButton.Location = new System.Drawing.Point(203, 517);
+            this.addProductButton.Location = new System.Drawing.Point(500, 595);
             this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(146, 30);
+            this.addProductButton.Size = new System.Drawing.Size(128, 55);
             this.addProductButton.TabIndex = 3;
             this.addProductButton.Text = "Add Product";
             this.addProductButton.UseVisualStyleBackColor = true;
@@ -279,7 +280,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(699, 111);
+            this.quantityTextBox.Location = new System.Drawing.Point(588, 110);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(221, 22);
             this.quantityTextBox.TabIndex = 0;
@@ -287,7 +288,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(571, 116);
+            this.label5.Location = new System.Drawing.Point(460, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 1;
@@ -301,6 +302,71 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.label2.Size = new System.Drawing.Size(65, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Category";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkedListBox1);
+            this.groupBox1.Location = new System.Drawing.Point(52, 210);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(265, 271);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Capacity",
+            "Memory Type",
+            "Bus Speed",
+            "Screen Size",
+            "Refresh Rate",
+            "Wattage",
+            "Motherboard Type",
+            "Clock Speed",
+            "Connection Type",
+            "Response Time"});
+            this.checkedListBox1.Location = new System.Drawing.Point(33, 66);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(214, 191);
+            this.checkedListBox1.TabIndex = 0;
+            // 
+            // warrentyComboBox
+            // 
+            this.warrentyComboBox.FormattingEnabled = true;
+            this.warrentyComboBox.Items.AddRange(new object[] {
+            "6 Months",
+            "1 Year",
+            "2 Years",
+            "3 Years",
+            "5 Years",
+            "7 Years",
+            "10 Years",
+            "Lifetime"});
+            this.warrentyComboBox.Location = new System.Drawing.Point(960, 65);
+            this.warrentyComboBox.Name = "warrentyComboBox";
+            this.warrentyComboBox.Size = new System.Drawing.Size(221, 24);
+            this.warrentyComboBox.TabIndex = 2;
+            this.warrentyComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(876, 70);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Warrenty";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(162, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(221, 24);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // AddProducts
             // 
@@ -318,6 +384,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.featureGroupBox.ResumeLayout(false);
             this.featureGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -339,7 +406,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.ComboBox memoryTypeComboBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox capacityTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox busSpeedComboBox;
         private System.Windows.Forms.Label label7;
@@ -349,5 +415,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button addProductButton;
         private System.Windows.Forms.TextBox quantityTextBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox warrentyComboBox;
     }
 }
