@@ -10,48 +10,77 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
     {
         List<string> category = new List<string>()
         {
-            "Laptop",
-            "Keyboard",
-            "Mouse",
-            "Monitor",
+            "CPU",
+            "Motherborad",
             "RAM",
-            "Graphics card",
-            "Processor",
             "HDD",
             "SSD",
-            "Pendrive",
+            "Graphics card",
             "Power Supply",
-            "Motherborad",
             "Casing",
+            "Monitor",
+            "Keyboard",
+            "Mouse",
+            "Headphone",
             "UPS",
             "Printer",
-            "Headphone"
-
+            "Pendrive",
+            "Laptop"
         };
 
         List<string> brand = new List<string>()
         {
+            //CPU
             "Intel",
-            "AMD",
-            "MSI",
+            "Ryzen",
+
+            //Motherboard
+            "ASRock",
             "ASUS",
+            "Gigabyte",
+            "MSI",
+
+            //Ram
+            "Corsair",
+            "G.Skill",
+            "PNY",
+            "Thermaltake",
+
+            //SSD, HDD
+            "Transcend",
+            "HP",
+            "Seagate",
+            "Adata",
+            "Twinmos",
+
+            //GPU
+            "Zotac",
+            "Sapphire",
+            "XFX",
+
+            //Monitor
             "DELL",
             "Samsung",
-            "Gigabyte",
             "LG",
             "Philips",
             "Acer",
-            "HP",
             "Benq",
             "Walton",
             "Viewsonic",
-            "Corsair",
-            "Thermaltake",
-            "G-skill",
-            "PNY",
-            "Transcend",
-            "Adata",
-            "Twinmos",
+
+            //Casing, PSU
+            "Gamdias",
+            "MaxGreen",
+            "Lian Li",
+            
+            //Keyboard, Mouse, Headphone
+            "A4Tech",
+            "Razer",
+            "Fantech",
+            "Logitech",
+            "Rapoo",
+
+            //Laptop
             "Team",
             "Apacer",
             "Apple"
@@ -60,8 +89,15 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
         List<string> capacity = new List<string>()
         {
             "1 GB",
+            "2 GB",
+            "4 GB",
+            "6 GB",
+            "8 GB",
+            "16 GB",
+            "24 GB",
             "256 GB",
             "1 TB",
+            "2 TB",
             "4 TB",
             "5 TB",
             "6 TB",
@@ -87,7 +123,6 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             "4200 MHz",
             "4400 MHz",
             "4600 MHz",
-
         };
 
         List<string> clockSpeed = new List<string>()
@@ -100,7 +135,9 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
         List<string> refreshRate = new List<string>()
         {
-            "Upto 75 Hz",
+            "60 Hz",
+            "75 Hz",
+            "90 Hz",
             "100 Hz",
             "144 Hz",
             "155 Hz",
@@ -121,7 +158,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             "12 ms",
             "13 ms",
             "14 ms",
-            "15 and Above"
+            "15 ms"
         };
 
         List<string> connectionType = new List<string>()
@@ -136,10 +173,12 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             "D-SUB",
             "Type-C",
             "Wireless",
-            "3.5 mm"
+            "3.5 mm",
+            "Bluetooth"
         };
         List<string> wattage = new List<string>()
         {
+            "150 watt",
             "200 Watt",
             "300 Watt",
             "350 Watt",
@@ -158,12 +197,44 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
         List<string> screenSize = new List<string>()
         {
-
+            "10 inch",
+            "12 inch",
+            "14.9 inch",
+            "15 inch",
+            "17 inch",
+            "18 inch",
+            "20 inch",
+            "21 inch",
+            "22 inch",
+            "23 inch",
+            "24 inch",
+            "26 inch",
+            "27 inch",
+            "28 inch",
+            "30 inch",
+            "Above 30 inch"
         };
 
         List<string> motherboardType = new List<string>()
         {
+            "ATX",
+            "Micro ATX",
+            "Extended ATX",
+            "Mini ITX"
+        };
 
+
+        List<string> memoryType = new List<string>()
+        {
+            "DDR3",
+            "DDR3L",
+            "DDR4",
+            "DDR5",
+            "GDDR5",
+            "GDDR5X",
+            "DDR6",
+            "GDDR6",
+            "GDDR6X"
         };
 
     }
