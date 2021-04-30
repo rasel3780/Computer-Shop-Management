@@ -12,7 +12,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
     {
         public int AddEmployee(Employee employee)
         {
-            string sql = "INSERT INTO Employees(Name,UserName,Password,Email,Address,DateOfBirth,BloodGroup,Gender,EmployeeType, Salary) VALUES('" + employee.Name + "'," + employee.UserName + "," + employee.Password + ",'" + employee.Email + "','" + employee.Address + "','" + employee.DateOfBirth + "','" + employee.BloodGroup + "','" + employee.Gender + "','" + employee.EmployeeType + "' ,'" + employee.Salary + "')";
+            string sql = "INSERT INTO Employees(Name,UserName,Password,Email,Address,DateOfBirth,BloodGroup,Gender,EmployeeType, Salary) VALUES('" + employee.Name + "','" + employee.UserName + "','" + employee.Password + "','" + employee.Email + "','" + employee.Address + "','" + employee.DateOfBirth + "','" + employee.BloodGroup + "','" + employee.Gender + "','" + employee.EmployeeType + "' ,'" + employee.Salary + "')";
             return this.ExecuteQuery(sql);
         }
         public int UpdateEmployee(Employee employee)

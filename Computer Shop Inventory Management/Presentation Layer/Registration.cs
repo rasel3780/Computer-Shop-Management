@@ -208,5 +208,10 @@ namespace Computer_Shop_Inventory_Management
             admin.Show();
             this.Hide();
         }
+
+        private void termscheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (termscheckBox.Checked == true) submitButton.Enabled = true;
+        }
     }
 }
