@@ -20,9 +20,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ModifyEmployeeInformation modifyEmployeeInformation = new ModifyEmployeeInformation();
-            modifyEmployeeInformation.Show();
-            this.Hide();
+            EmployeeServices employeeServices = new EmployeeServices();
+            string name = employeeServices.CheckUserName(UpdateNameTextBox);
+            if(name==UpdateNameTextBox)
+            {
+                ModifyEmployeeInformation modifyEmployeeInformation = new ModifyEmployeeInformation();
+                modifyEmployeeInformation.Show();
+                this.Hide();
+
+            
+            }
+            else
+            {
+                MessageBox.Show("Employee not found");
+            }
 
         }
 
@@ -44,15 +55,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void removeButton_Click(object sender, EventArgs e)
         {
             EmployeeServices employeeServices = new EmployeeServices();
-            string userName = employeeServices.CheckUserName(removeTextBox.Text);
-            if(userName != removeTextBox.Text)
+            string userName = employeeServices.CheckUserName(RemoveNameTextBox);
+            if(userName != RemoveNameTextBox)
             {
                 MessageBox.Show("Employee Not Found!!");
             }
             else
             {
 
-                int res = employeeServices.RemoveEmployee(removeTextBox.Text);
+                int res = employeeServices.RemoveEmployee(removeNameTextBox.Text);
                 if(res > 0)
                 {
                     MessageBox.Show("Employee Removed.");
