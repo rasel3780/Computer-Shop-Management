@@ -62,11 +62,24 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             if(res> 0)
             {
                 MessageBox.Show("Employee Updated....");
+
+                UpdateEmployee update = new UpdateEmployee();
+                update.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Could Not Update....");
             }
+
+            
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            UpdateEmployee update = new UpdateEmployee();
+            update.Show();
+            this.Hide();
         }
     }
 }
