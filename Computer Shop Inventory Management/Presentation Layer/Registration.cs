@@ -73,6 +73,7 @@ namespace Computer_Shop_Inventory_Management
             {
                     MessageBox.Show("Password Did Not Match!!");
             }
+            
             else
             {
 
@@ -209,9 +210,9 @@ namespace Computer_Shop_Inventory_Management
             this.Hide();
         }
 
-        private void termscheckBox_CheckedChanged(object sender, EventArgs e)
+        /*private void termscheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (termscheckBox.Checked == true) submitButton.Enabled = true;
-        }
+        }*/
     }
 }

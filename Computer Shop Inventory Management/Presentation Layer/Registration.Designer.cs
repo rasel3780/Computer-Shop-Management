@@ -359,7 +359,7 @@ namespace Computer_Shop_Inventory_Management
             this.termscheckBox.TabIndex = 21;
             this.termscheckBox.Text = "Agree to the Terms and Conditions";
             this.termscheckBox.UseVisualStyleBackColor = true;
-            this.termscheckBox.CheckedChanged += new System.EventHandler(this.termscheckBox_CheckedChanged);
+            //this.termscheckBox.CheckedChanged += new System.EventHandler(this.termscheckBox_CheckedChanged);
             // 
             // bloodgroupTextBox
             // 
