@@ -29,7 +29,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
             this.updateNameTextBox = new System.Windows.Forms.TextBox();
             this.updateButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
@@ -39,21 +39,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateGroupBox = new System.Windows.Forms.GroupBox();
             this.removeGroupBox = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
             this.updateGroupBox.SuspendLayout();
             this.removeGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // employeeDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(455, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 468);
-            this.dataGridView1.TabIndex = 0;
+            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeeDataGridView.Location = new System.Drawing.Point(455, 27);
+            this.employeeDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.employeeDataGridView.Name = "employeeDataGridView";
+            this.employeeDataGridView.RowHeadersWidth = 51;
+            this.employeeDataGridView.RowTemplate.Height = 24;
+            this.employeeDataGridView.Size = new System.Drawing.Size(600, 468);
+            this.employeeDataGridView.TabIndex = 0;
+            this.employeeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // updateNameTextBox
             // 
@@ -109,7 +110,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.backButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.Location = new System.Drawing.Point(16, 507);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 32);
             this.backButton.TabIndex = 6;
@@ -124,9 +125,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateGroupBox.Controls.Add(this.label1);
             this.updateGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateGroupBox.Location = new System.Drawing.Point(16, 103);
-            this.updateGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.updateGroupBox.Name = "updateGroupBox";
-            this.updateGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.updateGroupBox.Size = new System.Drawing.Size(432, 135);
             this.updateGroupBox.TabIndex = 7;
             this.updateGroupBox.TabStop = false;
@@ -139,9 +140,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.removeGroupBox.Controls.Add(this.removeButton);
             this.removeGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeGroupBox.Location = new System.Drawing.Point(16, 274);
-            this.removeGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.removeGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.removeGroupBox.Name = "removeGroupBox";
-            this.removeGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.removeGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.removeGroupBox.Size = new System.Drawing.Size(432, 137);
             this.removeGroupBox.TabIndex = 8;
             this.removeGroupBox.TabStop = false;
@@ -164,14 +165,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.Controls.Add(this.removeGroupBox);
             this.Controls.Add(this.updateGroupBox);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.employeeDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateEmployee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateEmployee_FormClosing);
             this.Load += new System.EventHandler(this.UpdateEmployee_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
             this.updateGroupBox.ResumeLayout(false);
             this.updateGroupBox.PerformLayout();
             this.removeGroupBox.ResumeLayout(false);
@@ -182,7 +183,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView employeeDataGridView;
         private System.Windows.Forms.TextBox updateNameTextBox;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button removeButton;

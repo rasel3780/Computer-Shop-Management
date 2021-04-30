@@ -16,6 +16,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         public UpdateEmployee()
         {
             InitializeComponent();
+            EmployeeServices employeeServices = new EmployeeServices();
+            employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,6 +86,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             AdminHome admin = new AdminHome();
             admin.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

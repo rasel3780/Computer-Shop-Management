@@ -45,7 +45,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 Employee employee = new Employee();
                 employee.Name = reader["Name"].ToString();
                 employee.UserName = reader["UserName"].ToString();
-                //employee.Password = reader["Password"].ToString();
+                employee.Password = reader["Password"].ToString();
                 employee.Email = reader["Email"].ToString();
                 employee.Address = reader["Address"].ToString();
                 employee.DateOfBirth = reader["DateOfBirth"].ToString();
