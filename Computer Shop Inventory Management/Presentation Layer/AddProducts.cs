@@ -531,9 +531,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 MessageBox.Show("Not Added...");
             }
-            AdminHome adminHome = new AdminHome();
+            /*AdminHome adminHome = new AdminHome();
             this.Hide();
-            adminHome.Show();
+            adminHome.Show();*/
         }
     }
 }
