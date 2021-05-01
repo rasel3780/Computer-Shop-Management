@@ -91,6 +91,12 @@
     <Compile Include="Presentation Layer\AddProducts.Designer.cs">
       <DependentUpon>AddProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\SaleDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\SaleDetails.Designer.cs">
+      <DependentUpon>SaleDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\SalesmanHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\AddProducts.resx">
       <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\SaleDetails.resx">
+      <DependentUpon>SaleDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\SalesmanHome.resx">
       <DependentUpon>SalesmanHome.cs</DependentUpon>
