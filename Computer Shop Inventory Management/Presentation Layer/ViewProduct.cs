@@ -273,8 +273,16 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 
 
                 SaleServices saleServices = new SaleServices();
-                saleServices.SellProduct(product.ProductId, product.Category, product.Brand, product.Quantity, product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, buyerNoTextBox.Text, empName);
-                
+                int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, product.Quantity, product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, buyerNoTextBox.Text, empName);
+                if (ans > 0)
+                {
+                    MessageBox.Show("Sold...");
+                    productGridView.DataSource = productServices.GetAllProducts();
+                }
+                else
+                {
+                    MessageBox.Show("Error...");
+                }
             }
             else
             {
