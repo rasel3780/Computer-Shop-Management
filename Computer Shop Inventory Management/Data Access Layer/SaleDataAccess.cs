@@ -120,5 +120,40 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             }
             return sales;
         }
+
+        public List<Sale> GetAllSaleByBoth(string category,string brand)
+        {
+            string sql = "SELECT * FROM Sales WHERE Category = '" + category + "' AND Brand = '"+brand+"'";
+            SqlDataReader reader = this.GetData(sql);
+            List<Sale> sales = new List<Sale>();
+            while (reader.Read())
+            {
+                Sale sale = new Sale();
+                sale.ProductId = Convert.ToInt32(reader["ProductId"]);
+                sale.Category = reader["Category"].ToString();
+                sale.Brand = reader["Brand"].ToString();
+                sale.Quantity = Convert.ToInt32(reader["Quantity"]);
+                sale.Price = Convert.ToSingle(reader["Price"]);
+                sale.Warranty = reader["Warranty"].ToString();
+                sale.Capacity = reader["Capacity"].ToString();
+                sale.MemoryType = reader["MemoryType"].ToString();
+                sale.BusSpeed = reader["BusSpeed"].ToString();
+                sale.ScreenSize = reader["ScreenSize"].ToString();
+                sale.RefreshRate = reader["RefreshRate"].ToString();
+                sale.Wattage = reader["Wattage"].ToString();
+                sale.MotherBoardType = reader["MotherBoardType"].ToString();
+                sale.ClockSpeed = reader["ClockSpeed"].ToString();
+                sale.ConnectionType = reader["ConnectionType"].ToString();
+                sale.ResponseTime = reader["ResponseTime"].ToString();
+                sale.Picture = reader["Picture"].ToString();
+                sale.Desciption = reader["Desciption"].ToString();
+                sale.SaleDate = reader["SaleDate"].ToString();
+                sale.BuyerName = reader["BuyerName"].ToString();
+                sale.BuyerPhoneNo = reader["BuyerPhoneNo"].ToString();
+                sale.SoldBy = reader["SoldBy"].ToString();
+                sales.Add(sale);
+            }
+            return sales;
+        }
     }
 }

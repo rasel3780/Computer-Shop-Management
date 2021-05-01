@@ -109,5 +109,21 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.saleDataAccess = new SaleDataAccess();
             return this.saleDataAccess.GetAllSale();
         }
+        public List<Sale> GetAllSaleByCategory(string category)
+        {
+            this.saleDataAccess = new SaleDataAccess();
+            return this.saleDataAccess.GetAllSaleByCategory(category);
+        }
+        public List<Sale> GetAllSaleByBrand(string brand)
+        {
+            this.saleDataAccess = new SaleDataAccess();
+            return this.saleDataAccess.GetAllSaleByBrand(brand);
+        }
+        public List<Sale> GetAllSaleByBoth(string category,string brand)
+        {
+            this.saleDataAccess = new SaleDataAccess();
+            return this.saleDataAccess.GetAllSaleByBoth(category,brand);
+        }
+
     }
 }
