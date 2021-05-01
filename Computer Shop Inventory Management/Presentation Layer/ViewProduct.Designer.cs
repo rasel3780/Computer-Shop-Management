@@ -51,6 +51,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.buyerNameTextBox = new System.Windows.Forms.TextBox();
             this.buyerNoTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.showAllButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             this.showGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -175,6 +176,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showGroupBox
             // 
+            this.showGroupBox.Controls.Add(this.showAllButton);
             this.showGroupBox.Controls.Add(this.bothButton);
             this.showGroupBox.Controls.Add(this.showByBrandButton);
             this.showGroupBox.Controls.Add(this.enterIdLabel);
@@ -198,10 +200,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // bothButton
             // 
             this.bothButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bothButton.Location = new System.Drawing.Point(461, 25);
+            this.bothButton.Location = new System.Drawing.Point(461, 69);
             this.bothButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bothButton.Name = "bothButton";
-            this.bothButton.Size = new System.Drawing.Size(109, 73);
+            this.bothButton.Size = new System.Drawing.Size(109, 29);
             this.bothButton.TabIndex = 12;
             this.bothButton.Text = "By Both";
             this.bothButton.UseVisualStyleBackColor = true;
@@ -318,6 +320,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sell";
             // 
+            // showAllButton
+            // 
+            this.showAllButton.Location = new System.Drawing.Point(461, 25);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(109, 26);
+            this.showAllButton.TabIndex = 13;
+            this.showAllButton.Text = "Show All";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            // 
             // ViewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,6 +382,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.TextBox buyerNameTextBox;
         private System.Windows.Forms.TextBox buyerNoTextBox;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button showAllButton;
 
         public string ShowByIdTextBox
         {
