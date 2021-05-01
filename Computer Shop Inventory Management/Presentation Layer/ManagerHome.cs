@@ -31,7 +31,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
        
         private void viewProductButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct();
+            ViewProduct viewProduct = new ViewProduct("Manager");
             viewProduct.Show();
             this.Hide();
         }

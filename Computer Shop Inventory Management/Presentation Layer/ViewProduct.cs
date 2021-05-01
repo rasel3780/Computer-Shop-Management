@@ -15,16 +15,26 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     public partial class ViewProduct : Form
     {
         private string empType;
-        public ViewProduct()
+        public ViewProduct(string empType)
         {
             InitializeComponent();
-           // this.empType = empType;
+            this.empType = empType;
             ProductServices productService = new ProductServices();
             productGridView.DataSource = productService.GetAllProducts();
 
             ProductList productList = new ProductList();
             categoryComboBox.DataSource = productList.Category();
             brandComboBox.DataSource = productList.Brand();
+            if(empType=="Salesman")
+            {
+                updateButton.Enabled = false;
+                removeButton.Enabled = false;
+                updateButton.Visible = false;
+                removeButton.Visible = false;
+
+                removeTextBox.Visible = false;
+                updateTextBox.Visible = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,15 +77,26 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            if(empType=="manager")
+            if(empType=="Manager")
             {
                 ManagerHome managerHome = new ManagerHome();
                 managerHome.Show();
                 this.Hide();
             }
-            AdminHome adminHome = new AdminHome();
-            adminHome.Show();
-            this.Hide();
+            else if(empType=="Admin")
+            {
+                AdminHome adminHome = new AdminHome();
+                adminHome.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                SalesmanHome salesmanHome = new SalesmanHome();
+                salesmanHome.Show();
+                this.Hide();
+            }
+          
         }
 
         private void ViewProduct_FormClosing(object sender, FormClosingEventArgs e)

@@ -53,7 +53,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void viewProdcutButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct();
+            ViewProduct viewProduct = new ViewProduct("Admin");
             viewProduct.Show();
             this.Hide();
         }

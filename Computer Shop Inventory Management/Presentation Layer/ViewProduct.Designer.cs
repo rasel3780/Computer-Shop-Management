@@ -31,7 +31,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             this.productGridView = new System.Windows.Forms.DataGridView();
             this.viewByIdButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
             this.showByIdTextBox = new System.Windows.Forms.TextBox();
             this.removeTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,16 +72,16 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.viewByIdButton.UseVisualStyleBackColor = true;
             this.viewByIdButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // removeButton
             // 
-            this.button2.Location = new System.Drawing.Point(429, 59);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.removeButton.Location = new System.Drawing.Point(429, 59);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(81, 30);
+            this.removeButton.TabIndex = 1;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // showByIdTextBox
             // 
@@ -233,7 +233,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.Controls.Add(this.showGroupBox);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.removeTextBox);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.removeButton);
             this.Controls.Add(this.productGridView);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewProduct";
@@ -252,7 +252,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private System.Windows.Forms.DataGridView productGridView;
         private System.Windows.Forms.Button viewByIdButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.TextBox showByIdTextBox;
         private System.Windows.Forms.TextBox removeTextBox;
         private System.Windows.Forms.Label label1;

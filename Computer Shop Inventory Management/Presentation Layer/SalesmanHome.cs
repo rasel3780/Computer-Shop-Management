@@ -31,7 +31,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void viewProductButton_Click(object sender, EventArgs e)
         {
-            
+            ViewProduct viewProduct = new ViewProduct("Salesman");
+            viewProduct.Show();
+            this.Hide();
         }
     }
 }

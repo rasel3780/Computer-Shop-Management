@@ -555,7 +555,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct();
+            ViewProduct viewProduct = new ViewProduct("Admin");
             viewProduct.Show();
             this.Hide();
         }
