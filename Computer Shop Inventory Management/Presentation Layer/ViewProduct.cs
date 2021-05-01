@@ -14,9 +14,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class ViewProduct : Form
     {
+        private string empType;
         public ViewProduct()
         {
             InitializeComponent();
+           // this.empType = empType;
             ProductServices productService = new ProductServices();
             productGridView.DataSource = productService.GetAllProducts();
 
@@ -65,6 +67,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            if(empType=="manager")
+            {
+                ManagerHome managerHome = new ManagerHome();
+                managerHome.Show();
+                this.Hide();
+            }
             AdminHome adminHome = new AdminHome();
             adminHome.Show();
             this.Hide();

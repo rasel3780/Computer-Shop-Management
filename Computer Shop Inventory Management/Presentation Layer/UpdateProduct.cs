@@ -16,6 +16,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     {
         private int productId;
         int check = 0;
+        string picture = null;
         public UpdateProduct(int productId)
         {
             InitializeComponent();
@@ -550,7 +551,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void updateProductButton_Click(object sender, EventArgs e)
         {
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            for (int i = 0; i < check; i++)
+            {
+                if (i == 0) dictionary.Add(Label1, ComboBox1);
+                if (i == 1) dictionary.Add(Label2, ComboBox2);
+                if (i == 2) dictionary.Add(Label3, ComboBox3);
+                if (i == 3) dictionary.Add(Label4, ComboBox4);
+                if (i == 4) dictionary.Add(Label5, ComboBox5);
+            }
 
+            if (picture != null) dictionary.Add("Picture", picture);
+            ProductServices productServices = new ProductServices();
+            productServices.UpdateProduct(Category, Brand, Convert.ToInt32(Quantity), Convert.ToSingle(Price), Warranty, Description, dictionary);
         }
 
         private void pictureUpdateButton_Click(object sender, EventArgs e)

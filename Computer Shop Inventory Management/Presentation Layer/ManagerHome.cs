@@ -28,7 +28,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             Application.Exit();
         }
-
+       
         private void viewProductButton_Click(object sender, EventArgs e)
         {
             ViewProduct viewProduct = new ViewProduct();
