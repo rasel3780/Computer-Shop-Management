@@ -44,6 +44,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.viewProductButton.TabIndex = 0;
             this.viewProductButton.Text = "View Product";
             this.viewProductButton.UseVisualStyleBackColor = true;
+            this.viewProductButton.Click += new System.EventHandler(this.viewProductButton_Click);
             // 
             // sellButton
             // 
