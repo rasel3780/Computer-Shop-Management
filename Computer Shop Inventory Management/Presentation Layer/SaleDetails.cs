@@ -20,6 +20,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.empType = empType;
             SaleServices saleServices = new SaleServices();
             saleGridView.DataSource = saleServices.GetAllSale();
+
+            ProductList productList = new ProductList();
+            categoryComboBox.DataSource = productList.Category();
+            brandComboBox.DataSource = productList.Brand();
         }
 
         private void SaleDetails_FormClosing(object sender, FormClosingEventArgs e)
