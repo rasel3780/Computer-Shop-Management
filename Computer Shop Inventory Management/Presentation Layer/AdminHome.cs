@@ -13,9 +13,11 @@ namespace Computer_Shop_Inventory_Management
 {
     public partial class AdminHome : Form
     {
-        public AdminHome()
+        private string empName;
+        public AdminHome(string empName)
         {
             InitializeComponent();
+            this.empName = empName;
         }
 
         private void AdminHome_FormClosing(object sender, FormClosingEventArgs e)
@@ -25,7 +27,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Registration registration = new Registration();
+            Registration registration = new Registration(empName);
             registration.Show();
             this.Hide();
         }
@@ -39,28 +41,28 @@ namespace Computer_Shop_Inventory_Management
 
         private void modifyButton_Click(object sender, EventArgs e)
         {
-            UpdateEmployee updateEmployee = new UpdateEmployee();
+            UpdateEmployee updateEmployee = new UpdateEmployee(empName);
             updateEmployee.Show();
             this.Hide();
         }
 
         private void addProductButton_Click(object sender, EventArgs e)
         {
-            AddProducts addProducts = new AddProducts("Admin");
+            AddProducts addProducts = new AddProducts("Admin",empName);
             addProducts.Show();
             this.Hide();
         }
 
         private void viewProdcutButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct("Admin");
+            ViewProduct viewProduct = new ViewProduct("Admin",empName);
             viewProduct.Show();
             this.Hide();
         }
 
         private void saleInfoButton_Click(object sender, EventArgs e)
         {
-            SaleDetails sale = new SaleDetails("Admin");
+            SaleDetails sale = new SaleDetails("Admin",empName);
             sale.Show();
             this.Hide();
         }

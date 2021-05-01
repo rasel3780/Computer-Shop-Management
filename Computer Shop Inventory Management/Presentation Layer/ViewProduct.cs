@@ -15,12 +15,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     public partial class ViewProduct : Form
     {
         private string empType;
-        private string empName="hahaha";
-        public ViewProduct(string empType)
+        private string empName;
+        public ViewProduct(string empType,string empName)
         {
             InitializeComponent();
             this.empType = empType;
-            //this.empName = empName;
+            this.empName = empName;
             ProductServices productService = new ProductServices();
             productGridView.DataSource = productService.GetAllProducts();
 
@@ -81,20 +81,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             if(empType=="Manager")
             {
-                ManagerHome managerHome = new ManagerHome();
+                ManagerHome managerHome = new ManagerHome(empName);
                 managerHome.Show();
                 this.Hide();
             }
             else if(empType=="Admin")
             {
-                AdminHome adminHome = new AdminHome();
+                AdminHome adminHome = new AdminHome(empName);
                 adminHome.Show();
                 this.Hide();
 
             }
             else
             {
-                SalesmanHome salesmanHome = new SalesmanHome();
+                SalesmanHome salesmanHome = new SalesmanHome(empName);
                 salesmanHome.Show();
                 this.Hide();
             }
@@ -173,7 +173,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
            
             if(id == Convert.ToInt32(UpdateTextBox))
             {
-                UpdateProduct updateProduct = new UpdateProduct(id,empType);
+                UpdateProduct updateProduct = new UpdateProduct(id,empType,empName);
                 updateProduct.Show();
                 this.Hide();
             }

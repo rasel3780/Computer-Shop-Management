@@ -16,10 +16,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         int check = 0;
         string picture = null;
         private string empType;
-        public AddProducts(string empType)
+        private string empName;
+        public AddProducts(string empType,string empName)
         {
             InitializeComponent();
             this.empType = empType;
+            this.empName = empName;
             ProductList productList = new ProductList();
 
             categoryComboBox.DataSource = productList.Category();
@@ -470,13 +472,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             if(empType == "Admin")
             {
-                AdminHome admin = new AdminHome();
+                AdminHome admin = new AdminHome(empName);
                 admin.Show();
                 this.Hide();
             }
             else if(empType == "Manager")
             {
-                ManagerHome manager = new ManagerHome();
+                ManagerHome manager = new ManagerHome(empName);
                 manager.Show();
                 this.Hide();
             }

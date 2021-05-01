@@ -18,11 +18,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         int check = 0;
         string picture = null;
         string empType;
-        public UpdateProduct(int productId, string empType)
+        string empName;
+        public UpdateProduct(int productId, string empType,string empName)
         {
             InitializeComponent();
             this.productId = productId;
             this.empType = empType;
+            this.empName = empName;
             Product product = new Product();
             ProductServices productServices = new ProductServices();
             product = productServices.ReadProduct(productId);
@@ -559,13 +561,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             if(empType== "Admin")
             {
-                ViewProduct viewProduct = new ViewProduct("Admin");
+                ViewProduct viewProduct = new ViewProduct("Admin",empName);
                 viewProduct.Show();
                 this.Hide();
             }
             else if(empType == "Manager")
             {
-                ViewProduct viewProduct = new ViewProduct("Manager");
+                ViewProduct viewProduct = new ViewProduct("Manager",empName);
                 viewProduct.Show();
                 this.Hide();
             }            

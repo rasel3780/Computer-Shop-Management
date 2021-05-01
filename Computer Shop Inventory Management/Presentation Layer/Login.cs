@@ -48,19 +48,19 @@ namespace Computer_Shop_Inventory_Management
             }
             else if(typeComboBox.Text=="Admin")
             {
-                AdminHome admin = new AdminHome();
+                AdminHome admin = new AdminHome(nameTextBox.Text);
                 admin.Show();
                 this.Hide();
             }
             else if(typeComboBox.Text== "Manager")
             {
-                ManagerHome managerHome = new ManagerHome();
+                ManagerHome managerHome = new ManagerHome(nameTextBox.Text);
                 managerHome.Show();
                 this.Hide();
             }
             else if(typeComboBox.Text == "Salesman")
             {
-                SalesmanHome salesmanHome = new SalesmanHome();
+                SalesmanHome salesmanHome = new SalesmanHome(nameTextBox.Text);
                 salesmanHome.Show();
                 this.Hide();
             }
@@ -68,7 +68,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            Registration registration = new Registration();
+            Registration registration = new Registration(nameTextBox.Text);
             registration.Show();
             this.Hide();
         }

@@ -12,9 +12,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class ManagerHome : Form
     {
-        public ManagerHome()
+        private string empName;
+        public ManagerHome(string empName)
         {
             InitializeComponent();
+            this.empName = empName;
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -31,21 +33,21 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
        
         private void viewProductButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct("Manager");
+            ViewProduct viewProduct = new ViewProduct("Manager",empName);
             viewProduct.Show();
             this.Hide();
         }
 
         private void saleInfoButton_Click(object sender, EventArgs e)
         {
-            SaleDetails sale = new SaleDetails("Manager");
+            SaleDetails sale = new SaleDetails("Manager",empName);
             sale.Show();
             this.Hide();
         }
 
         private void addProductButton_Click(object sender, EventArgs e)
         {
-            AddProducts addProducts = new AddProducts("Manager");
+            AddProducts addProducts = new AddProducts("Manager",empName);
             addProducts.Show();
             this.Hide();
         }

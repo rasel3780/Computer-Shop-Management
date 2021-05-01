@@ -13,9 +13,11 @@ namespace Computer_Shop_Inventory_Management
 {
     public partial class Registration : Form
     {
-        public Registration()
+        private string empName;
+        public Registration(string empName)
         {
             InitializeComponent();
+            this.empName = empName;
         }
 
         private void Registration_Load(object sender, EventArgs e)
@@ -161,7 +163,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            AdminHome admin = new AdminHome();
+            AdminHome admin = new AdminHome(empName);
             admin.Show();
             this.Hide();
         }

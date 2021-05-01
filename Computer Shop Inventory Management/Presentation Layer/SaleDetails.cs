@@ -13,11 +13,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class SaleDetails : Form
     {
-        string empType = null;
-        public SaleDetails(string empType)
+        private string empType;
+        private string empName;
+        public SaleDetails(string empType,string empName)
         {
             InitializeComponent();
             this.empType = empType;
+            this.empName = empName;
             SaleServices saleServices = new SaleServices();
             saleGridView.DataSource = saleServices.GetAllSale();
 
@@ -37,13 +39,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             if (empType == "Admin")
             {
-                AdminHome admin = new AdminHome();
+                AdminHome admin = new AdminHome(empName);
                 admin.Show();
                 this.Hide();
             }
             else
             {
-                ManagerHome manager = new ManagerHome();
+                ManagerHome manager = new ManagerHome(empName);
                 manager.Show();
                 this.Hide();
             }

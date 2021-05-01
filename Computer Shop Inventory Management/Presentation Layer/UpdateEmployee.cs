@@ -13,9 +13,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class UpdateEmployee : Form
     {
-        public UpdateEmployee()
+        private string empName;
+        public UpdateEmployee(string empName)
         {
             InitializeComponent();
+            this.empName = empName;
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
 
@@ -85,7 +87,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            AdminHome admin = new AdminHome();
+            AdminHome admin = new AdminHome(empName);
             admin.Show();
             this.Hide();
         }

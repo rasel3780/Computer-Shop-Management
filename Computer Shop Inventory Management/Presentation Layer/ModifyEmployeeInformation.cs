@@ -63,7 +63,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 MessageBox.Show("Employee Updated....");
 
-                UpdateEmployee update = new UpdateEmployee();
+                UpdateEmployee update = new UpdateEmployee(userName);
                 update.Show();
                 this.Hide();
             }
@@ -77,7 +77,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            UpdateEmployee update = new UpdateEmployee();
+            UpdateEmployee update = new UpdateEmployee(userName);
             update.Show();
             this.Hide();
         }
