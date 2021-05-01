@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,24 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 manager.Show();
                 this.Hide();
             }
+        }
+
+        private void showByCategoryButton_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource =saleServices.GetAllSaleByCategory(categoryComboBox.Text);
+        }
+
+        private void showByBrandButton_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource = saleServices.GetAllSaleByBrand(brandComboBox.Text);
+        }
+
+        private void bothButton_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource = saleServices.GetAllSaleByBoth(categoryComboBox.Text,brandComboBox.Text);
         }
     }
 }
