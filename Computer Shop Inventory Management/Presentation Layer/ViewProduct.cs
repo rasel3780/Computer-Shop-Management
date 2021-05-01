@@ -134,5 +134,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
 
         }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            UpdateProduct updateProduct = new UpdateProduct();
+            updateProduct.Show();
+            this.Hide();
+        }
     }
 }

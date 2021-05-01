@@ -91,6 +91,12 @@
     <Compile Include="Presentation Layer\UpdateEmployee.Designer.cs">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\UpdateProduct.Designer.cs">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\ViewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\UpdateProduct.resx">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\ViewProduct.resx">
       <DependentUpon>ViewProduct.cs</DependentUpon>

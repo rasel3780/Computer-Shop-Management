@@ -74,3 +74,4 @@ G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Compute
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ModifyEmployeeInformation.resources
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ViewProduct.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ViewProduct.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateProduct.resources

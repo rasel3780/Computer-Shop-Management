@@ -1,7 +1,7 @@
 ﻿
 namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
-    partial class AddProducts
+    partial class UpdateProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
-            this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.priceLabel = new System.Windows.Forms.Label();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
             this.addProductGroupBox1 = new System.Windows.Forms.GroupBox();
             this.backButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,46 +49,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.descriptionLabel = new System.Windows.Forms.Label();
-            this.addProductButton = new System.Windows.Forms.Button();
+            this.updateProductButton = new System.Windows.Forms.Button();
             this.brandComboBox = new System.Windows.Forms.ComboBox();
             this.brandLabel = new System.Windows.Forms.Label();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.warrantyLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
             this.quantityLabel = new System.Windows.Forms.Label();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
             this.categoryLabel = new System.Windows.Forms.Label();
             this.warrentyComboBox = new System.Windows.Forms.ComboBox();
+            this.categoryComboBox = new System.Windows.Forms.ComboBox();
             this.addProductGroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.featureGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.Location = new System.Drawing.Point(591, 47);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(221, 27);
-            this.priceTextBox.TabIndex = 0;
-            // 
-            // priceLabel
-            // 
-            this.priceLabel.AutoSize = true;
-            this.priceLabel.Location = new System.Drawing.Point(463, 52);
-            this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(43, 20);
-            this.priceLabel.TabIndex = 1;
-            this.priceLabel.Text = "Price";
-            // 
-            // categoryComboBox
-            // 
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(180, 48);
-            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(221, 27);
-            this.categoryComboBox.TabIndex = 2;
-            this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // addProductGroupBox1
             // 
@@ -102,7 +75,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.pictureBox1);
             this.addProductGroupBox1.Controls.Add(this.descriptionTextBox);
             this.addProductGroupBox1.Controls.Add(this.descriptionLabel);
-            this.addProductGroupBox1.Controls.Add(this.addProductButton);
+            this.addProductGroupBox1.Controls.Add(this.updateProductButton);
             this.addProductGroupBox1.Controls.Add(this.brandComboBox);
             this.addProductGroupBox1.Controls.Add(this.brandLabel);
             this.addProductGroupBox1.Controls.Add(this.quantityTextBox);
@@ -114,15 +87,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.warrentyComboBox);
             this.addProductGroupBox1.Controls.Add(this.categoryComboBox);
             this.addProductGroupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addProductGroupBox1.Location = new System.Drawing.Point(14, 11);
+            this.addProductGroupBox1.Location = new System.Drawing.Point(25, 31);
             this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addProductGroupBox1.Name = "addProductGroupBox1";
             this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addProductGroupBox1.Size = new System.Drawing.Size(1263, 633);
-            this.addProductGroupBox1.TabIndex = 3;
+            this.addProductGroupBox1.TabIndex = 4;
             this.addProductGroupBox1.TabStop = false;
-            this.addProductGroupBox1.Text = "Add Products";
-            this.addProductGroupBox1.Enter += new System.EventHandler(this.addProductGroupBox1_Enter);
+            this.addProductGroupBox1.Text = "Update Product";
             // 
             // backButton
             // 
@@ -147,7 +119,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Categories";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // selectButton
             // 
@@ -158,7 +129,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.selectButton.TabIndex = 1;
             this.selectButton.Text = "Select";
             this.selectButton.UseVisualStyleBackColor = true;
-            this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // checkedListBox1
             // 
@@ -211,7 +181,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox4.Size = new System.Drawing.Size(221, 27);
             this.comboBox4.TabIndex = 2;
             this.comboBox4.Visible = false;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // comboBox5
             // 
@@ -222,7 +191,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox5.Size = new System.Drawing.Size(221, 27);
             this.comboBox5.TabIndex = 2;
             this.comboBox5.Visible = false;
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -233,7 +201,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox1.Size = new System.Drawing.Size(221, 27);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Visible = false;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -244,7 +211,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox2.Size = new System.Drawing.Size(221, 27);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.Visible = false;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -285,7 +251,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox3.Size = new System.Drawing.Size(221, 27);
             this.comboBox3.TabIndex = 2;
             this.comboBox3.Visible = false;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -316,7 +281,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.pictureAddButton.TabIndex = 3;
             this.pictureAddButton.Text = "Add Picture";
             this.pictureAddButton.UseVisualStyleBackColor = true;
-            this.pictureAddButton.Click += new System.EventHandler(this.pictureAddButton_Click);
             // 
             // pictureBox1
             // 
@@ -346,16 +310,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.descriptionLabel.TabIndex = 1;
             this.descriptionLabel.Text = "Description";
             // 
-            // addProductButton
+            // updateProductButton
             // 
-            this.addProductButton.Location = new System.Drawing.Point(571, 566);
-            this.addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(173, 46);
-            this.addProductButton.TabIndex = 3;
-            this.addProductButton.Text = "Add Product";
-            this.addProductButton.UseVisualStyleBackColor = true;
-            this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
+            this.updateProductButton.Location = new System.Drawing.Point(571, 566);
+            this.updateProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updateProductButton.Name = "updateProductButton";
+            this.updateProductButton.Size = new System.Drawing.Size(173, 46);
+            this.updateProductButton.TabIndex = 3;
+            this.updateProductButton.Text = "Update Product";
+            this.updateProductButton.UseVisualStyleBackColor = true;
             // 
             // brandComboBox
             // 
@@ -392,6 +355,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.warrantyLabel.TabIndex = 1;
             this.warrantyLabel.Text = "Warranty";
             // 
+            // priceLabel
+            // 
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Location = new System.Drawing.Point(463, 52);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(43, 20);
+            this.priceLabel.TabIndex = 1;
+            this.priceLabel.Text = "Price";
+            // 
             // quantityLabel
             // 
             this.quantityLabel.AutoSize = true;
@@ -400,6 +372,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.quantityLabel.Size = new System.Drawing.Size(75, 20);
             this.quantityLabel.TabIndex = 1;
             this.quantityLabel.Text = "Quantity";
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.Location = new System.Drawing.Point(591, 47);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(221, 27);
+            this.priceTextBox.TabIndex = 0;
             // 
             // categoryLabel
             // 
@@ -427,20 +407,25 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.warrentyComboBox.Name = "warrentyComboBox";
             this.warrentyComboBox.Size = new System.Drawing.Size(221, 27);
             this.warrentyComboBox.TabIndex = 2;
-            this.warrentyComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
-            // AddProducts
+            // categoryComboBox
+            // 
+            this.categoryComboBox.FormattingEnabled = true;
+            this.categoryComboBox.Location = new System.Drawing.Point(180, 48);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(221, 27);
+            this.categoryComboBox.TabIndex = 2;
+            // 
+            // UpdateProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 647);
+            this.ClientSize = new System.Drawing.Size(1313, 694);
             this.Controls.Add(this.addProductGroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "AddProducts";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Product";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddProducts_FormClosing);
-            this.Load += new System.EventHandler(this.AddProducts_Load);
+            this.Name = "UpdateProduct";
+            this.Text = "UpdateProduct";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateProduct_FormClosing);
             this.addProductGroupBox1.ResumeLayout(false);
             this.addProductGroupBox1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -453,18 +438,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         #endregion
 
-        private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.Label priceLabel;
-        private System.Windows.Forms.ComboBox categoryComboBox;
         private System.Windows.Forms.GroupBox addProductGroupBox1;
-        private System.Windows.Forms.ComboBox brandComboBox;
-        private System.Windows.Forms.Label brandLabel;
-        private System.Windows.Forms.TextBox descriptionTextBox;
-        private System.Windows.Forms.Label descriptionLabel;
-        private System.Windows.Forms.Label categoryLabel;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button selectButton;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.GroupBox featureGroupBox;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -474,96 +456,18 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button pictureAddButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button addProductButton;
+        private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.Label descriptionLabel;
+        private System.Windows.Forms.Button updateProductButton;
+        private System.Windows.Forms.ComboBox brandComboBox;
+        private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.TextBox quantityTextBox;
-        private System.Windows.Forms.Label quantityLabel;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label warrantyLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label quantityLabel;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.Label categoryLabel;
         private System.Windows.Forms.ComboBox warrentyComboBox;
-        private System.Windows.Forms.Button selectButton;
-        private System.Windows.Forms.Button backButton;
-
-        public string Category 
-        {
-            get { return this.categoryComboBox.Text; }
-        }
-        public string Brand
-        {
-            get { return this.brandComboBox.Text; }
-        }
-        public string Price
-        {
-            get { return this.priceTextBox.Text; }
-        }
-        public string Quantity
-        {
-            get { return this.quantityTextBox.Text; }
-        }
-        public string Warranty
-        {
-            get { return this.warrentyComboBox.Text; }
-        }
-
-        public string Description
-        {
-            get { return this.descriptionTextBox.Text; }
-        }
-
-
-        public string ComboBox1
-        {
-            get { return this.comboBox1.Text; }
-        }
-        public string ComboBox2
-        {
-            get { return this.comboBox2.Text; }
-        }
-        public string ComboBox3
-        {
-            get { return this.comboBox3.Text; }
-        }
-        public string ComboBox4
-        {
-            get { return this.comboBox4.Text; }
-        }
-        public string ComboBox5
-        {
-            get { return this.comboBox5.Text; }
-        }
-
-
-        public string Label1
-        {
-            get { return this.label1.Text; }
-        }
-        public string Label2
-        {
-            get { return this.label2.Text; }
-        }
-        public string Label3
-        {
-            get { return this.label3.Text; }
-        }
-        public string Label4
-        {
-            get { return this.label4.Text; }
-        }
-        public string Label5
-        {
-            get { return this.label5.Text; }
-        }
-
-
-
-
-
-        /*public List<string> CheckedListBox
-        {
-            get { return this.CheckedListBox;  }
-        }*/
-
-
+        private System.Windows.Forms.ComboBox categoryComboBox;
     }
 }
