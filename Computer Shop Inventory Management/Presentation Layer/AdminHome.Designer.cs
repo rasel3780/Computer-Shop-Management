@@ -236,6 +236,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             // saleInfoButton
             // 
+            this.saleInfoButton.Font = new System.Drawing.Font("Maiandra GD", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saleInfoButton.Location = new System.Drawing.Point(8, 258);
             this.saleInfoButton.Name = "saleInfoButton";
             this.saleInfoButton.Size = new System.Drawing.Size(172, 37);
