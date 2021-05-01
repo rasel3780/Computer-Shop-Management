@@ -110,14 +110,11 @@ namespace Computer_Shop_Inventory_Management
                     {
                         MessageBox.Show("Employee Added");
                         nameTextBox.Text = usernameTextBox.Text = emailTextBox.Text = passTextBox.Text = cpassTextBox.Text = addressTextBox.Text = salaryTextBox.Text = "";
-                        if (maleRadioButton.Checked)
-                        { 
-                            maleRadioButton.Checked = false; 
-                        }
-                        if (femaleRadioButton.Checked)
-                        {
+                    
+                       
+                           maleRadioButton.Checked = false; 
                            femaleRadioButton.Checked = false;
-                        }
+                        
 
                         termscheckBox.Checked  = submitButton.Enabled = false;
                         bloodgroupTextBox.Text = null;
