@@ -1033,5 +1033,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 }
             }
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

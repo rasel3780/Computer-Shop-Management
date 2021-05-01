@@ -205,7 +205,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showAllButton.Location = new System.Drawing.Point(346, 20);
             this.showAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showAllButton.Name = "showAllButton";
-            this.showAllButton.Size = new System.Drawing.Size(82, 21);
+            this.showAllButton.Size = new System.Drawing.Size(82, 24);
             this.showAllButton.TabIndex = 13;
             this.showAllButton.Text = "Show All";
             this.showAllButton.UseVisualStyleBackColor = true;

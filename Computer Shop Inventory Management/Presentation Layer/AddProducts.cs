@@ -526,6 +526,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             if (addChecking > 0)
             {
                 MessageBox.Show("Product Add Successfully");
+
+                categoryComboBox.Text = null;
+                brandComboBox.Text = null;
+                priceTextBox.Text = "";
+                quantityTextBox.Text = "";
+                descriptionTextBox.Text = "";
+                featureGroupBox.Visible = false;
+                warrentyComboBox.Text = null;
+
+                for(int  i = 0; i<10; i++)
+                {
+                    checkedListBox1.SetItemChecked(i, false);
+                }
+                pictureBox1.Image = null;
             }
             else
             {
@@ -534,6 +548,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             /*AdminHome adminHome = new AdminHome();
             this.Hide();
             adminHome.Show();*/
+
+
+
         }
     }
 }
