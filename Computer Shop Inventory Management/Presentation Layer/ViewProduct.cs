@@ -15,10 +15,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     public partial class ViewProduct : Form
     {
         private string empType;
+        private string empName="hahaha";
         public ViewProduct(string empType)
         {
             InitializeComponent();
             this.empType = empType;
+            //this.empName = empName;
             ProductServices productService = new ProductServices();
             productGridView.DataSource = productService.GetAllProducts();
 
@@ -237,6 +239,46 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             else if(updateTextBox.Text == "")
             {
                 updateTextBox.Text = "Enter Product ID";
+            }
+        }
+
+        private void sellButton_Click(object sender, EventArgs e)
+        {
+            ProductServices productServices = new ProductServices();
+            int id = productServices.CheckProductId(Convert.ToInt32(SellTextBox));
+
+            if(id==Convert.ToInt32(SellTextBox))
+            {
+                Product product = new Product();
+                product = productServices.ReadProduct(id);
+                productServices.RemoveProduct(id);
+
+
+                Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                dictionary.Add("Capacity", product.Capacity);
+                dictionary.Add("MemoryType", product.MemoryType);
+                dictionary.Add("BusSpeed", product.BusSpeed);
+                dictionary.Add("ScreenSize", product.ScreenSize);
+                dictionary.Add("RefreshRate", product.RefreshRate);
+                dictionary.Add("Wattage", product.Wattage);
+
+                dictionary.Add("MotherBoardType", product.MotherBoardType);
+                dictionary.Add("ClockSpeed", product.ClockSpeed);
+                dictionary.Add("ConnectionType", product.ConnectionType);
+                dictionary.Add("ResponseTime", product.ResponseTime);
+                dictionary.Add("Picture", product.Picture);
+
+
+                string now = DateTime.Now.ToString();
+                
+
+                SaleServices saleServices = new SaleServices();
+                saleServices.SellProduct(product.ProductId, product.Category, product.Brand, product.Quantity, product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, buyerNoTextBox.Text, empName);
+                
+            }
+            else
+            {
+                MessageBox.Show("Product not found");
             }
         }
     }

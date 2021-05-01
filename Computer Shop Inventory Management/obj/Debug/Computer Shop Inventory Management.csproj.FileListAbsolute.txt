@@ -84,3 +84,4 @@ E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inve
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SalesmanHome.resources
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateProduct.resources
 E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SaleDetails.resources
+G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SaleDetails.resources
