@@ -170,7 +170,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.featureGroupBox.TabIndex = 4;
             this.featureGroupBox.TabStop = false;
             this.featureGroupBox.Text = "Features";
-            this.featureGroupBox.Visible = false;
             // 
             // comboBox4
             // 
@@ -281,6 +280,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.pictureUpdateButton.TabIndex = 3;
             this.pictureUpdateButton.Text = "Update Picture";
             this.pictureUpdateButton.UseVisualStyleBackColor = true;
+            this.pictureUpdateButton.Click += new System.EventHandler(this.pictureUpdateButton_Click);
             // 
             // pictureBox1
             // 

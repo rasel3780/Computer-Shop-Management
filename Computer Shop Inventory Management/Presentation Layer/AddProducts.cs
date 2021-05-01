@@ -14,7 +14,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     public partial class AddProducts : Form
     {
         int check = 0;
-        string picture = "";
+        string picture = null;
         public AddProducts()
         {
             InitializeComponent();
@@ -504,6 +504,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 if (i == 3) dictionary.Add(Label4, ComboBox4);
                 if (i == 4) dictionary.Add(Label5, ComboBox5);
             }
+
+            if (picture != null) dictionary.Add("Picture", picture);
+
             ProductServices productServices = new ProductServices();
            int addChecking =  productServices.AddProduct(Category,Brand,Convert.ToInt32(Quantity),Convert.ToSingle(Price),Warranty,Description,dictionary);
 

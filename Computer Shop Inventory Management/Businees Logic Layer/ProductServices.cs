@@ -71,7 +71,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                 {
                     responseTime = keyValuePair.Value;
                 }
-                else
+                else if(keyValuePair.Key == "Picture")
                 {
                     picture = keyValuePair.Value;
                 }

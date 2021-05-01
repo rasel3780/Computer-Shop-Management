@@ -38,6 +38,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             pictureBox1.Size = size;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.Image = Image.FromFile(imageLoction);
+
+
         }
 
         private void UpdateProduct_FormClosing(object sender, FormClosingEventArgs e)
@@ -53,6 +55,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         }
 
         private void updateProductButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureUpdateButton_Click(object sender, EventArgs e)
         {
 
         }
