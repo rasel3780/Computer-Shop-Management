@@ -508,7 +508,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             if (picture != null) dictionary.Add("Picture", picture);
 
             ProductServices productServices = new ProductServices();
-           int addChecking =  productServices.AddProduct(Category,Brand,Convert.ToInt32(Quantity),Convert.ToSingle(Price),Warranty,Description,dictionary);
+            int addChecking =  productServices.AddProduct(Category,Brand,Convert.ToInt32(Quantity),Convert.ToSingle(Price),Warranty,Description,dictionary);
 
             if (addChecking > 0)
             {

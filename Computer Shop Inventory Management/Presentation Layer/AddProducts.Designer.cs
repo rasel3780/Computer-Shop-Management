@@ -68,28 +68,29 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(591, 47);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.priceTextBox.Location = new System.Drawing.Point(443, 38);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(221, 27);
+            this.priceTextBox.Size = new System.Drawing.Size(167, 23);
             this.priceTextBox.TabIndex = 0;
             // 
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
-            this.priceLabel.Location = new System.Drawing.Point(463, 52);
+            this.priceLabel.Location = new System.Drawing.Point(347, 42);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(43, 20);
+            this.priceLabel.Size = new System.Drawing.Size(35, 16);
             this.priceLabel.TabIndex = 1;
             this.priceLabel.Text = "Price";
             // 
             // categoryComboBox
             // 
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(180, 48);
-            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.categoryComboBox.Location = new System.Drawing.Point(135, 39);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(221, 27);
+            this.categoryComboBox.Size = new System.Drawing.Size(167, 24);
             this.categoryComboBox.TabIndex = 2;
             this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
@@ -114,11 +115,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.warrentyComboBox);
             this.addProductGroupBox1.Controls.Add(this.categoryComboBox);
             this.addProductGroupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addProductGroupBox1.Location = new System.Drawing.Point(14, 11);
-            this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addProductGroupBox1.Location = new System.Drawing.Point(10, 9);
+            this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addProductGroupBox1.Name = "addProductGroupBox1";
-            this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.addProductGroupBox1.Size = new System.Drawing.Size(1263, 633);
+            this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addProductGroupBox1.Size = new System.Drawing.Size(947, 514);
             this.addProductGroupBox1.TabIndex = 3;
             this.addProductGroupBox1.TabStop = false;
             this.addProductGroupBox1.Text = "Add Products";
@@ -126,10 +127,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(8, 587);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backButton.Location = new System.Drawing.Point(6, 477);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(100, 33);
+            this.backButton.Size = new System.Drawing.Size(75, 27);
             this.backButton.TabIndex = 6;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
@@ -139,11 +139,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.groupBox1.Controls.Add(this.selectButton);
             this.groupBox1.Controls.Add(this.checkedListBox1);
-            this.groupBox1.Location = new System.Drawing.Point(56, 171);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(42, 139);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(317, 326);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(238, 265);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Categories";
@@ -151,10 +151,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(111, 283);
-            this.selectButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.selectButton.Location = new System.Drawing.Point(83, 230);
+            this.selectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectButton.Name = "selectButton";
-            this.selectButton.Size = new System.Drawing.Size(92, 34);
+            this.selectButton.Size = new System.Drawing.Size(69, 28);
             this.selectButton.TabIndex = 1;
             this.selectButton.Text = "Select";
             this.selectButton.UseVisualStyleBackColor = true;
@@ -174,10 +174,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             "Clock Speed",
             "Connection Type",
             "Response Time"});
-            this.checkedListBox1.Location = new System.Drawing.Point(33, 30);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkedListBox1.Location = new System.Drawing.Point(25, 24);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(257, 224);
+            this.checkedListBox1.Size = new System.Drawing.Size(194, 166);
             this.checkedListBox1.TabIndex = 0;
             // 
             // featureGroupBox
@@ -192,11 +192,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.featureGroupBox.Controls.Add(this.comboBox3);
             this.featureGroupBox.Controls.Add(this.label2);
             this.featureGroupBox.Controls.Add(this.label3);
-            this.featureGroupBox.Location = new System.Drawing.Point(467, 176);
-            this.featureGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.featureGroupBox.Location = new System.Drawing.Point(350, 139);
+            this.featureGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.featureGroupBox.Name = "featureGroupBox";
-            this.featureGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.featureGroupBox.Size = new System.Drawing.Size(436, 313);
+            this.featureGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.featureGroupBox.Size = new System.Drawing.Size(327, 265);
             this.featureGroupBox.TabIndex = 4;
             this.featureGroupBox.TabStop = false;
             this.featureGroupBox.Text = "Features";
@@ -205,10 +205,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(183, 207);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox4.Location = new System.Drawing.Point(137, 168);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(221, 27);
+            this.comboBox4.Size = new System.Drawing.Size(167, 24);
             this.comboBox4.TabIndex = 2;
             this.comboBox4.Visible = false;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -216,10 +216,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(183, 265);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox5.Location = new System.Drawing.Point(137, 215);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(221, 27);
+            this.comboBox5.Size = new System.Drawing.Size(167, 24);
             this.comboBox5.TabIndex = 2;
             this.comboBox5.Visible = false;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -227,10 +227,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 46);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Location = new System.Drawing.Point(137, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 27);
+            this.comboBox1.Size = new System.Drawing.Size(167, 24);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -238,10 +238,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(183, 101);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Location = new System.Drawing.Point(137, 82);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(221, 27);
+            this.comboBox2.Size = new System.Drawing.Size(167, 24);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.Visible = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -249,9 +249,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 210);
+            this.label4.Location = new System.Drawing.Point(26, 171);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 20);
+            this.label4.Size = new System.Drawing.Size(69, 16);
             this.label4.TabIndex = 1;
             this.label4.Text = "Screen Size";
             this.label4.Visible = false;
@@ -259,9 +260,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 268);
+            this.label5.Location = new System.Drawing.Point(26, 218);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
+            this.label5.Size = new System.Drawing.Size(76, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Refresh Rate";
             this.label5.Visible = false;
@@ -269,9 +271,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 55);
+            this.label1.Location = new System.Drawing.Point(26, 45);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Capacity";
             this.label1.Visible = false;
@@ -279,10 +282,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(183, 155);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox3.Location = new System.Drawing.Point(137, 126);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(221, 27);
+            this.comboBox3.Size = new System.Drawing.Size(167, 24);
             this.comboBox3.TabIndex = 2;
             this.comboBox3.Visible = false;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -290,9 +293,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 105);
+            this.label2.Location = new System.Drawing.Point(13, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Memory Type";
             this.label2.Visible = false;
@@ -300,19 +304,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 155);
+            this.label3.Location = new System.Drawing.Point(26, 126);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 20);
+            this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Bus Speed";
             this.label3.Visible = false;
             // 
             // pictureAddButton
             // 
-            this.pictureAddButton.Location = new System.Drawing.Point(960, 383);
-            this.pictureAddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureAddButton.Location = new System.Drawing.Point(720, 311);
+            this.pictureAddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureAddButton.Name = "pictureAddButton";
-            this.pictureAddButton.Size = new System.Drawing.Size(147, 30);
+            this.pictureAddButton.Size = new System.Drawing.Size(110, 24);
             this.pictureAddButton.TabIndex = 3;
             this.pictureAddButton.Text = "Add Picture";
             this.pictureAddButton.UseVisualStyleBackColor = true;
@@ -321,37 +326,38 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(960, 135);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(720, 110);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 180);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(960, 442);
-            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.descriptionTextBox.Location = new System.Drawing.Point(720, 359);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(269, 118);
+            this.descriptionTextBox.Size = new System.Drawing.Size(203, 97);
             this.descriptionTextBox.TabIndex = 0;
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(956, 576);
+            this.descriptionLabel.Location = new System.Drawing.Point(717, 468);
+            this.descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(92, 20);
+            this.descriptionLabel.Size = new System.Drawing.Size(71, 16);
             this.descriptionLabel.TabIndex = 1;
             this.descriptionLabel.Text = "Description";
             // 
             // addProductButton
             // 
-            this.addProductButton.Location = new System.Drawing.Point(571, 566);
-            this.addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addProductButton.Location = new System.Drawing.Point(428, 460);
+            this.addProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(173, 46);
+            this.addProductButton.Size = new System.Drawing.Size(130, 37);
             this.addProductButton.TabIndex = 3;
             this.addProductButton.Text = "Add Product";
             this.addProductButton.UseVisualStyleBackColor = true;
@@ -360,53 +366,57 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // brandComboBox
             // 
             this.brandComboBox.FormattingEnabled = true;
-            this.brandComboBox.Location = new System.Drawing.Point(180, 95);
-            this.brandComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.brandComboBox.Location = new System.Drawing.Point(135, 77);
+            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.brandComboBox.Name = "brandComboBox";
-            this.brandComboBox.Size = new System.Drawing.Size(221, 27);
+            this.brandComboBox.Size = new System.Drawing.Size(167, 24);
             this.brandComboBox.TabIndex = 2;
             // 
             // brandLabel
             // 
             this.brandLabel.AutoSize = true;
-            this.brandLabel.Location = new System.Drawing.Point(52, 97);
+            this.brandLabel.Location = new System.Drawing.Point(39, 79);
+            this.brandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.brandLabel.Name = "brandLabel";
-            this.brandLabel.Size = new System.Drawing.Size(53, 20);
+            this.brandLabel.Size = new System.Drawing.Size(42, 16);
             this.brandLabel.TabIndex = 1;
             this.brandLabel.Text = "Brand";
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(591, 91);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.quantityTextBox.Location = new System.Drawing.Point(443, 74);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(221, 27);
+            this.quantityTextBox.Size = new System.Drawing.Size(167, 23);
             this.quantityTextBox.TabIndex = 0;
             // 
             // warrantyLabel
             // 
             this.warrantyLabel.AutoSize = true;
-            this.warrantyLabel.Location = new System.Drawing.Point(863, 50);
+            this.warrantyLabel.Location = new System.Drawing.Point(647, 41);
+            this.warrantyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.warrantyLabel.Name = "warrantyLabel";
-            this.warrantyLabel.Size = new System.Drawing.Size(79, 20);
+            this.warrantyLabel.Size = new System.Drawing.Size(61, 16);
             this.warrantyLabel.TabIndex = 1;
             this.warrantyLabel.Text = "Warranty";
             // 
             // quantityLabel
             // 
             this.quantityLabel.AutoSize = true;
-            this.quantityLabel.Location = new System.Drawing.Point(463, 96);
+            this.quantityLabel.Location = new System.Drawing.Point(347, 78);
+            this.quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.quantityLabel.Name = "quantityLabel";
-            this.quantityLabel.Size = new System.Drawing.Size(75, 20);
+            this.quantityLabel.Size = new System.Drawing.Size(57, 16);
             this.quantityLabel.TabIndex = 1;
             this.quantityLabel.Text = "Quantity";
             // 
             // categoryLabel
             // 
             this.categoryLabel.AutoSize = true;
-            this.categoryLabel.Location = new System.Drawing.Point(52, 52);
+            this.categoryLabel.Location = new System.Drawing.Point(39, 42);
+            this.categoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.categoryLabel.Name = "categoryLabel";
-            this.categoryLabel.Size = new System.Drawing.Size(76, 20);
+            this.categoryLabel.Size = new System.Drawing.Size(60, 16);
             this.categoryLabel.TabIndex = 1;
             this.categoryLabel.Text = "Category";
             // 
@@ -422,20 +432,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             "7 Years",
             "10 Years",
             "Lifetime"});
-            this.warrentyComboBox.Location = new System.Drawing.Point(960, 46);
-            this.warrentyComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.warrentyComboBox.Location = new System.Drawing.Point(720, 37);
+            this.warrentyComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.warrentyComboBox.Name = "warrentyComboBox";
-            this.warrentyComboBox.Size = new System.Drawing.Size(221, 27);
+            this.warrentyComboBox.Size = new System.Drawing.Size(167, 24);
             this.warrentyComboBox.TabIndex = 2;
             this.warrentyComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // AddProducts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 647);
+            this.ClientSize = new System.Drawing.Size(967, 526);
             this.Controls.Add(this.addProductGroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product";

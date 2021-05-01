@@ -38,9 +38,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // viewProductButton
             // 
-            this.viewProductButton.Location = new System.Drawing.Point(35, 71);
+            this.viewProductButton.Location = new System.Drawing.Point(124, 59);
+            this.viewProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewProductButton.Name = "viewProductButton";
-            this.viewProductButton.Size = new System.Drawing.Size(155, 35);
+            this.viewProductButton.Size = new System.Drawing.Size(116, 28);
             this.viewProductButton.TabIndex = 0;
             this.viewProductButton.Text = "View Product";
             this.viewProductButton.UseVisualStyleBackColor = true;
@@ -48,18 +49,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // sellButton
             // 
-            this.sellButton.Location = new System.Drawing.Point(35, 130);
+            this.sellButton.Location = new System.Drawing.Point(124, 107);
+            this.sellButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sellButton.Name = "sellButton";
-            this.sellButton.Size = new System.Drawing.Size(155, 37);
+            this.sellButton.Size = new System.Drawing.Size(116, 30);
             this.sellButton.TabIndex = 1;
             this.sellButton.Text = "Sell Product";
             this.sellButton.UseVisualStyleBackColor = true;
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(710, 403);
+            this.logoutButton.Location = new System.Drawing.Point(532, 327);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(78, 35);
+            this.logoutButton.Size = new System.Drawing.Size(58, 28);
             this.logoutButton.TabIndex = 2;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -70,21 +73,25 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.viewProductButton);
             this.groupBox1.Controls.Add(this.sellButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(276, 100);
+            this.groupBox1.Location = new System.Drawing.Point(110, 68);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(223, 234);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(365, 190);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Salesman Home";
             // 
             // SalesmanHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.logoutButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SalesmanHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SalesmanHome";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SalesmanHome_FormClosing);
             this.groupBox1.ResumeLayout(false);

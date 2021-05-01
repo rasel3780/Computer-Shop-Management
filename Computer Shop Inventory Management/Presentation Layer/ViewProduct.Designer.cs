@@ -34,12 +34,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.removeButton = new System.Windows.Forms.Button();
             this.showByIdTextBox = new System.Windows.Forms.TextBox();
             this.removeTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.enterIdLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.categoryComboBox = new System.Windows.Forms.ComboBox();
             this.brandComboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.categoryLabel = new System.Windows.Forms.Label();
+            this.brandLabel = new System.Windows.Forms.Label();
             this.showGroupBox = new System.Windows.Forms.GroupBox();
             this.bothButton = new System.Windows.Forms.Button();
             this.showByBrandButton = new System.Windows.Forms.Button();
@@ -53,20 +53,21 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // productGridView
             // 
             this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productGridView.Location = new System.Drawing.Point(35, 156);
-            this.productGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productGridView.Location = new System.Drawing.Point(26, 127);
+            this.productGridView.Margin = new System.Windows.Forms.Padding(2);
             this.productGridView.Name = "productGridView";
             this.productGridView.RowHeadersWidth = 51;
             this.productGridView.RowTemplate.Height = 24;
-            this.productGridView.Size = new System.Drawing.Size(1229, 355);
+            this.productGridView.Size = new System.Drawing.Size(922, 288);
             this.productGridView.TabIndex = 0;
             // 
             // viewByIdButton
             // 
-            this.viewByIdButton.Location = new System.Drawing.Point(614, 66);
-            this.viewByIdButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewByIdButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewByIdButton.Location = new System.Drawing.Point(550, 55);
+            this.viewByIdButton.Margin = new System.Windows.Forms.Padding(2);
             this.viewByIdButton.Name = "viewByIdButton";
-            this.viewByIdButton.Size = new System.Drawing.Size(85, 28);
+            this.viewByIdButton.Size = new System.Drawing.Size(76, 24);
             this.viewByIdButton.TabIndex = 1;
             this.viewByIdButton.Text = "View";
             this.viewByIdButton.UseVisualStyleBackColor = true;
@@ -74,10 +75,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(429, 59);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.removeButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.Location = new System.Drawing.Point(825, 67);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(2);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(81, 30);
+            this.removeButton.Size = new System.Drawing.Size(77, 25);
             this.removeButton.TabIndex = 1;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -85,35 +87,42 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showByIdTextBox
             // 
-            this.showByIdTextBox.Location = new System.Drawing.Point(488, 69);
-            this.showByIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showByIdTextBox.Location = new System.Drawing.Point(550, 20);
+            this.showByIdTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.showByIdTextBox.Name = "showByIdTextBox";
-            this.showByIdTextBox.Size = new System.Drawing.Size(100, 22);
+            this.showByIdTextBox.Size = new System.Drawing.Size(76, 20);
             this.showByIdTextBox.TabIndex = 2;
             // 
             // removeTextBox
             // 
-            this.removeTextBox.Location = new System.Drawing.Point(315, 62);
-            this.removeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.removeTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.removeTextBox.Location = new System.Drawing.Point(825, 32);
+            this.removeTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.removeTextBox.Multiline = true;
             this.removeTextBox.Name = "removeTextBox";
-            this.removeTextBox.Size = new System.Drawing.Size(100, 22);
+            this.removeTextBox.Size = new System.Drawing.Size(116, 23);
             this.removeTextBox.TabIndex = 3;
+            this.removeTextBox.Text = "Enter Product ID";
+            this.removeTextBox.Click += new System.EventHandler(this.removeTextBox_Click);
+            this.removeTextBox.TextChanged += new System.EventHandler(this.removeTextBox_TextChanged);
             // 
-            // label1
+            // enterIdLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(476, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Enter Product ID";
+            this.enterIdLabel.AutoSize = true;
+            this.enterIdLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterIdLabel.Location = new System.Drawing.Point(443, 20);
+            this.enterIdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.enterIdLabel.Name = "enterIdLabel";
+            this.enterIdLabel.Size = new System.Drawing.Size(103, 16);
+            this.enterIdLabel.TabIndex = 4;
+            this.enterIdLabel.Text = "Enter Product ID";
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(615, 529);
-            this.backButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.backButton.Location = new System.Drawing.Point(461, 430);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.Size = new System.Drawing.Size(56, 19);
             this.backButton.TabIndex = 5;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
@@ -122,55 +131,61 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // categoryComboBox
             // 
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(117, 31);
-            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.categoryComboBox.Location = new System.Drawing.Point(70, 20);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(121, 24);
+            this.categoryComboBox.Size = new System.Drawing.Size(92, 21);
             this.categoryComboBox.TabIndex = 6;
             // 
             // brandComboBox
             // 
             this.brandComboBox.FormattingEnabled = true;
-            this.brandComboBox.Location = new System.Drawing.Point(315, 33);
-            this.brandComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.brandComboBox.Location = new System.Drawing.Point(226, 20);
+            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.brandComboBox.Name = "brandComboBox";
-            this.brandComboBox.Size = new System.Drawing.Size(121, 24);
+            this.brandComboBox.Size = new System.Drawing.Size(92, 21);
             this.brandComboBox.TabIndex = 7;
             // 
-            // label2
+            // categoryLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 17);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Category";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.categoryLabel.AutoSize = true;
+            this.categoryLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryLabel.Location = new System.Drawing.Point(6, 20);
+            this.categoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.categoryLabel.Name = "categoryLabel";
+            this.categoryLabel.Size = new System.Drawing.Size(60, 16);
+            this.categoryLabel.TabIndex = 8;
+            this.categoryLabel.Text = "Category";
+            this.categoryLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // brandLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(251, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Brand";
+            this.brandLabel.AutoSize = true;
+            this.brandLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brandLabel.Location = new System.Drawing.Point(180, 24);
+            this.brandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.brandLabel.Name = "brandLabel";
+            this.brandLabel.Size = new System.Drawing.Size(42, 16);
+            this.brandLabel.TabIndex = 9;
+            this.brandLabel.Text = "Brand";
             // 
             // showGroupBox
             // 
             this.showGroupBox.Controls.Add(this.bothButton);
             this.showGroupBox.Controls.Add(this.showByBrandButton);
-            this.showGroupBox.Controls.Add(this.label1);
+            this.showGroupBox.Controls.Add(this.enterIdLabel);
             this.showGroupBox.Controls.Add(this.showByCategoryButton);
             this.showGroupBox.Controls.Add(this.showByIdTextBox);
             this.showGroupBox.Controls.Add(this.categoryComboBox);
-            this.showGroupBox.Controls.Add(this.label3);
+            this.showGroupBox.Controls.Add(this.brandLabel);
             this.showGroupBox.Controls.Add(this.brandComboBox);
             this.showGroupBox.Controls.Add(this.viewByIdButton);
-            this.showGroupBox.Controls.Add(this.label2);
-            this.showGroupBox.Location = new System.Drawing.Point(529, 14);
+            this.showGroupBox.Controls.Add(this.categoryLabel);
+            this.showGroupBox.Location = new System.Drawing.Point(26, 11);
+            this.showGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.showGroupBox.Name = "showGroupBox";
-            this.showGroupBox.Size = new System.Drawing.Size(721, 124);
+            this.showGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.showGroupBox.Size = new System.Drawing.Size(630, 101);
             this.showGroupBox.TabIndex = 10;
             this.showGroupBox.TabStop = false;
             this.showGroupBox.Text = "Show";
@@ -178,9 +193,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // bothButton
             // 
-            this.bothButton.Location = new System.Drawing.Point(327, 71);
+            this.bothButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bothButton.Location = new System.Drawing.Point(346, 20);
+            this.bothButton.Margin = new System.Windows.Forms.Padding(2);
             this.bothButton.Name = "bothButton";
-            this.bothButton.Size = new System.Drawing.Size(109, 26);
+            this.bothButton.Size = new System.Drawing.Size(82, 59);
             this.bothButton.TabIndex = 12;
             this.bothButton.Text = "By Both";
             this.bothButton.UseVisualStyleBackColor = true;
@@ -188,9 +205,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showByBrandButton
             // 
-            this.showByBrandButton.Location = new System.Drawing.Point(177, 71);
+            this.showByBrandButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showByBrandButton.Location = new System.Drawing.Point(228, 56);
+            this.showByBrandButton.Margin = new System.Windows.Forms.Padding(2);
             this.showByBrandButton.Name = "showByBrandButton";
-            this.showByBrandButton.Size = new System.Drawing.Size(109, 26);
+            this.showByBrandButton.Size = new System.Drawing.Size(92, 24);
             this.showByBrandButton.TabIndex = 11;
             this.showByBrandButton.Text = "By Brand";
             this.showByBrandButton.UseVisualStyleBackColor = true;
@@ -198,9 +217,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showByCategoryButton
             // 
-            this.showByCategoryButton.Location = new System.Drawing.Point(28, 71);
+            this.showByCategoryButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showByCategoryButton.Location = new System.Drawing.Point(70, 55);
+            this.showByCategoryButton.Margin = new System.Windows.Forms.Padding(2);
             this.showByCategoryButton.Name = "showByCategoryButton";
-            this.showByCategoryButton.Size = new System.Drawing.Size(109, 26);
+            this.showByCategoryButton.Size = new System.Drawing.Size(92, 24);
             this.showByCategoryButton.TabIndex = 10;
             this.showByCategoryButton.Text = "By Category";
             this.showByCategoryButton.UseVisualStyleBackColor = true;
@@ -208,9 +229,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(141, 63);
+            this.updateButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(673, 66);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(81, 26);
+            this.updateButton.Size = new System.Drawing.Size(77, 25);
             this.updateButton.TabIndex = 11;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -218,16 +241,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // updateTextBox
             // 
-            this.updateTextBox.Location = new System.Drawing.Point(35, 63);
+            this.updateTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.updateTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.updateTextBox.Location = new System.Drawing.Point(673, 31);
+            this.updateTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.updateTextBox.Multiline = true;
             this.updateTextBox.Name = "updateTextBox";
-            this.updateTextBox.Size = new System.Drawing.Size(100, 22);
+            this.updateTextBox.Size = new System.Drawing.Size(116, 23);
             this.updateTextBox.TabIndex = 12;
+            this.updateTextBox.Text = "Enter Product ID";
+            this.updateTextBox.Click += new System.EventHandler(this.updateTextBox_Click);
             // 
             // ViewProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1309, 609);
+            this.ClientSize = new System.Drawing.Size(982, 495);
             this.Controls.Add(this.updateTextBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.showGroupBox);
@@ -235,8 +264,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.Controls.Add(this.removeTextBox);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.productGridView);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewProduct";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewProduct_FormClosing);
             this.Load += new System.EventHandler(this.ViewProduct_Load);
@@ -255,12 +285,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.TextBox showByIdTextBox;
         private System.Windows.Forms.TextBox removeTextBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label enterIdLabel;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.ComboBox categoryComboBox;
         private System.Windows.Forms.ComboBox brandComboBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label categoryLabel;
+        private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.GroupBox showGroupBox;
         private System.Windows.Forms.Button showByCategoryButton;
         private System.Windows.Forms.Button bothButton;

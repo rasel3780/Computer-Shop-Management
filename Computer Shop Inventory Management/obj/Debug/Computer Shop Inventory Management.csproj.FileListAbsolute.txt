@@ -80,3 +80,6 @@ G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Compute
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ManagerHome.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SalesmanHome.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateProduct.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.ManagerHome.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SalesmanHome.resources
+E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.UpdateProduct.resources

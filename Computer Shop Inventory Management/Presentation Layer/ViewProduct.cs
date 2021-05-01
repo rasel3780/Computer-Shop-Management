@@ -180,5 +180,33 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 MessageBox.Show("ProductId not found");
             }
         }
+
+        private void updateTextBox_Click(object sender, EventArgs e)
+        {
+            updateTextBox.Text = null;
+            if (removeTextBox.Text == "")
+            {
+                removeTextBox.Text = "Enter Product ID";
+            }
+        }
+
+        private void removeTextBox_Click(object sender, EventArgs e)
+        {
+            removeTextBox.Text = null;
+            if (updateTextBox.Text == "")
+            {
+                updateTextBox.Text = "Enter Product ID";
+            }
+        }
+
+        private void updateTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void removeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
