@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,10 +46,22 @@ namespace Computer_Shop_Inventory_Management
             {
                 passWarning.Visible = true;
             }
-            else
+            else if(typeComboBox.Text=="Admin")
             {
                 AdminHome admin = new AdminHome();
                 admin.Show();
+                this.Hide();
+            }
+            else if(typeComboBox.Text== "Manager")
+            {
+                ManagerHome managerHome = new ManagerHome();
+                managerHome.Show();
+                this.Hide();
+            }
+            else if(typeComboBox.Text == "Salesman")
+            {
+                SalesmanHome salesmanHome = new SalesmanHome();
+                salesmanHome.Show();
                 this.Hide();
             }
         }
