@@ -17,10 +17,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private int productId;
         int check = 0;
         string picture = null;
-        public UpdateProduct(int productId)
+        string empType;
+        public UpdateProduct(int productId, string empType)
         {
             InitializeComponent();
             this.productId = productId;
+            this.empType = empType;
             Product product = new Product();
             ProductServices productServices = new ProductServices();
             product = productServices.ReadProduct(productId);
@@ -555,9 +557,18 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            ViewProduct viewProduct = new ViewProduct("Admin");
-            viewProduct.Show();
-            this.Hide();
+            if(empType== "Admin")
+            {
+                ViewProduct viewProduct = new ViewProduct("Admin");
+                viewProduct.Show();
+                this.Hide();
+            }
+            else if(empType == "Manager")
+            {
+                ViewProduct viewProduct = new ViewProduct("Manager");
+                viewProduct.Show();
+                this.Hide();
+            }            
         }
 
         private void updateProductButton_Click(object sender, EventArgs e)

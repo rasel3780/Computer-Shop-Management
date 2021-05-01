@@ -15,10 +15,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
     {
         int check = 0;
         string picture = null;
-        public AddProducts()
+        private string empType;
+        public AddProducts(string empType)
         {
             InitializeComponent();
+            this.empType = empType;
             ProductList productList = new ProductList();
+
             categoryComboBox.DataSource = productList.Category();
             brandComboBox.DataSource = productList.Brand();
         }
@@ -465,9 +468,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            AdminHome admin = new AdminHome();
-            admin.Show();
-            this.Hide();
+            if(empType == "Admin")
+            {
+                AdminHome admin = new AdminHome();
+                admin.Show();
+                this.Hide();
+            }
+            else if(empType == "Manager")
+            {
+                ManagerHome manager = new ManagerHome();
+                manager.Show();
+                this.Hide();
+            }
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

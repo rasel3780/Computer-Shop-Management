@@ -88,10 +88,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.categoryComboBox);
             this.addProductGroupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addProductGroupBox1.Location = new System.Drawing.Point(11, 11);
-            this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.addProductGroupBox1.Name = "addProductGroupBox1";
-            this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.addProductGroupBox1.Size = new System.Drawing.Size(947, 514);
+            this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.addProductGroupBox1.Size = new System.Drawing.Size(947, 530);
             this.addProductGroupBox1.TabIndex = 4;
             this.addProductGroupBox1.TabStop = false;
             this.addProductGroupBox1.Text = "Update Product";
@@ -111,9 +111,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.selectButton);
             this.groupBox1.Controls.Add(this.checkedListBox1);
             this.groupBox1.Location = new System.Drawing.Point(42, 139);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(238, 265);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -122,7 +122,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // selectButton
             // 
             this.selectButton.Location = new System.Drawing.Point(83, 230);
-            this.selectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectButton.Margin = new System.Windows.Forms.Padding(2);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(69, 28);
             this.selectButton.TabIndex = 1;
@@ -145,7 +145,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             "Connection Type",
             "Response Time"});
             this.checkedListBox1.Location = new System.Drawing.Point(25, 24);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(194, 166);
             this.checkedListBox1.TabIndex = 0;
@@ -163,9 +163,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.featureGroupBox.Controls.Add(this.label2);
             this.featureGroupBox.Controls.Add(this.label3);
             this.featureGroupBox.Location = new System.Drawing.Point(350, 139);
-            this.featureGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.featureGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.featureGroupBox.Name = "featureGroupBox";
-            this.featureGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.featureGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.featureGroupBox.Size = new System.Drawing.Size(327, 265);
             this.featureGroupBox.TabIndex = 4;
             this.featureGroupBox.TabStop = false;
@@ -175,7 +175,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(137, 168);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(167, 24);
             this.comboBox4.TabIndex = 2;
@@ -185,7 +185,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(137, 215);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(167, 24);
             this.comboBox5.TabIndex = 2;
@@ -195,7 +195,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(137, 37);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 24);
             this.comboBox1.TabIndex = 2;
@@ -205,7 +205,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(137, 82);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(167, 24);
             this.comboBox2.TabIndex = 2;
@@ -248,7 +248,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(137, 126);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(167, 24);
             this.comboBox3.TabIndex = 2;
@@ -279,7 +279,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // pictureUpdateButton
             // 
             this.pictureUpdateButton.Location = new System.Drawing.Point(720, 311);
-            this.pictureUpdateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureUpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.pictureUpdateButton.Name = "pictureUpdateButton";
             this.pictureUpdateButton.Size = new System.Drawing.Size(110, 24);
             this.pictureUpdateButton.TabIndex = 3;
@@ -291,7 +291,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(720, 110);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 180);
             this.pictureBox1.TabIndex = 3;
@@ -300,7 +300,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // descriptionTextBox
             // 
             this.descriptionTextBox.Location = new System.Drawing.Point(720, 359);
-            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(203, 97);
@@ -319,7 +319,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // updateProductButton
             // 
             this.updateProductButton.Location = new System.Drawing.Point(428, 460);
-            this.updateProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateProductButton.Margin = new System.Windows.Forms.Padding(2);
             this.updateProductButton.Name = "updateProductButton";
             this.updateProductButton.Size = new System.Drawing.Size(130, 37);
             this.updateProductButton.TabIndex = 3;
@@ -331,7 +331,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.brandComboBox.FormattingEnabled = true;
             this.brandComboBox.Location = new System.Drawing.Point(135, 77);
-            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.brandComboBox.Name = "brandComboBox";
             this.brandComboBox.Size = new System.Drawing.Size(167, 24);
             this.brandComboBox.TabIndex = 2;
@@ -349,7 +349,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // quantityTextBox
             // 
             this.quantityTextBox.Location = new System.Drawing.Point(443, 74);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(167, 23);
             this.quantityTextBox.TabIndex = 0;
@@ -387,7 +387,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // priceTextBox
             // 
             this.priceTextBox.Location = new System.Drawing.Point(443, 38);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(167, 23);
             this.priceTextBox.TabIndex = 0;
@@ -415,7 +415,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             "10 Years",
             "Lifetime"});
             this.warrentyComboBox.Location = new System.Drawing.Point(720, 37);
-            this.warrentyComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.warrentyComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.warrentyComboBox.Name = "warrentyComboBox";
             this.warrentyComboBox.Size = new System.Drawing.Size(167, 24);
             this.warrentyComboBox.TabIndex = 2;
@@ -424,7 +424,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.categoryComboBox.FormattingEnabled = true;
             this.categoryComboBox.Location = new System.Drawing.Point(135, 39);
-            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(167, 24);
             this.categoryComboBox.TabIndex = 2;
@@ -435,8 +435,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 564);
             this.Controls.Add(this.addProductGroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UpdateProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateProduct";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateProduct_FormClosing);
             this.addProductGroupBox1.ResumeLayout(false);

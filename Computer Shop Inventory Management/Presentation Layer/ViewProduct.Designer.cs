@@ -266,6 +266,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.sellTextBox.Size = new System.Drawing.Size(100, 23);
             this.sellTextBox.TabIndex = 14;
             this.sellTextBox.Text = "Enter Product ID";
+            this.sellTextBox.Click += new System.EventHandler(this.sellTextBox_Click);
             // 
             // sellButton
             // 

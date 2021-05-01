@@ -42,5 +42,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             sale.Show();
             this.Hide();
         }
+
+        private void addProductButton_Click(object sender, EventArgs e)
+        {
+            AddProducts addProducts = new AddProducts("Manager");
+            addProducts.Show();
+            this.Hide();
+        }
     }
 }

@@ -171,7 +171,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
            
             if(id == Convert.ToInt32(UpdateTextBox))
             {
-                UpdateProduct updateProduct = new UpdateProduct(id);
+                UpdateProduct updateProduct = new UpdateProduct(id,empType);
                 updateProduct.Show();
                 this.Hide();
             }
@@ -188,6 +188,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 removeTextBox.Text = "Enter Product ID";
             }
+            else if (sellTextBox.Text == "")
+            {
+                sellTextBox.Text = "Enter Product ID";
+            }
         }
 
         private void removeTextBox_Click(object sender, EventArgs e)
@@ -196,6 +200,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             if (updateTextBox.Text == "")
             {
                 updateTextBox.Text = "Enter Product ID";
+            }
+            else if(sellTextBox.Text == "")
+            {
+                sellTextBox.Text = "Enter Product ID";
             }
         }
 
@@ -217,6 +225,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void productGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void sellTextBox_Click(object sender, EventArgs e)
+        {
+            sellTextBox.Text = null;
+            if (removeTextBox.Text == "")
+            {
+                removeTextBox.Text = "Enter Product ID";
+            }
+            else if(updateTextBox.Text == "")
+            {
+                updateTextBox.Text = "Enter Product ID";
+            }
         }
     }
 }
