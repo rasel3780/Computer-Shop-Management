@@ -107,10 +107,41 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             };
             return this.productDataAccess.CheckProductId(product);
         }
-        public List<Product> GetProducts()
+        public List<Product> GetAllProducts()
         {
             this.productDataAccess = new ProductDataAccess();
             return this.productDataAccess.GetAllProducts();
+        }
+
+        public List<Product> GetProductById(int productId)
+        {
+            List<Product> product = new List<Product>();
+            this.productDataAccess = new ProductDataAccess();
+            product.Add(this.productDataAccess.GetProductById(productId));
+
+            return product;
+        }
+        public List<Product> GetProductsByCategory(string category)
+        {
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.GetProductsByCategory(category);
+        }
+
+        public List<Product> GetProductsByBrand(string brand)
+        {
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.GetProductsByBrand(brand);
+        }
+
+        public List<Product> GetProductsByCategoryAndBrand(string category, string brand)
+        {
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.GetProductsByCategoryAndBrand(category,brand);
+        }
+        public int RemoveProduct(int productId)
+        {
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.RemoveProduct(productId);
         }
     }
 }
