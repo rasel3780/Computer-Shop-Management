@@ -470,5 +470,77 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Label categoryLabel;
         private System.Windows.Forms.ComboBox warrentyComboBox;
         private System.Windows.Forms.ComboBox categoryComboBox;
+
+
+
+        public string Category
+        {
+            get { return this.categoryComboBox.Text; }
+        }
+        public string Brand
+        {
+            get { return this.brandComboBox.Text; }
+        }
+        public string Price
+        {
+            get { return this.priceTextBox.Text; }
+        }
+        public string Quantity
+        {
+            get { return this.quantityTextBox.Text; }
+        }
+        public string Warranty
+        {
+            get { return this.warrentyComboBox.Text; }
+        }
+
+        public string Description
+        {
+            get { return this.descriptionTextBox.Text; }
+        }
+
+
+        public string ComboBox1
+        {
+            get { return this.comboBox1.Text; }
+        }
+        public string ComboBox2
+        {
+            get { return this.comboBox2.Text; }
+        }
+        public string ComboBox3
+        {
+            get { return this.comboBox3.Text; }
+        }
+        public string ComboBox4
+        {
+            get { return this.comboBox4.Text; }
+        }
+        public string ComboBox5
+        {
+            get { return this.comboBox5.Text; }
+        }
+
+
+        public string Label1
+        {
+            get { return this.label1.Text; }
+        }
+        public string Label2
+        {
+            get { return this.label2.Text; }
+        }
+        public string Label3
+        {
+            get { return this.label3.Text; }
+        }
+        public string Label4
+        {
+            get { return this.label4.Text; }
+        }
+        public string Label5
+        {
+            get { return this.label5.Text; }
+        }
     }
 }
