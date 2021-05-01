@@ -319,6 +319,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateProductButton.TabIndex = 3;
             this.updateProductButton.Text = "Update Product";
             this.updateProductButton.UseVisualStyleBackColor = true;
+            this.updateProductButton.Click += new System.EventHandler(this.updateProductButton_Click);
             // 
             // brandComboBox
             // 

@@ -45,7 +45,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showByBrandButton = new System.Windows.Forms.Button();
             this.showByCategoryButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.updateTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             this.showGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -216,19 +216,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // textBox1
+            // updateTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 12;
+            this.updateTextBox.Location = new System.Drawing.Point(35, 63);
+            this.updateTextBox.Name = "updateTextBox";
+            this.updateTextBox.Size = new System.Drawing.Size(100, 22);
+            this.updateTextBox.TabIndex = 12;
             // 
             // ViewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 609);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.updateTextBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.showGroupBox);
             this.Controls.Add(this.backButton);
@@ -266,7 +266,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button bothButton;
         private System.Windows.Forms.Button showByBrandButton;
         private System.Windows.Forms.Button updateButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox updateTextBox;
 
         public string ShowByIdTextBox
         {
@@ -284,5 +284,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             get { return this.brandComboBox.Text; }
         }
+        /*
+        public int UpdateTextBox
+        {
+            get { return this.updateTextBox.Text;}
+        }
+        */
     }
 }

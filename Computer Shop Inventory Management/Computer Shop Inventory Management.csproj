@@ -61,6 +61,12 @@
     <Compile Include="Presentation Layer\AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\ModifyEmployeeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="Presentation Layer\AddProducts.Designer.cs">
       <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\SalesmanHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\SalesmanHome.Designer.cs">
+      <DependentUpon>SalesmanHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation Layer\UpdateEmployee.cs">
       <SubType>Form</SubType>
@@ -114,6 +126,9 @@
     <EmbeddedResource Include="Presentation Layer\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\ModifyEmployeeInformation.resx">
       <DependentUpon>ModifyEmployeeInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\AddProducts.resx">
       <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\SalesmanHome.resx">
+      <DependentUpon>SalesmanHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>

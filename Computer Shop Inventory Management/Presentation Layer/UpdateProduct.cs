@@ -12,9 +12,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class UpdateProduct : Form
     {
-        public UpdateProduct()
+        private int productId;
+        public UpdateProduct(int productId)
         {
             InitializeComponent();
+            this.productId = productId;
         }
 
         private void UpdateProduct_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,6 +29,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             ViewProduct viewProduct = new ViewProduct();
             viewProduct.Show();
             this.Hide();
+        }
+
+        private void updateProductButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

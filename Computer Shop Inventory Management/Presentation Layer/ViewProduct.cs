@@ -137,9 +137,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            UpdateProduct updateProduct = new UpdateProduct();
-            updateProduct.Show();
-            this.Hide();
+            ProductServices productServices = new ProductServices();
+            int id = productServices.CheckProductId(Convert.ToInt32(updateTextBox.Text));
+           
+            if(id == Convert.ToInt32(updateTextBox.Text))
+            {
+                UpdateProduct updateProduct = new UpdateProduct(Convert.ToInt32(updateTextBox.Text));
+                updateProduct.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("ProductId not found");
+            }
         }
     }
 }
