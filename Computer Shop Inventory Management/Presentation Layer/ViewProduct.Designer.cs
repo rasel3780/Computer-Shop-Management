@@ -49,9 +49,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateTextBox = new System.Windows.Forms.TextBox();
             this.sellTextBox = new System.Windows.Forms.TextBox();
             this.sellButton = new System.Windows.Forms.Button();
-            this.buyerNameTextBox = new System.Windows.Forms.TextBox();
-            this.buyerNoTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.phoneNoTextBox = new System.Windows.Forms.TextBox();
+            this.buyerNameTextBox = new System.Windows.Forms.TextBox();
+            this.quantityTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             this.showGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,7 +66,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.productGridView.Name = "productGridView";
             this.productGridView.RowHeadersWidth = 51;
             this.productGridView.RowTemplate.Height = 24;
-            this.productGridView.Size = new System.Drawing.Size(850, 288);
+            this.productGridView.Size = new System.Drawing.Size(850, 317);
             this.productGridView.TabIndex = 0;
             this.productGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productGridView_CellContentClick);
             // 
@@ -288,7 +289,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // sellButton
             // 
             this.sellButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellButton.Location = new System.Drawing.Point(20, 150);
+            this.sellButton.Location = new System.Drawing.Point(34, 195);
             this.sellButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sellButton.Name = "sellButton";
             this.sellButton.Size = new System.Drawing.Size(77, 28);
@@ -297,50 +298,63 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.sellButton.UseVisualStyleBackColor = true;
             this.sellButton.Click += new System.EventHandler(this.sellButton_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.quantityTextBox);
+            this.groupBox1.Controls.Add(this.phoneNoTextBox);
+            this.groupBox1.Controls.Add(this.buyerNameTextBox);
+            this.groupBox1.Controls.Add(this.sellButton);
+            this.groupBox1.Controls.Add(this.sellTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(901, 31);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(147, 242);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sell";
+            // 
+            // phoneNoTextBox
+            // 
+            this.phoneNoTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.phoneNoTextBox.Location = new System.Drawing.Point(20, 69);
+            this.phoneNoTextBox.Multiline = true;
+            this.phoneNoTextBox.Name = "phoneNoTextBox";
+            this.phoneNoTextBox.Size = new System.Drawing.Size(100, 26);
+            this.phoneNoTextBox.TabIndex = 14;
+            this.phoneNoTextBox.Text = "Enter Phone No";
+            this.phoneNoTextBox.Click += new System.EventHandler(this.phoneNoTextBox_Click);
+            // 
             // buyerNameTextBox
             // 
             this.buyerNameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.buyerNameTextBox.Location = new System.Drawing.Point(20, 34);
-            this.buyerNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyerNameTextBox.Multiline = true;
             this.buyerNameTextBox.Name = "buyerNameTextBox";
-            this.buyerNameTextBox.Size = new System.Drawing.Size(100, 23);
-            this.buyerNameTextBox.TabIndex = 14;
+            this.buyerNameTextBox.Size = new System.Drawing.Size(100, 26);
+            this.buyerNameTextBox.TabIndex = 15;
             this.buyerNameTextBox.Text = "Enter Buyer Name";
-            this.buyerNameTextBox.Click += new System.EventHandler(this.sellTextBox_Click);
+            this.buyerNameTextBox.Click += new System.EventHandler(this.buyerNameTextBox_Click);
+            this.buyerNameTextBox.TextChanged += new System.EventHandler(this.buyerNameTextBox_TextChanged);
             // 
-            // buyerNoTextBox
+            // quantityTextBox
             // 
-            this.buyerNoTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.buyerNoTextBox.Location = new System.Drawing.Point(20, 72);
-            this.buyerNoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buyerNoTextBox.Multiline = true;
-            this.buyerNoTextBox.Name = "buyerNoTextBox";
-            this.buyerNoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.buyerNoTextBox.TabIndex = 14;
-            this.buyerNoTextBox.Text = "Phone Number";
-            this.buyerNoTextBox.Click += new System.EventHandler(this.sellTextBox_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.sellButton);
-            this.groupBox1.Controls.Add(this.buyerNoTextBox);
-            this.groupBox1.Controls.Add(this.sellTextBox);
-            this.groupBox1.Controls.Add(this.buyerNameTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(896, 32);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(194, 219);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sell";
+            this.quantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantityTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.quantityTextBox.Location = new System.Drawing.Point(20, 150);
+            this.quantityTextBox.Multiline = true;
+            this.quantityTextBox.Name = "quantityTextBox";
+            this.quantityTextBox.Size = new System.Drawing.Size(100, 26);
+            this.quantityTextBox.TabIndex = 16;
+            this.quantityTextBox.Text = "Quantity";
+            this.quantityTextBox.Click += new System.EventHandler(this.quantityTextBox_Click);
+            this.quantityTextBox.TextChanged += new System.EventHandler(this.quantityTextBox_TextChanged);
             // 
             // ViewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 495);
+            this.ClientSize = new System.Drawing.Size(1059, 495);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.updateTextBox);
             this.Controls.Add(this.updateButton);
@@ -386,10 +400,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.TextBox updateTextBox;
         private System.Windows.Forms.TextBox sellTextBox;
         private System.Windows.Forms.Button sellButton;
-        private System.Windows.Forms.TextBox buyerNameTextBox;
-        private System.Windows.Forms.TextBox buyerNoTextBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button showAllButton;
+        private System.Windows.Forms.TextBox phoneNoTextBox;
+        private System.Windows.Forms.TextBox buyerNameTextBox;
+        private System.Windows.Forms.TextBox quantityTextBox;
 
         public string ShowByIdTextBox
         {

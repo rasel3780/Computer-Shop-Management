@@ -194,6 +194,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 sellTextBox.Text = "Enter Product ID";
             }
+
+            else if (quantityTextBox.Text == "")
+            {
+                quantityTextBox.Text = "Quantity";
+            }
         }
 
         private void removeTextBox_Click(object sender, EventArgs e)
@@ -206,6 +211,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             else if(sellTextBox.Text == "")
             {
                 sellTextBox.Text = "Enter Product ID";
+            }
+            else if (quantityTextBox.Text == "")
+            {
+                quantityTextBox.Text = "Quantity";
             }
         }
 
@@ -240,6 +249,18 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 updateTextBox.Text = "Enter Product ID";
             }
+            else if(buyerNameTextBox.Text == "")
+            {
+                buyerNameTextBox.Text = "Enter Buyer Name";
+            }
+            else if(phoneNoTextBox.Text == "")
+            {
+                phoneNoTextBox.Text = "Enter Phone No";
+            }
+            else if (quantityTextBox.Text == "")
+            {
+                quantityTextBox.Text = "Quantity";
+            }
         }
 
         private void sellButton_Click(object sender, EventArgs e)
@@ -251,42 +272,54 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 Product product = new Product();
                 product = productServices.ReadProduct(id);
-                productServices.RemoveProduct(id);
-
-
-                Dictionary<string, string> dictionary = new Dictionary<string, string>();
-                dictionary.Add("Capacity", product.Capacity);
-                dictionary.Add("MemoryType", product.MemoryType);
-                dictionary.Add("BusSpeed", product.BusSpeed);
-                dictionary.Add("ScreenSize", product.ScreenSize);
-                dictionary.Add("RefreshRate", product.RefreshRate);
-                dictionary.Add("Wattage", product.Wattage);
-
-                dictionary.Add("MotherBoardType", product.MotherBoardType);
-                dictionary.Add("ClockSpeed", product.ClockSpeed);
-                dictionary.Add("ConnectionType", product.ConnectionType);
-                dictionary.Add("ResponseTime", product.ResponseTime);
-                dictionary.Add("Picture", product.Picture);
-
-
-                string now = DateTime.Now.ToString();
-                
-
-                SaleServices saleServices = new SaleServices();
-                int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, product.Quantity, product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, buyerNoTextBox.Text, empName);
-                if (ans > 0)
+                int availableQuantity = product.Quantity - Convert.ToInt32(quantityTextBox.Text);
+                if(availableQuantity<0)
                 {
-                    MessageBox.Show("Sold...");
-                    productGridView.DataSource = productServices.GetAllProducts();
+                    MessageBox.Show("Product Quantity Not Available!!");
                 }
-                else
+                else 
                 {
-                    MessageBox.Show("Error...");
-                }
+                    Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                    dictionary.Add("Capacity", product.Capacity);
+                    dictionary.Add("MemoryType", product.MemoryType);
+                    dictionary.Add("BusSpeed", product.BusSpeed);
+                    dictionary.Add("ScreenSize", product.ScreenSize);
+                    dictionary.Add("RefreshRate", product.RefreshRate);
+                    dictionary.Add("Wattage", product.Wattage);
+
+                    dictionary.Add("MotherBoardType", product.MotherBoardType);
+                    dictionary.Add("ClockSpeed", product.ClockSpeed);
+                    dictionary.Add("ConnectionType", product.ConnectionType);
+                    dictionary.Add("ResponseTime", product.ResponseTime);
+                    dictionary.Add("Picture", product.Picture);
+
+                    if (availableQuantity>0)
+                    {
+                        productServices.UpdateProduct(Convert.ToInt32(SellTextBox), product.Category, product.Brand, availableQuantity, product.Price, product.Warranty, product.Desciption, dictionary);
+                    }
+                    else
+                    {
+                        productServices.RemoveProduct(id);
+                    }
+
+                    string now = DateTime.Now.ToString();
+
+                    SaleServices saleServices = new SaleServices();
+                    int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, Convert.ToInt32(quantityTextBox.Text), product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, phoneNoTextBox.Text, empName);
+                    if (ans > 0)
+                    {
+                        MessageBox.Show("Product Sold Successfully..");
+                        productGridView.DataSource = productServices.GetAllProducts();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Can Not Sell the Product!!");
+                    }
+                }                
             }
             else
             {
-                MessageBox.Show("Product not found");
+                MessageBox.Show("Out of Stock!!");
             }
         }
 
@@ -294,6 +327,95 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             ProductServices productServices = new ProductServices();
             productGridView.DataSource = productServices.GetAllProducts();
+        }
+
+        private void buyerNameTextBox_Click(object sender, EventArgs e)
+        {
+            buyerNameTextBox.Text = null;
+            if (removeTextBox.Text == "")
+            {
+                removeTextBox.Text = "Enter Product ID";
+            }
+            else if (updateTextBox.Text == "")
+            {
+                updateTextBox.Text = "Enter Product ID";
+            }
+            else if (phoneNoTextBox.Text == "")
+            {
+                phoneNoTextBox.Text = "Enter Phone No";
+            }
+            else if (sellTextBox.Text == "")
+            {
+                sellTextBox.Text = "Enter Product ID";
+            }
+            else if (quantityTextBox.Text == "")
+            {
+                quantityTextBox.Text = "Quantity";
+            }
+        }
+
+        private void phoneNoTextBox_Click(object sender, EventArgs e)
+        {
+            phoneNoTextBox.Text = null;
+            
+            if (removeTextBox.Text == "")
+            {
+                removeTextBox.Text = "Enter Product ID";
+            }
+            else if (updateTextBox.Text == "")
+            {
+                updateTextBox.Text = "Enter Product ID";
+            }
+            else if (sellTextBox.Text == "")
+            {
+                sellTextBox.Text = "Enter Product ID";
+            }
+            else if (buyerNameTextBox.Text == "")
+            {
+                buyerNameTextBox.Text = "Enter Buyer Name";
+            }
+            else if(quantityTextBox.Text == "")
+            {
+                quantityTextBox.Text = "Quantity";
+            }
+        }
+
+        private void buyerNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (buyerNameTextBox.Text == "")
+            {
+
+            }
+        }
+
+        private void quantityTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quantityTextBox_Click(object sender, EventArgs e)
+        {
+            quantityTextBox.Text = null;
+            if (removeTextBox.Text == "")
+            {
+                removeTextBox.Text = "Enter Product ID";
+            }
+            else if (updateTextBox.Text == "")
+            {
+                updateTextBox.Text = "Enter Product ID";
+            }
+            else if (sellTextBox.Text == "")
+            {
+                sellTextBox.Text = "Enter Product ID";
+            }
+            else if (buyerNameTextBox.Text == "")
+            {
+                buyerNameTextBox.Text = "Enter Buyer Name";
+            }
+            else if (phoneNoTextBox.Text == "")
+            {
+                phoneNoTextBox.Text = "Enter Phone No";
+            }
         }
     }
 }
