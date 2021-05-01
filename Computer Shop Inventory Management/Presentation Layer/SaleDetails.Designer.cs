@@ -39,12 +39,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.categoryLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.saleGridView = new System.Windows.Forms.DataGridView();
+            this.showAllButton = new System.Windows.Forms.Button();
             this.showGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.saleGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // showGroupBox
             // 
+            this.showGroupBox.Controls.Add(this.showAllButton);
             this.showGroupBox.Controls.Add(this.bothButton);
             this.showGroupBox.Controls.Add(this.showByBrandButton);
             this.showGroupBox.Controls.Add(this.showByCategoryButton);
@@ -64,10 +66,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // bothButton
             // 
             this.bothButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bothButton.Location = new System.Drawing.Point(461, 25);
+            this.bothButton.Location = new System.Drawing.Point(461, 68);
             this.bothButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bothButton.Name = "bothButton";
-            this.bothButton.Size = new System.Drawing.Size(109, 73);
+            this.bothButton.Size = new System.Drawing.Size(123, 30);
             this.bothButton.TabIndex = 12;
             this.bothButton.Text = "By Both";
             this.bothButton.UseVisualStyleBackColor = true;
@@ -157,6 +159,16 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.saleGridView.Size = new System.Drawing.Size(1229, 354);
             this.saleGridView.TabIndex = 13;
             // 
+            // showAllButton
+            // 
+            this.showAllButton.Location = new System.Drawing.Point(461, 25);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(123, 30);
+            this.showAllButton.TabIndex = 13;
+            this.showAllButton.Text = "Show All";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
             // SaleDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,5 +201,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Label categoryLabel;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.DataGridView saleGridView;
+        private System.Windows.Forms.Button showAllButton;
     }
 }

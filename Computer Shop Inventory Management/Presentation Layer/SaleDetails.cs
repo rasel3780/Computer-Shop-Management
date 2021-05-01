@@ -18,6 +18,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             InitializeComponent();
             this.empType = empType;
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource = saleServices.GetAllSale();
         }
 
         private void SaleDetails_FormClosing(object sender, FormClosingEventArgs e)
@@ -59,6 +61,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             SaleServices saleServices = new SaleServices();
             saleGridView.DataSource = saleServices.GetAllSaleByBoth(categoryComboBox.Text,brandComboBox.Text);
+        }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource = saleServices.GetAllSale();
         }
     }
 }

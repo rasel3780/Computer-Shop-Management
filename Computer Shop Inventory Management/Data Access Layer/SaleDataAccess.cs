@@ -41,7 +41,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 sale.ConnectionType = reader["ConnectionType"].ToString();
                 sale.ResponseTime = reader["ResponseTime"].ToString();
                 sale.Picture = reader["Picture"].ToString();
-                sale.Desciption = reader["Desciption"].ToString();
+                sale.Desciption = reader["Description"].ToString();
                 sale.SaleDate = reader["SaleDate"].ToString();
                 sale.BuyerName = reader["BuyerName"].ToString();
                 sale.BuyerPhoneNo = reader["BuyerPhoneNo"].ToString();
@@ -76,7 +76,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 sale.ConnectionType = reader["ConnectionType"].ToString();
                 sale.ResponseTime = reader["ResponseTime"].ToString();
                 sale.Picture = reader["Picture"].ToString();
-                sale.Desciption = reader["Desciption"].ToString();
+                sale.Desciption = reader["Description"].ToString();
                 sale.SaleDate = reader["SaleDate"].ToString();
                 sale.BuyerName = reader["BuyerName"].ToString();
                 sale.BuyerPhoneNo = reader["BuyerPhoneNo"].ToString();
@@ -111,7 +111,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 sale.ConnectionType = reader["ConnectionType"].ToString();
                 sale.ResponseTime = reader["ResponseTime"].ToString();
                 sale.Picture = reader["Picture"].ToString();
-                sale.Desciption = reader["Desciption"].ToString();
+                sale.Desciption = reader["Description"].ToString();
                 sale.SaleDate = reader["SaleDate"].ToString();
                 sale.BuyerName = reader["BuyerName"].ToString();
                 sale.BuyerPhoneNo = reader["BuyerPhoneNo"].ToString();
@@ -146,7 +146,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 sale.ConnectionType = reader["ConnectionType"].ToString();
                 sale.ResponseTime = reader["ResponseTime"].ToString();
                 sale.Picture = reader["Picture"].ToString();
-                sale.Desciption = reader["Desciption"].ToString();
+                sale.Desciption = reader["Description"].ToString();
                 sale.SaleDate = reader["SaleDate"].ToString();
                 sale.BuyerName = reader["BuyerName"].ToString();
                 sale.BuyerPhoneNo = reader["BuyerPhoneNo"].ToString();
