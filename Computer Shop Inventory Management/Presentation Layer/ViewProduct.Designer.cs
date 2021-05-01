@@ -44,6 +44,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.bothButton = new System.Windows.Forms.Button();
             this.showByBrandButton = new System.Windows.Forms.Button();
             this.showByCategoryButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             this.showGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +64,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // viewByIdButton
             // 
-            this.viewByIdButton.Location = new System.Drawing.Point(196, 59);
+            this.viewByIdButton.Location = new System.Drawing.Point(614, 66);
             this.viewByIdButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewByIdButton.Name = "viewByIdButton";
             this.viewByIdButton.Size = new System.Drawing.Size(85, 28);
@@ -83,7 +86,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showByIdTextBox
             // 
-            this.showByIdTextBox.Location = new System.Drawing.Point(70, 62);
+            this.showByIdTextBox.Location = new System.Drawing.Point(488, 69);
             this.showByIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showByIdTextBox.Name = "showByIdTextBox";
             this.showByIdTextBox.Size = new System.Drawing.Size(100, 22);
@@ -100,7 +103,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 24);
+            this.label1.Location = new System.Drawing.Point(476, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 17);
             this.label1.TabIndex = 4;
@@ -158,14 +161,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.showGroupBox.Controls.Add(this.bothButton);
             this.showGroupBox.Controls.Add(this.showByBrandButton);
+            this.showGroupBox.Controls.Add(this.label1);
             this.showGroupBox.Controls.Add(this.showByCategoryButton);
+            this.showGroupBox.Controls.Add(this.showByIdTextBox);
             this.showGroupBox.Controls.Add(this.categoryComboBox);
             this.showGroupBox.Controls.Add(this.label3);
             this.showGroupBox.Controls.Add(this.brandComboBox);
+            this.showGroupBox.Controls.Add(this.viewByIdButton);
             this.showGroupBox.Controls.Add(this.label2);
             this.showGroupBox.Location = new System.Drawing.Point(529, 14);
             this.showGroupBox.Name = "showGroupBox";
-            this.showGroupBox.Size = new System.Drawing.Size(469, 124);
+            this.showGroupBox.Size = new System.Drawing.Size(721, 124);
             this.showGroupBox.TabIndex = 10;
             this.showGroupBox.TabStop = false;
             this.showGroupBox.Text = "Show";
@@ -201,19 +207,46 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showByCategoryButton.UseVisualStyleBackColor = true;
             this.showByCategoryButton.Click += new System.EventHandler(this.showByCategoryButton_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 17);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Enter Product ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(72, 63);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(198, 60);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 28);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "View";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ViewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 609);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.showGroupBox);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.removeTextBox);
-            this.Controls.Add(this.showByIdTextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.productGridView);
-            this.Controls.Add(this.viewByIdButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewProduct";
             this.Text = "ViewProduct";
@@ -244,6 +277,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button showByCategoryButton;
         private System.Windows.Forms.Button bothButton;
         private System.Windows.Forms.Button showByBrandButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
 
         public string ShowByIdTextBox
         {
