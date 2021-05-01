@@ -16,5 +16,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void SaleDetails_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+
+        }
     }
 }
