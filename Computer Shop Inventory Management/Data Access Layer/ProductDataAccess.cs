@@ -188,5 +188,41 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             string sql = "DELETE FROM Products WHERE ProductId='" + productId + "' ";
             return this.ExecuteQuery(sql);
         }
+        public int UpdateProduct(Product product)
+        {
+            string sql = "UPDATE Products SET Category = '"+product.Category+ "', Brand='" + product.Brand+ "', Quantity='" + product.Quantity+ "', Price='" + product.Price+ "', Warranty='" + product.Warranty+ "', Capacity='" + product.Capacity+ "', MemoryType='" + product.MemoryType+ "', BusSpeed='"+product.BusSpeed+ "', ScreenSize= '"+product.ScreenSize+ "', RefreshRate='"+product.RefreshRate+ "', Wattage='"+product.Wattage+ "', MotherBoardType='"+product.MemoryType+ "', ClockSpeed='"+product.ClockSpeed+ "', ConnectionType='"+product.ConnectionType+ "', ResponseTime='"+product.ResponseTime+ "', Desciption='"+product.Desciption+"'";
+            return this.ExecuteQuery(sql);
+        }
+
+
+        public Product ReadProduct(Product product)
+        {
+            string query = "SELECT * FROM Products WHERE ProductId= '" + product.ProductId + "'";
+            SqlDataReader reader = GetData(query);
+            if (reader.Read())
+            {
+                Product product1 = new Product();
+                product1.ProductId = Convert.ToInt32(reader["ProductId"]);
+                product1.Category = reader["Category"].ToString();
+                product1.Brand = reader["Brand"].ToString();
+                product1.Quantity = Convert.ToInt32(reader["Quantity"]);
+                product1.Price = Convert.ToSingle(reader["Price"]);
+                product1.Warranty = reader["Warranty"].ToString();
+                product1.Capacity = reader["Capacity"].ToString();
+                product1.MemoryType = reader["MemoryType"].ToString();
+                product1.BusSpeed = reader["BusSpeed"].ToString();
+                product1.ScreenSize = reader["ScreenSize"].ToString();
+                product1.RefreshRate = reader["RefreshRate"].ToString();
+                product1.Wattage = reader["Wattage"].ToString();
+                product1.MotherBoardType = reader["MotherBoardType"].ToString();
+                product1.ClockSpeed = reader["ClockSpeed"].ToString();
+                product1.ConnectionType = reader["ConnectionType"].ToString();
+                product1.ResponseTime = reader["ResponseTime"].ToString();
+                product1.Picture = reader["Picture"].ToString();
+                product1.Desciption = reader["Desciption"].ToString();
+                return product1;
+            }
+            else return null;
+        }
     }
 }
