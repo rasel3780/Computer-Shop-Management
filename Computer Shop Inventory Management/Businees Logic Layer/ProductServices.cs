@@ -149,7 +149,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return this.productDataAccess.ReadProduct(productId);
         }
 
-        public int UpdateProduct(string catagory, string brand, int quantity, float price, string warranty, string desciption, Dictionary<string, string> features)
+        public int UpdateProduct(int productId,string catagory, string brand, int quantity, float price, string warranty, string desciption, Dictionary<string, string> features)
         {
             string capacity = null;
             string memoryType = null;
@@ -211,6 +211,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             }
             Product product = new Product()
             {
+                ProductId = productId,
                 Category = catagory,
                 Brand = brand,
                 Quantity = quantity,

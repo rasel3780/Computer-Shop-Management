@@ -190,7 +190,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
         }
         public int UpdateProduct(Product product)
         {
-            string sql = "UPDATE Products SET Category = '"+product.Category+ "', Brand='" + product.Brand+ "', Quantity='" + product.Quantity+ "', Price='" + product.Price+ "', Warranty='" + product.Warranty+ "', Capacity='" + product.Capacity+ "', MemoryType='" + product.MemoryType+ "', BusSpeed='"+product.BusSpeed+ "', ScreenSize= '"+product.ScreenSize+ "', RefreshRate='"+product.RefreshRate+ "', Wattage='"+product.Wattage+ "', MotherBoardType='"+product.MemoryType+ "', ClockSpeed='"+product.ClockSpeed+ "', ConnectionType='"+product.ConnectionType+ "', ResponseTime='"+product.ResponseTime+ "', Desciption='"+product.Desciption+"'";
+            string sql = "UPDATE Products SET Category = '"+product.Category+ "', Brand='" + product.Brand+ "', Quantity='" + product.Quantity+ "', Price='" + product.Price+ "', Warranty='" + product.Warranty+ "', Capacity='" + product.Capacity+ "', MemoryType='" + product.MemoryType+ "', BusSpeed='"+product.BusSpeed+ "', ScreenSize= '"+product.ScreenSize+ "', RefreshRate='"+product.RefreshRate+ "', Wattage='"+product.Wattage+ "', MotherBoardType='"+product.MemoryType+ "', ClockSpeed='"+product.ClockSpeed+ "', ConnectionType='"+product.ConnectionType+ "', ResponseTime='"+product.ResponseTime+ "',Picture = '"+product.Picture+"', Desciption='"+product.Desciption+"' WHERE ProductId = '"+product.ProductId+"'";
             return this.ExecuteQuery(sql);
         }
 

@@ -52,8 +52,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             descriptionTextBox.Text = product.Desciption;
 
             //product image show in picture box
-            string imageLoction = product.Picture;
-            if (imageLoction != null)
+           string imageLoction = product.Picture;
+            if (imageLoction != "")
             {
                 Size size = pictureBox1.Size;
                 size.Height = 200;
@@ -70,6 +70,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             //capacity check
             if(product.Capacity != "")
             {
+                checkedListBox1.SetItemChecked(0, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.Capacity();
@@ -117,6 +118,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             //memory type check
             if (product.MemoryType != "")
             {
+                checkedListBox1.SetItemChecked(1, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.MemoryType();
@@ -164,6 +166,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.BusSpeed != "")
             {
+                checkedListBox1.SetItemChecked(2, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.BusSpeed();
@@ -211,6 +214,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.ScreenSize != "")
             {
+                checkedListBox1.SetItemChecked(3, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.ScreenSize();
@@ -258,6 +262,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.RefreshRate != "")
             {
+                checkedListBox1.SetItemChecked(4, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.RefreshRate();
@@ -305,6 +310,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.Wattage != "")
             {
+                checkedListBox1.SetItemChecked(5, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.Wattage();
@@ -351,6 +357,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.MotherBoardType != "")
             {
+                checkedListBox1.SetItemChecked(6, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.MotherBoardType();
@@ -398,6 +405,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.ClockSpeed != "")
             {
+                checkedListBox1.SetItemChecked(7, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.ClockSpeed();
@@ -446,6 +454,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.ConnectionType != "")
             {
+                checkedListBox1.SetItemChecked(8, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.ConnectionType();
@@ -493,6 +502,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (product.ResponseTime != "")
             {
+                checkedListBox1.SetItemChecked(9, true);
                 if (ok == 0)
                 {
                     comboBox1.DataSource = productList.ResponseTime();
@@ -535,6 +545,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 }
                 ok++;
             }
+            check = ok;
         }
 
         private void UpdateProduct_FormClosing(object sender, FormClosingEventArgs e)
@@ -563,7 +574,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (picture != null) dictionary.Add("Picture", picture);
             ProductServices productServices = new ProductServices();
-            productServices.UpdateProduct(Category, Brand, Convert.ToInt32(Quantity), Convert.ToSingle(Price), Warranty, Description, dictionary);
+            int ans =productServices.UpdateProduct(productId,Category, Brand, Convert.ToInt32(Quantity), Convert.ToSingle(Price), Warranty, Description, dictionary);
+            
+            if(ans>0)
+            {
+                MessageBox.Show("Updated....");
+            }
+            else
+            {
+                MessageBox.Show("Error...");
+            }
+        
         }
 
         private void pictureUpdateButton_Click(object sender, EventArgs e)
