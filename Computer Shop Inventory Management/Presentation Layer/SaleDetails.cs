@@ -12,9 +12,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class SaleDetails : Form
     {
-        public SaleDetails()
+        string empType = null;
+        public SaleDetails(string empType)
         {
             InitializeComponent();
+            this.empType = empType;
         }
 
         private void SaleDetails_FormClosing(object sender, FormClosingEventArgs e)
@@ -22,6 +24,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             Application.Exit();
 
 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            if (empType == "Admin")
+            {
+                AdminHome admin = new AdminHome();
+                admin.Show();
+                this.Hide();
+            }
+            else
+            {
+                ManagerHome manager = new ManagerHome();
+                manager.Show();
+                this.Hide();
+            }
         }
     }
 }

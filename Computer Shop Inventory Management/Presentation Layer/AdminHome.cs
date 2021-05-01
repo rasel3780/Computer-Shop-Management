@@ -57,5 +57,12 @@ namespace Computer_Shop_Inventory_Management
             viewProduct.Show();
             this.Hide();
         }
+
+        private void saleInfoButton_Click(object sender, EventArgs e)
+        {
+            SaleDetails sale = new SaleDetails("Admin");
+            sale.Show();
+            this.Hide();
+        }
     }
 }

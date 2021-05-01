@@ -30,7 +30,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void InitializeComponent()
         {
             this.viewProductButton = new System.Windows.Forms.Button();
-            this.sellButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -47,16 +46,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.viewProductButton.UseVisualStyleBackColor = true;
             this.viewProductButton.Click += new System.EventHandler(this.viewProductButton_Click);
             // 
-            // sellButton
-            // 
-            this.sellButton.Location = new System.Drawing.Point(124, 107);
-            this.sellButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.sellButton.Name = "sellButton";
-            this.sellButton.Size = new System.Drawing.Size(116, 30);
-            this.sellButton.TabIndex = 1;
-            this.sellButton.Text = "Sell Product";
-            this.sellButton.UseVisualStyleBackColor = true;
-            // 
             // logoutButton
             // 
             this.logoutButton.Location = new System.Drawing.Point(532, 327);
@@ -71,7 +60,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.viewProductButton);
-            this.groupBox1.Controls.Add(this.sellButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(110, 68);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -102,7 +90,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         #endregion
 
         private System.Windows.Forms.Button viewProductButton;
-        private System.Windows.Forms.Button sellButton;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.GroupBox groupBox1;
     }

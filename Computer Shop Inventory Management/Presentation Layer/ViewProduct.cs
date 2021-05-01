@@ -208,5 +208,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
 
         }
+
+        private void updateTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

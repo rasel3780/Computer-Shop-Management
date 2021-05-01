@@ -35,5 +35,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             viewProduct.Show();
             this.Hide();
         }
+
+        private void saleInfoButton_Click(object sender, EventArgs e)
+        {
+            SaleDetails sale = new SaleDetails("Manager");
+            sale.Show();
+            this.Hide();
+        }
     }
 }

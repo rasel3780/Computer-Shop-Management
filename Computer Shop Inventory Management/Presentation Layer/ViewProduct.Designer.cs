@@ -46,6 +46,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showByCategoryButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.updateTextBox = new System.Windows.Forms.TextBox();
+            this.sellTextBox = new System.Windows.Forms.TextBox();
+            this.sellButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             this.showGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -58,8 +60,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.productGridView.Name = "productGridView";
             this.productGridView.RowHeadersWidth = 51;
             this.productGridView.RowTemplate.Height = 24;
-            this.productGridView.Size = new System.Drawing.Size(922, 288);
+            this.productGridView.Size = new System.Drawing.Size(955, 288);
             this.productGridView.TabIndex = 0;
+            this.productGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productGridView_CellContentClick);
             // 
             // viewByIdButton
             // 
@@ -76,7 +79,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // removeButton
             // 
             this.removeButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton.Location = new System.Drawing.Point(825, 67);
+            this.removeButton.Location = new System.Drawing.Point(777, 67);
             this.removeButton.Margin = new System.Windows.Forms.Padding(2);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(77, 25);
@@ -96,11 +99,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // removeTextBox
             // 
             this.removeTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.removeTextBox.Location = new System.Drawing.Point(825, 32);
+            this.removeTextBox.Location = new System.Drawing.Point(777, 31);
             this.removeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.removeTextBox.Multiline = true;
             this.removeTextBox.Name = "removeTextBox";
-            this.removeTextBox.Size = new System.Drawing.Size(116, 23);
+            this.removeTextBox.Size = new System.Drawing.Size(100, 23);
             this.removeTextBox.TabIndex = 3;
             this.removeTextBox.Text = "Enter Product ID";
             this.removeTextBox.Click += new System.EventHandler(this.removeTextBox_Click);
@@ -119,10 +122,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(461, 430);
+            this.backButton.Location = new System.Drawing.Point(26, 459);
             this.backButton.Margin = new System.Windows.Forms.Padding(2);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(56, 19);
+            this.backButton.Size = new System.Drawing.Size(56, 25);
             this.backButton.TabIndex = 5;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
@@ -247,16 +250,41 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.updateTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.updateTextBox.Multiline = true;
             this.updateTextBox.Name = "updateTextBox";
-            this.updateTextBox.Size = new System.Drawing.Size(116, 23);
+            this.updateTextBox.Size = new System.Drawing.Size(100, 23);
             this.updateTextBox.TabIndex = 12;
             this.updateTextBox.Text = "Enter Product ID";
             this.updateTextBox.Click += new System.EventHandler(this.updateTextBox_Click);
+            this.updateTextBox.TextChanged += new System.EventHandler(this.updateTextBox_TextChanged_1);
+            // 
+            // sellTextBox
+            // 
+            this.sellTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.sellTextBox.Location = new System.Drawing.Point(881, 31);
+            this.sellTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.sellTextBox.Multiline = true;
+            this.sellTextBox.Name = "sellTextBox";
+            this.sellTextBox.Size = new System.Drawing.Size(100, 23);
+            this.sellTextBox.TabIndex = 14;
+            this.sellTextBox.Text = "Enter Product ID";
+            // 
+            // sellButton
+            // 
+            this.sellButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sellButton.Location = new System.Drawing.Point(881, 67);
+            this.sellButton.Margin = new System.Windows.Forms.Padding(2);
+            this.sellButton.Name = "sellButton";
+            this.sellButton.Size = new System.Drawing.Size(77, 25);
+            this.sellButton.TabIndex = 13;
+            this.sellButton.Text = "Sell";
+            this.sellButton.UseVisualStyleBackColor = true;
             // 
             // ViewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 495);
+            this.ClientSize = new System.Drawing.Size(996, 495);
+            this.Controls.Add(this.sellTextBox);
+            this.Controls.Add(this.sellButton);
             this.Controls.Add(this.updateTextBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.showGroupBox);
@@ -297,6 +325,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button showByBrandButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.TextBox updateTextBox;
+        private System.Windows.Forms.TextBox sellTextBox;
+        private System.Windows.Forms.Button sellButton;
 
         public string ShowByIdTextBox
         {
