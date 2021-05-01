@@ -289,5 +289,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 MessageBox.Show("Product not found");
             }
         }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            ProductServices productServices = new ProductServices();
+            productGridView.DataSource = productServices.GetAllProducts();
+        }
     }
 }
