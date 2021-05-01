@@ -589,7 +589,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void pictureUpdateButton_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.jpg; *.jpeg; *.png; .bmp)|.jpg; *.jpeg; *.png; *.bmp";
 
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picture = openFile.FileName;
+                Size size = pictureBox1.Size;
+                size.Height = 200;
+                size.Width = 200;
+                pictureBox1.Size = size;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = Image.FromFile(picture);
+            }
         }
 
         private void selectButton_Click(object sender, EventArgs e)
