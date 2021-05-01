@@ -45,7 +45,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureAddButton = new System.Windows.Forms.Button();
+            this.pictureUpdateButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.descriptionLabel = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Controls.Add(this.backButton);
             this.addProductGroupBox1.Controls.Add(this.groupBox1);
             this.addProductGroupBox1.Controls.Add(this.featureGroupBox);
-            this.addProductGroupBox1.Controls.Add(this.pictureAddButton);
+            this.addProductGroupBox1.Controls.Add(this.pictureUpdateButton);
             this.addProductGroupBox1.Controls.Add(this.pictureBox1);
             this.addProductGroupBox1.Controls.Add(this.descriptionTextBox);
             this.addProductGroupBox1.Controls.Add(this.descriptionLabel);
@@ -272,15 +272,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.label3.Text = "Bus Speed";
             this.label3.Visible = false;
             // 
-            // pictureAddButton
+            // pictureUpdateButton
             // 
-            this.pictureAddButton.Location = new System.Drawing.Point(960, 383);
-            this.pictureAddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureAddButton.Name = "pictureAddButton";
-            this.pictureAddButton.Size = new System.Drawing.Size(147, 30);
-            this.pictureAddButton.TabIndex = 3;
-            this.pictureAddButton.Text = "Add Picture";
-            this.pictureAddButton.UseVisualStyleBackColor = true;
+            this.pictureUpdateButton.Location = new System.Drawing.Point(960, 383);
+            this.pictureUpdateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureUpdateButton.Name = "pictureUpdateButton";
+            this.pictureUpdateButton.Size = new System.Drawing.Size(147, 30);
+            this.pictureUpdateButton.TabIndex = 3;
+            this.pictureUpdateButton.Text = "Update Picture";
+            this.pictureUpdateButton.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -455,7 +455,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button pictureAddButton;
+        private System.Windows.Forms.Button pictureUpdateButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.Label descriptionLabel;
