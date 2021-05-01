@@ -145,11 +145,8 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
         }
         public Product ReadProduct(int productId)
         {
-            Product product = new Product()
-            {
-                ProductId = productId
-            };
-            return this.productDataAccess.ReadProduct(product);
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.ReadProduct(productId);
         }
 
         public int UpdateProduct(string catagory, string brand, int quantity, float price, string warranty, string desciption, Dictionary<string, string> features)

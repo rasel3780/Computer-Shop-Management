@@ -138,11 +138,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void updateButton_Click(object sender, EventArgs e)
         {
             ProductServices productServices = new ProductServices();
-            int id = productServices.CheckProductId(Convert.ToInt32(updateTextBox.Text));
+            int id = productServices.CheckProductId(Convert.ToInt32(UpdateTextBox));
            
-            if(id == Convert.ToInt32(updateTextBox.Text))
+            if(id == Convert.ToInt32(UpdateTextBox))
             {
-                UpdateProduct updateProduct = new UpdateProduct(Convert.ToInt32(updateTextBox.Text));
+                UpdateProduct updateProduct = new UpdateProduct(id);
                 updateProduct.Show();
                 this.Hide();
             }

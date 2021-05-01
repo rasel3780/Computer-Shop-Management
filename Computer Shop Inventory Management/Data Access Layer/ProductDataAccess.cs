@@ -195,9 +195,9 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
         }
 
 
-        public Product ReadProduct(Product product)
+        public Product ReadProduct(int productId)
         {
-            string query = "SELECT * FROM Products WHERE ProductId= '" + product.ProductId + "'";
+            string query = "SELECT * FROM Products WHERE ProductId= '" + productId + "'";
             SqlDataReader reader = GetData(query);
             if (reader.Read())
             {

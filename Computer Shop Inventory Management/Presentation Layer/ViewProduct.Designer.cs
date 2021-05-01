@@ -284,11 +284,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             get { return this.brandComboBox.Text; }
         }
-        /*
-        public int UpdateTextBox
+       
+        public string UpdateTextBox
         {
             get { return this.updateTextBox.Text;}
         }
-        */
+      
     }
 }
