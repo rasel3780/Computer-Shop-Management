@@ -109,9 +109,19 @@ namespace Computer_Shop_Inventory_Management
                     if (res > 0)
                     {
                         MessageBox.Show("Employee Added");
-                        nameTextBox.Text = usernameTextBox.Text = emailTextBox.Text = passTextBox.Text = cpassTextBox.Text = addressTextBox.Text= salaryTextBox.Text="";
-                        maleRadioButton.Checked = femaleRadioButton.Checked = termscheckBox.Checked  = submitButton.Enabled = false;
+                        nameTextBox.Text = usernameTextBox.Text = emailTextBox.Text = passTextBox.Text = cpassTextBox.Text = addressTextBox.Text = salaryTextBox.Text = "";
+                        if (maleRadioButton.Checked)
+                        { 
+                            maleRadioButton.Checked = false; 
+                        }
+                        if (femaleRadioButton.Checked)
+                        {
+                           femaleRadioButton.Checked = false;
+                        }
+
+                        termscheckBox.Checked  = submitButton.Enabled = false;
                         bloodgroupTextBox.Text = null;
+                        typeComboBox.Text = null;
                     }
                     else
                     {
