@@ -71,12 +71,13 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return this.employeeDataAccess.GetAllEmployees();
         }
 
-        public Employee ReadEmployee(string userName)
+       public Employee ReadEmployee(string userName)
         {
             Employee employee = new Employee()
             {
                 UserName = userName
             };
+            this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.ReadEmployee(employee);
         }
 
@@ -112,13 +113,14 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
             return employees;
         }
-        public Employee EmployeeSearchName(string userName)
+        public List<Employee> EmployeeSearchName(string userName)
         {
             Employee employee = new Employee()
             {
                 UserName = userName
             };
-            return this.employeeDataAccess.ReadEmployee(employee);
+            this.employeeDataAccess = new EmployeeDataAccess();
+            return this.employeeDataAccess.EmployeeSearchName(employee);
         }
 
     }

@@ -77,6 +77,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void userNameButton_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("" + userNameTextBox.Text);
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.EmployeeSearchName(userNameTextBox.Text);
 

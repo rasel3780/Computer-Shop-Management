@@ -60,9 +60,9 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
 
         public Employee ReadEmployee(Employee employee)
         {
-            string query = "SELECT * FROM Employees WHERE UserName= '" + employee.UserName + "'";
-            SqlDataReader reader = GetData(query);
-            if (reader.Read())
+            string sql = "SELECT * FROM Employees WHERE EmployeeType = '" + employee.UserName + "'";
+            SqlDataReader reader = this.GetData(sql);
+           if (reader.Read())
             {
                 Employee employee1 = new Employee();
                 employee1.Name = reader["Name"].ToString();
@@ -99,6 +99,28 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
                 employee.EmployeeType = reader["EmployeeType"].ToString();
                 employee.Salary = Convert.ToSingle(reader["Salary"]);
                 employees.Add(employee);
+            }
+            return employees;
+        }
+        public List<Employee> EmployeeSearchName(Employee employee)
+        {
+            string sql = "SELECT * FROM Employees WHERE UserName = '"+employee.UserName+"'";
+            SqlDataReader reader = this.GetData(sql);
+            List<Employee> employees = new List<Employee>();
+            while (reader.Read())
+            {
+                Employee employee1 = new Employee();
+                employee1.Name = reader["Name"].ToString();
+                employee1.UserName = reader["UserName"].ToString();
+                employee1.Password = reader["Password"].ToString();
+                employee1.Email = reader["Email"].ToString();
+                employee1.Address = reader["Address"].ToString();
+                employee1.DateOfBirth = reader["DateOfBirth"].ToString();
+                employee1.BloodGroup = reader["bloodGroup"].ToString();
+                employee1.Gender = reader["Gender"].ToString();
+                employee1.EmployeeType = reader["EmployeeType"].ToString();
+                employee1.Salary = Convert.ToSingle(reader["Salary"]);
+                employees.Add(employee1);
             }
             return employees;
         }
