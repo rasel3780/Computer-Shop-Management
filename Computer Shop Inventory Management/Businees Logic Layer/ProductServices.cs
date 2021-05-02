@@ -99,14 +99,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.productDataAccess = new ProductDataAccess();
             return this.productDataAccess.AddProduct(product);
         }
-        public int CheckProductId(int productId)
-        {
-            Product product = new Product()
-            {
-                ProductId = productId
-            };
-            return this.productDataAccess.CheckProductId(product);
-        }
+        
         public List<Product> GetAllProducts()
         {
             this.productDataAccess = new ProductDataAccess();
