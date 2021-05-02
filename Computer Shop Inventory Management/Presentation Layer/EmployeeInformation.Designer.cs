@@ -62,7 +62,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(53, 94);
+            this.selectButton.Location = new System.Drawing.Point(51, 94);
             this.selectButton.Margin = new System.Windows.Forms.Padding(2);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(68, 25);
