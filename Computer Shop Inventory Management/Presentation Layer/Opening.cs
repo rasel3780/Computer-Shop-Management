@@ -24,7 +24,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            progressBar1.Maximum = 3000;
+            progressBar1.Maximum = 100;
             progressBar1.Step = 1;
             for (int i = 0; i < 3000; i++)
             {
@@ -39,6 +39,11 @@ namespace Computer_Shop_Inventory_Management
         private void Welcome_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void welcomeLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
