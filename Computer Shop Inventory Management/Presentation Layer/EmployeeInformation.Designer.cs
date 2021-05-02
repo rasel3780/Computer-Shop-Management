@@ -29,28 +29,29 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
             this.typeButton = new System.Windows.Forms.Button();
             this.highButton = new System.Windows.Forms.Button();
             this.lowButton = new System.Windows.Forms.Button();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.userNameButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.showAllButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // employeeDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(110, 228);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1196, 416);
-            this.dataGridView1.TabIndex = 0;
+            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeeDataGridView.Location = new System.Drawing.Point(110, 228);
+            this.employeeDataGridView.Name = "employeeDataGridView";
+            this.employeeDataGridView.RowHeadersWidth = 51;
+            this.employeeDataGridView.RowTemplate.Height = 24;
+            this.employeeDataGridView.Size = new System.Drawing.Size(1022, 416);
+            this.employeeDataGridView.TabIndex = 0;
             // 
             // typeButton
             // 
-            this.typeButton.Location = new System.Drawing.Point(113, 125);
+            this.typeButton.Location = new System.Drawing.Point(275, 98);
             this.typeButton.Name = "typeButton";
             this.typeButton.Size = new System.Drawing.Size(137, 36);
             this.typeButton.TabIndex = 1;
@@ -59,7 +60,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // highButton
             // 
-            this.highButton.Location = new System.Drawing.Point(287, 124);
+            this.highButton.Location = new System.Drawing.Point(463, 97);
             this.highButton.Name = "highButton";
             this.highButton.Size = new System.Drawing.Size(174, 37);
             this.highButton.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // lowButton
             // 
-            this.lowButton.Location = new System.Drawing.Point(512, 125);
+            this.lowButton.Location = new System.Drawing.Point(709, 98);
             this.lowButton.Name = "lowButton";
             this.lowButton.Size = new System.Drawing.Size(169, 36);
             this.lowButton.TabIndex = 3;
@@ -77,35 +78,46 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(763, 124);
+            this.userNameTextBox.Location = new System.Drawing.Point(955, 97);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(177, 22);
             this.userNameTextBox.TabIndex = 4;
             // 
             // userNameButton
             // 
-            this.userNameButton.Location = new System.Drawing.Point(763, 153);
+            this.userNameButton.Location = new System.Drawing.Point(955, 126);
             this.userNameButton.Name = "userNameButton";
             this.userNameButton.Size = new System.Drawing.Size(177, 30);
             this.userNameButton.TabIndex = 5;
             this.userNameButton.Text = "By Username";
             this.userNameButton.UseVisualStyleBackColor = true;
             // 
+            // showAllButton
+            // 
+            this.showAllButton.Location = new System.Drawing.Point(108, 98);
+            this.showAllButton.Name = "showAllButton";
+            this.showAllButton.Size = new System.Drawing.Size(106, 36);
+            this.showAllButton.TabIndex = 6;
+            this.showAllButton.Text = "Show All";
+            this.showAllButton.UseVisualStyleBackColor = true;
+            this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
+            // 
             // EmployeeInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1474, 673);
+            this.Controls.Add(this.showAllButton);
             this.Controls.Add(this.userNameButton);
             this.Controls.Add(this.userNameTextBox);
             this.Controls.Add(this.lowButton);
             this.Controls.Add(this.highButton);
             this.Controls.Add(this.typeButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.employeeDataGridView);
             this.Name = "EmployeeInformation";
             this.Text = "EmployeeInformation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeInformation_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,11 +125,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView employeeDataGridView;
         private System.Windows.Forms.Button typeButton;
         private System.Windows.Forms.Button highButton;
         private System.Windows.Forms.Button lowButton;
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.Button userNameButton;
+        private System.Windows.Forms.Button showAllButton;
     }
 }

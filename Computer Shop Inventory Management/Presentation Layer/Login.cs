@@ -51,7 +51,7 @@ namespace Computer_Shop_Inventory_Management
             {
                 LoginServices loginServices = new LoginServices();
                 string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
-                MessageBox.Show(""+res);
+                
                 if (res == nameTextBox.Text)
                 {
                     AdminHome admin = new AdminHome(nameTextBox.Text);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         public EmployeeInformation()
         {
             InitializeComponent();
+            EmployeeServices employeeServices = new EmployeeServices();
+            employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
         }
 
         private void EmployeeInformation_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void showAllButton_Click(object sender, EventArgs e)
+        {
+            EmployeeServices employeeServices = new EmployeeServices();
+            employeeDataGridView.DataSource = employeeServices.GetAllEmployees(); 
         }
     }
 }
