@@ -63,32 +63,42 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             }
             catch(Exception e6)
             {
-                MessageBox.Show("Please Enter a valid id");
+                MessageBox.Show("Please Enter a Valid ID");
             }
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ProductServices productService = new ProductServices();
-            int ans = productService.CheckProductId(Convert.ToInt32(RemoveTextBox));
-            if (ans > 0)
+            try
             {
-                int x = productService.RemoveProduct(Convert.ToInt32(RemoveTextBox));
-                if (x > 0)
+                ProductServices productService = new ProductServices();
+                int ans = productService.CheckProductId(Convert.ToInt32(RemoveTextBox));
+                if (ans > 0)
                 {
-                    MessageBox.Show("Product Removed.....");
-                    productGridView.DataSource = productService.GetAllProducts();
+                    int x = productService.RemoveProduct(Convert.ToInt32(RemoveTextBox));
+                    if (x > 0)
+                    {
+                        MessageBox.Show("Product Removed.....");
+                        productGridView.DataSource = productService.GetAllProducts();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error...");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error...");
+                    MessageBox.Show("No Product Found....");
                 }
             }
-            else
+            catch(Exception e5)
             {
-                MessageBox.Show("No Product Found....");
+                MessageBox.Show(e5.Message);
+                MessageBox.Show("Enter Valid Product ID");
             }
+
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -357,7 +367,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             }
             catch(Exception e9)
             {
-                MessageBox.Show("Enter valid input");
+                MessageBox.Show("Enter Valid Information");
             }
         }
 
