@@ -148,6 +148,31 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.productDataAccess = new ProductDataAccess();
             return this.productDataAccess.ReadProduct(productId);
         }
+        public List<Product> ALLProductSortByPriceHighToLow()
+        {
+            List<Product> products = new List<Product>();
+            this.productDataAccess = new ProductDataAccess();
+            products = this.productDataAccess.GetAllProducts();
+
+            products.Sort(delegate (Product x, Product y) {
+                return x.Price.CompareTo(y.Price);
+            });
+
+            products.Reverse();
+
+            return products;
+        }
+        public List<Product> ALLProductSortByPriceLowToHigh()
+        {
+            List<Product> products = new List<Product>();
+            this.productDataAccess = new ProductDataAccess();
+            products = this.productDataAccess.GetAllProducts();
+
+            products.Sort(delegate (Product x, Product y) {
+                return x.Price.CompareTo(y.Price);
+            });
+            return products;
+        }
 
         public int UpdateProduct(int productId,string catagory, string brand, int quantity, float price, string warranty, string desciption, Dictionary<string, string> features)
         {

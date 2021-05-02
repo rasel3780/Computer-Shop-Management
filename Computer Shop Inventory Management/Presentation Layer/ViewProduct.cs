@@ -417,5 +417,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 phoneNoTextBox.Text = "Enter Phone No";
             }
         }
+
+        private void highToLowButton_Click(object sender, EventArgs e)
+        {
+            ProductServices productServices = new ProductServices();
+            productGridView.DataSource = productServices.ALLProductSortByPriceHighToLow();
+        }
+
+        private void lowToHighButton_Click(object sender, EventArgs e)
+        {
+            ProductServices productServices = new ProductServices();
+            productGridView.DataSource = productServices.ALLProductSortByPriceLowToHigh();
+        }
     }
 }
