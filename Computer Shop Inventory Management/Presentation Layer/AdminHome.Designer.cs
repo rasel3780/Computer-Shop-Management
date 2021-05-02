@@ -42,12 +42,12 @@ namespace Computer_Shop_Inventory_Management
             this.label2 = new System.Windows.Forms.Label();
             this.totalSaleLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.totalSellRadioButton = new System.Windows.Forms.RadioButton();
             this.selectButton = new System.Windows.Forms.Button();
             this.yearlyRadioButton = new System.Windows.Forms.RadioButton();
             this.monthlyRadioButton = new System.Windows.Forms.RadioButton();
             this.dailyRadioButton = new System.Windows.Forms.RadioButton();
             this.logoutButton = new System.Windows.Forms.Button();
-            this.totalSellRadioButton = new System.Windows.Forms.RadioButton();
             this.adminGroupBox.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -170,7 +170,7 @@ namespace Computer_Shop_Inventory_Management
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(579, 82);
+            this.label3.Location = new System.Drawing.Point(605, 72);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 17);
@@ -190,7 +190,7 @@ namespace Computer_Shop_Inventory_Management
             // totalSaleLabel
             // 
             this.totalSaleLabel.AutoSize = true;
-            this.totalSaleLabel.Location = new System.Drawing.Point(480, 82);
+            this.totalSaleLabel.Location = new System.Drawing.Point(513, 72);
             this.totalSaleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalSaleLabel.Name = "totalSaleLabel";
             this.totalSaleLabel.Size = new System.Drawing.Size(72, 17);
@@ -204,18 +204,29 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox1.Controls.Add(this.yearlyRadioButton);
             this.groupBox1.Controls.Add(this.monthlyRadioButton);
             this.groupBox1.Controls.Add(this.dailyRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(236, 82);
+            this.groupBox1.Location = new System.Drawing.Point(235, 47);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(226, 261);
+            this.groupBox1.Size = new System.Drawing.Size(226, 227);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Total Sell";
             // 
+            // totalSellRadioButton
+            // 
+            this.totalSellRadioButton.AutoSize = true;
+            this.totalSellRadioButton.Location = new System.Drawing.Point(60, 134);
+            this.totalSellRadioButton.Name = "totalSellRadioButton";
+            this.totalSellRadioButton.Size = new System.Drawing.Size(61, 21);
+            this.totalSellRadioButton.TabIndex = 13;
+            this.totalSellRadioButton.TabStop = true;
+            this.totalSellRadioButton.Text = "Total";
+            this.totalSellRadioButton.UseVisualStyleBackColor = true;
+            // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(43, 197);
+            this.selectButton.Location = new System.Drawing.Point(110, 186);
             this.selectButton.Margin = new System.Windows.Forms.Padding(4);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(95, 27);
@@ -272,17 +283,6 @@ namespace Computer_Shop_Inventory_Management
             this.logoutButton.Text = "Log Out";
             this.logoutButton.UseVisualStyleBackColor = false;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
-            // 
-            // totalSellRadioButton
-            // 
-            this.totalSellRadioButton.AutoSize = true;
-            this.totalSellRadioButton.Location = new System.Drawing.Point(60, 134);
-            this.totalSellRadioButton.Name = "totalSellRadioButton";
-            this.totalSellRadioButton.Size = new System.Drawing.Size(61, 21);
-            this.totalSellRadioButton.TabIndex = 13;
-            this.totalSellRadioButton.TabStop = true;
-            this.totalSellRadioButton.Text = "Total";
-            this.totalSellRadioButton.UseVisualStyleBackColor = true;
             // 
             // AdminHome
             // 

@@ -52,9 +52,9 @@ namespace Computer_Shop_Inventory_Management
             this.loginGroupBox.Controls.Add(this.nameTextBox);
             this.loginGroupBox.Controls.Add(this.nameLabel);
             this.loginGroupBox.Location = new System.Drawing.Point(101, 30);
-            this.loginGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.loginGroupBox.Name = "loginGroupBox";
-            this.loginGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.loginGroupBox.Size = new System.Drawing.Size(868, 436);
             this.loginGroupBox.TabIndex = 3;
             this.loginGroupBox.TabStop = false;
@@ -63,8 +63,8 @@ namespace Computer_Shop_Inventory_Management
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(385, 338);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Location = new System.Drawing.Point(354, 298);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(133, 46);
             this.loginButton.TabIndex = 34;
@@ -88,7 +88,7 @@ namespace Computer_Shop_Inventory_Management
             // passTextBox
             // 
             this.passTextBox.Location = new System.Drawing.Point(364, 197);
-            this.passTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passTextBox.Multiline = true;
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.PasswordChar = '*';
@@ -123,7 +123,7 @@ namespace Computer_Shop_Inventory_Management
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(364, 113);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nameTextBox.Multiline = true;
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(271, 40);
@@ -145,7 +145,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.signUpButton.Font = new System.Drawing.Font("Maiandra GD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.Location = new System.Drawing.Point(628, 505);
-            this.signUpButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(4);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(100, 28);
             this.signUpButton.TabIndex = 5;
@@ -172,7 +172,7 @@ namespace Computer_Shop_Inventory_Management
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loginGroupBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -98,6 +98,13 @@ namespace Computer_Shop_Inventory_Management
                 label3.Text = yearlySell.ToString();
                 label3.Visible = true;
             }
+            else if(totalSellRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                int totalSell = saleServices.TotalSell();
+                label3.Text = totalSell.ToString();
+                label3.Visible = true;
+            }
         }
     }
 }

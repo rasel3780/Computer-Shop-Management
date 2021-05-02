@@ -385,5 +385,15 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return yearSell;
         }
 
+
+        public int TotalSell()
+        {
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+
+            return sales.Count;
+        }
+
     }
 }
