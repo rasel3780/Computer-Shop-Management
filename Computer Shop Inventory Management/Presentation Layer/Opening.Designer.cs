@@ -37,24 +37,24 @@ namespace Computer_Shop_Inventory_Management
             // 
             // startButton
             // 
+            this.startButton.BackColor = System.Drawing.SystemColors.Control;
             this.startButton.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(448, 316);
-            this.startButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.startButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.startButton.Location = new System.Drawing.Point(336, 257);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(153, 57);
+            this.startButton.Size = new System.Drawing.Size(115, 46);
             this.startButton.TabIndex = 5;
             this.startButton.Text = "Get Started";
-            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // quoteLabel
             // 
             this.quoteLabel.AutoSize = true;
             this.quoteLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quoteLabel.Location = new System.Drawing.Point(352, 166);
-            this.quoteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.quoteLabel.Location = new System.Drawing.Point(264, 135);
             this.quoteLabel.Name = "quoteLabel";
-            this.quoteLabel.Size = new System.Drawing.Size(345, 24);
+            this.quoteLabel.Size = new System.Drawing.Size(280, 19);
             this.quoteLabel.TabIndex = 4;
             this.quoteLabel.Text = "Keep Track Of Your Regular Schedules";
             // 
@@ -62,30 +62,29 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(283, 82);
-            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcomeLabel.Location = new System.Drawing.Point(212, 67);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(467, 41);
+            this.welcomeLabel.Size = new System.Drawing.Size(374, 33);
             this.welcomeLabel.TabIndex = 3;
             this.welcomeLabel.Text = "Welcome To Your Event Scheduler";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(173, 233);
+            this.progressBar1.Location = new System.Drawing.Point(130, 189);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(717, 54);
+            this.progressBar1.Size = new System.Drawing.Size(538, 29);
             this.progressBar1.TabIndex = 6;
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 381);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quoteLabel);
             this.Controls.Add(this.welcomeLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Welcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
