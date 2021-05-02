@@ -10,8 +10,9 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
     {
         List<string> category = new List<string>()
         {
-            "CPU",
+            
             "Casing",
+            "CPU",
             "Graphics card",
             "Headphone",
             "HDD",
@@ -31,15 +32,49 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
         List<string> brand = new List<string>()
         {
-            //CPU
+           
+
+            //Casing, PSU
+            "Gamdias",
+            "MaxGreen",
+            "Lian Li",
+
+             //CPU
             "Intel",
             "Ryzen",
+
+            //GPU
+            "Zotac",
+            "Sapphire",
+            "XFX",
+
+            //Keyboard, Mouse, Headphone
+            "A4Tech",
+            "Razer",
+            "Fantech",
+            "Logitech",
+            "Rapoo",
+
+            //Laptop
+            "Team",
+            "Apacer",
+            "Apple",
 
             //Motherboard
             "ASRock",
             "ASUS",
             "Gigabyte",
             "MSI",
+
+             //Monitor
+            "DELL",
+            "Samsung",
+            "LG",
+            "Philips",
+            "Acer",
+            "Benq",
+            "Walton",
+            "Viewsonic",
 
             //Ram
             "Corsair",
@@ -52,39 +87,9 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             "HP",
             "Seagate",
             "Adata",
-            "Twinmos",
+            "Twinmos"
 
-            //GPU
-            "Zotac",
-            "Sapphire",
-            "XFX",
-
-            //Monitor
-            "DELL",
-            "Samsung",
-            "LG",
-            "Philips",
-            "Acer",
-            "Benq",
-            "Walton",
-            "Viewsonic",
-
-            //Casing, PSU
-            "Gamdias",
-            "MaxGreen",
-            "Lian Li",
             
-            //Keyboard, Mouse, Headphone
-            "A4Tech",
-            "Razer",
-            "Fantech",
-            "Logitech",
-            "Rapoo",
-
-            //Laptop
-            "Team",
-            "Apacer",
-            "Apple"
         };
 
         List<string> capacity = new List<string>()
