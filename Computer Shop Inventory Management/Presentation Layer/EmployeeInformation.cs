@@ -74,5 +74,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.ALLEmployeeSortBySalaryLowToHigh();
         }
+
+        private void userNameButton_Click(object sender, EventArgs e)
+        {
+            EmployeeServices employeeServices = new EmployeeServices();
+            employeeDataGridView.DataSource = employeeServices.EmployeeSearchName(userNameTextBox.Text);
+
+        }
     }
 }

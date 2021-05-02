@@ -112,7 +112,14 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
             return employees;
         }
-
+        public Employee EmployeeSearchName(string userName)
+        {
+            Employee employee = new Employee()
+            {
+                UserName = userName
+            };
+            return this.employeeDataAccess.ReadEmployee(employee);
+        }
 
     }
 }
