@@ -54,7 +54,7 @@ namespace Computer_Shop_Inventory_Management
             this.dailyRadioButton = new System.Windows.Forms.RadioButton();
             this.logoutButton = new System.Windows.Forms.Button();
             this.amountGroupBox = new System.Windows.Forms.GroupBox();
-            this.amonutDailyRadioButton = new System.Windows.Forms.RadioButton();
+            this.amountDailyRadioButton = new System.Windows.Forms.RadioButton();
             this.amountMonthlyRadioButton = new System.Windows.Forms.RadioButton();
             this.amountYearltRadioButton = new System.Windows.Forms.RadioButton();
             this.amountTotalRadioButton = new System.Windows.Forms.RadioButton();
@@ -376,7 +376,7 @@ namespace Computer_Shop_Inventory_Management
             this.amountGroupBox.Controls.Add(this.amountTotalRadioButton);
             this.amountGroupBox.Controls.Add(this.amountYearltRadioButton);
             this.amountGroupBox.Controls.Add(this.amountMonthlyRadioButton);
-            this.amountGroupBox.Controls.Add(this.amonutDailyRadioButton);
+            this.amountGroupBox.Controls.Add(this.amountDailyRadioButton);
             this.amountGroupBox.Location = new System.Drawing.Point(704, 38);
             this.amountGroupBox.Name = "amountGroupBox";
             this.amountGroupBox.Size = new System.Drawing.Size(169, 201);
@@ -384,16 +384,16 @@ namespace Computer_Shop_Inventory_Management
             this.amountGroupBox.TabStop = false;
             this.amountGroupBox.Text = "Amount sell";
             // 
-            // amonutDailyRadioButton
+            // amountDailyRadioButton
             // 
-            this.amonutDailyRadioButton.AutoSize = true;
-            this.amonutDailyRadioButton.Location = new System.Drawing.Point(18, 30);
-            this.amonutDailyRadioButton.Name = "amonutDailyRadioButton";
-            this.amonutDailyRadioButton.Size = new System.Drawing.Size(67, 24);
-            this.amonutDailyRadioButton.TabIndex = 0;
-            this.amonutDailyRadioButton.TabStop = true;
-            this.amonutDailyRadioButton.Text = "Daily";
-            this.amonutDailyRadioButton.UseVisualStyleBackColor = true;
+            this.amountDailyRadioButton.AutoSize = true;
+            this.amountDailyRadioButton.Location = new System.Drawing.Point(18, 30);
+            this.amountDailyRadioButton.Name = "amountDailyRadioButton";
+            this.amountDailyRadioButton.Size = new System.Drawing.Size(67, 24);
+            this.amountDailyRadioButton.TabIndex = 0;
+            this.amountDailyRadioButton.TabStop = true;
+            this.amountDailyRadioButton.Text = "Daily";
+            this.amountDailyRadioButton.UseVisualStyleBackColor = true;
             // 
             // amountMonthlyRadioButton
             // 
@@ -493,6 +493,6 @@ namespace Computer_Shop_Inventory_Management
         private System.Windows.Forms.RadioButton amountTotalRadioButton;
         private System.Windows.Forms.RadioButton amountYearltRadioButton;
         private System.Windows.Forms.RadioButton amountMonthlyRadioButton;
-        private System.Windows.Forms.RadioButton amonutDailyRadioButton;
+        private System.Windows.Forms.RadioButton amountDailyRadioButton;
     }
 }

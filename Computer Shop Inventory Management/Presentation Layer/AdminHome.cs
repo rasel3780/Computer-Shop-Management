@@ -117,6 +117,28 @@ namespace Computer_Shop_Inventory_Management
                 label4.Text = totalprice.ToString();
                 label4.Visible = true;
             }
+
+            else if (amountDailyRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                long totalprice = saleServices.DailyAmountSell();
+                label4.Text = totalprice.ToString();
+                label4.Visible = true;
+            }
+            else if (amountMonthlyRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                long totalprice = saleServices.MonthlyAmountSell();
+                label4.Text = totalprice.ToString();
+                label4.Visible = true;
+            }
+            else if (amountYearltRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                long totalprice = saleServices.YearlyAmountSell();
+                label4.Text = totalprice.ToString();
+                label4.Visible = true;
+            }
         }
     }
 }
