@@ -106,5 +106,16 @@ namespace Computer_Shop_Inventory_Management
                 label3.Visible = true;
             }
         }
+
+        private void amonutButton_Click(object sender, EventArgs e)
+        {
+            if(amountTotalRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                long totalprice = saleServices.TotalAmountSell();
+                label4.Text = totalprice.ToString();
+                label4.Visible = true;
+            }
+        }
     }
 }

@@ -125,7 +125,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return this.saleDataAccess.GetAllSaleByBoth(category,brand);
         }
 
-        public int DailySell()
+        public int MonthlySell()
         {
             int dailySell = 0;
             string today = DateTime.Now.ToString();
@@ -211,7 +211,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return dailySell;
         }
 
-        public int MonthlySell()
+        public int DailySell()
         {
             int monthlySell = 0;
             string today = DateTime.Now.ToString();
@@ -392,6 +392,22 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             sales = this.saleDataAccess.GetAllSale();
 
             return sales.Count;
+        }
+
+
+        public long TotalAmountSell()
+        {
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+            long price = 0;
+
+            foreach(Sale sale in sales)
+            {
+                price += Convert.ToInt64(sale.Price);
+            }
+
+            return price;
         }
 
     }
