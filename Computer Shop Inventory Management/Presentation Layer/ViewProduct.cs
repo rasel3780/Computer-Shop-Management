@@ -41,15 +41,29 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProductServices productService = new ProductServices();
-            int ans = productService.CheckProductId(Convert.ToInt32(ShowByIdTextBox));
-            if (ans > 0)
+            try
             {
-                productGridView.DataSource = productService.GetProductById(Convert.ToInt32(ShowByIdTextBox));
+                if (ShowByIdTextBox != "")
+                {
+                    ProductServices productService = new ProductServices();
+                    int ans = productService.CheckProductId(Convert.ToInt32(ShowByIdTextBox));
+                    if (ans > 0)
+                    {
+                        productGridView.DataSource = productService.GetProductById(Convert.ToInt32(ShowByIdTextBox));
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Product Found....");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Enter Product Id");
+                }
             }
-            else
+            catch(Exception e6)
             {
-                MessageBox.Show("No Product Found....");
+                MessageBox.Show("Please Enter a valid id");
             }
             
         }
@@ -168,18 +182,33 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            ProductServices productServices = new ProductServices();
-            int id = productServices.CheckProductId(Convert.ToInt32(UpdateTextBox));
-           
-            if(id == Convert.ToInt32(UpdateTextBox))
+            try
             {
-                UpdateProduct updateProduct = new UpdateProduct(id,empType,empName);
-                updateProduct.Show();
-                this.Hide();
+                if (UpdateTextBox != "")
+                {
+                    ProductServices productServices = new ProductServices();
+                    int id = productServices.CheckProductId(Convert.ToInt32(UpdateTextBox));
+
+                    if (id == Convert.ToInt32(UpdateTextBox))
+                    {
+                        UpdateProduct updateProduct = new UpdateProduct(id, empType, empName);
+                        updateProduct.Show();
+                        this.Hide();
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("ProductId not found");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Enter Product id");
+                }
             }
-            else
+            catch(Exception e7)
             {
-                MessageBox.Show("ProductId not found");
+                MessageBox.Show("Enter a valid Product id");
             }
         }
 
@@ -265,61 +294,70 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void sellButton_Click(object sender, EventArgs e)
         {
-            ProductServices productServices = new ProductServices();
-            int id = productServices.CheckProductId(Convert.ToInt32(SellTextBox));
 
-            if(id==Convert.ToInt32(SellTextBox))
+            try
             {
-                Product product = new Product();
-                product = productServices.ReadProduct(id);
-                int availableQuantity = product.Quantity - Convert.ToInt32(quantityTextBox.Text);
-                if(availableQuantity<0)
+                ProductServices productServices = new ProductServices();
+                int id = productServices.CheckProductId(Convert.ToInt32(SellTextBox));
+
+                if (id == Convert.ToInt32(SellTextBox))
                 {
-                    MessageBox.Show("Product Quantity Not Available!!");
+                    Product product = new Product();
+                    product = productServices.ReadProduct(id);
+                    int availableQuantity = product.Quantity - Convert.ToInt32(quantityTextBox.Text);
+                    if (availableQuantity < 0)
+                    {
+                        MessageBox.Show("Product Quantity Not Available!!");
+                    }
+                    else
+                    {
+                        Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                        dictionary.Add("Capacity", product.Capacity);
+                        dictionary.Add("MemoryType", product.MemoryType);
+                        dictionary.Add("BusSpeed", product.BusSpeed);
+                        dictionary.Add("ScreenSize", product.ScreenSize);
+                        dictionary.Add("RefreshRate", product.RefreshRate);
+                        dictionary.Add("Wattage", product.Wattage);
+
+                        dictionary.Add("MotherBoardType", product.MotherBoardType);
+                        dictionary.Add("ClockSpeed", product.ClockSpeed);
+                        dictionary.Add("ConnectionType", product.ConnectionType);
+                        dictionary.Add("ResponseTime", product.ResponseTime);
+                        dictionary.Add("Picture", product.Picture);
+
+                        if (availableQuantity > 0)
+                        {
+                            productServices.UpdateProduct(Convert.ToInt32(SellTextBox), product.Category, product.Brand, availableQuantity, product.Price, product.Warranty, product.Desciption, dictionary);
+                        }
+                        else
+                        {
+                            productServices.RemoveProduct(id);
+                        }
+
+                        string now = DateTime.Now.ToString();
+
+                        float price = (Convert.ToSingle(product.Price)) * (Convert.ToSingle(quantityTextBox.Text));
+                        SaleServices saleServices = new SaleServices();
+                        int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, Convert.ToInt32(quantityTextBox.Text), price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, phoneNoTextBox.Text, empName);
+                        if (ans > 0)
+                        {
+                            MessageBox.Show("Product Sold Successfully..");
+                            productGridView.DataSource = productServices.GetAllProducts();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Can Not Sell the Product!!");
+                        }
+                    }
                 }
-                else 
+                else
                 {
-                    Dictionary<string, string> dictionary = new Dictionary<string, string>();
-                    dictionary.Add("Capacity", product.Capacity);
-                    dictionary.Add("MemoryType", product.MemoryType);
-                    dictionary.Add("BusSpeed", product.BusSpeed);
-                    dictionary.Add("ScreenSize", product.ScreenSize);
-                    dictionary.Add("RefreshRate", product.RefreshRate);
-                    dictionary.Add("Wattage", product.Wattage);
-
-                    dictionary.Add("MotherBoardType", product.MotherBoardType);
-                    dictionary.Add("ClockSpeed", product.ClockSpeed);
-                    dictionary.Add("ConnectionType", product.ConnectionType);
-                    dictionary.Add("ResponseTime", product.ResponseTime);
-                    dictionary.Add("Picture", product.Picture);
-
-                    if (availableQuantity>0)
-                    {
-                        productServices.UpdateProduct(Convert.ToInt32(SellTextBox), product.Category, product.Brand, availableQuantity, product.Price, product.Warranty, product.Desciption, dictionary);
-                    }
-                    else
-                    {
-                        productServices.RemoveProduct(id);
-                    }
-
-                    string now = DateTime.Now.ToString();
-
-                    SaleServices saleServices = new SaleServices();
-                    int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, Convert.ToInt32(quantityTextBox.Text), product.Price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, phoneNoTextBox.Text, empName);
-                    if (ans > 0)
-                    {
-                        MessageBox.Show("Product Sold Successfully..");
-                        productGridView.DataSource = productServices.GetAllProducts();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Can Not Sell the Product!!");
-                    }
-                }                
+                    MessageBox.Show("Out of Stock!!");
+                }
             }
-            else
+            catch(Exception e9)
             {
-                MessageBox.Show("Out of Stock!!");
+                MessageBox.Show("Enter valid input");
             }
         }
 
