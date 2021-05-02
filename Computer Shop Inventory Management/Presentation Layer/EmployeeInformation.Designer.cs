@@ -53,7 +53,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.employeeDataGridView.Location = new System.Drawing.Point(20, 145);
-            this.employeeDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.employeeDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.employeeDataGridView.Name = "employeeDataGridView";
             this.employeeDataGridView.RowHeadersWidth = 51;
             this.employeeDataGridView.RowTemplate.Height = 24;
@@ -63,7 +63,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // selectButton
             // 
             this.selectButton.Location = new System.Drawing.Point(53, 94);
-            this.selectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectButton.Margin = new System.Windows.Forms.Padding(2);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(68, 25);
             this.selectButton.TabIndex = 1;
@@ -73,10 +73,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // highButton
             // 
-            this.highButton.Location = new System.Drawing.Point(10, 34);
-            this.highButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.highButton.Location = new System.Drawing.Point(17, 34);
+            this.highButton.Margin = new System.Windows.Forms.Padding(2);
             this.highButton.Name = "highButton";
-            this.highButton.Size = new System.Drawing.Size(130, 30);
+            this.highButton.Size = new System.Drawing.Size(160, 30);
             this.highButton.TabIndex = 2;
             this.highButton.Text = "By Salary High to Low";
             this.highButton.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // lowButton
             // 
-            this.lowButton.Location = new System.Drawing.Point(10, 73);
-            this.lowButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lowButton.Location = new System.Drawing.Point(17, 73);
+            this.lowButton.Margin = new System.Windows.Forms.Padding(2);
             this.lowButton.Name = "lowButton";
-            this.lowButton.Size = new System.Drawing.Size(130, 29);
+            this.lowButton.Size = new System.Drawing.Size(160, 29);
             this.lowButton.TabIndex = 3;
             this.lowButton.Text = "By Salary Low to High";
             this.lowButton.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // userNameTextBox
             // 
             this.userNameTextBox.Location = new System.Drawing.Point(10, 34);
-            this.userNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.userNameTextBox.Multiline = true;
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(134, 30);
@@ -105,7 +105,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // userNameButton
             // 
             this.userNameButton.Location = new System.Drawing.Point(10, 68);
-            this.userNameButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameButton.Margin = new System.Windows.Forms.Padding(2);
             this.userNameButton.Name = "userNameButton";
             this.userNameButton.Size = new System.Drawing.Size(134, 34);
             this.userNameButton.TabIndex = 5;
@@ -116,7 +116,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // showAllButton
             // 
             this.showAllButton.Location = new System.Drawing.Point(157, 34);
-            this.showAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllButton.Name = "showAllButton";
             this.showAllButton.Size = new System.Drawing.Size(80, 68);
             this.showAllButton.TabIndex = 6;
@@ -127,7 +127,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // backButton
             // 
             this.backButton.Location = new System.Drawing.Point(20, 487);
-            this.backButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(70, 29);
             this.backButton.TabIndex = 7;
@@ -143,9 +143,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.selectButton);
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(20, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(168, 129);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
@@ -155,7 +155,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.salesmanRadioButton.AutoSize = true;
             this.salesmanRadioButton.Location = new System.Drawing.Point(13, 47);
-            this.salesmanRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesmanRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.salesmanRadioButton.Name = "salesmanRadioButton";
             this.salesmanRadioButton.Size = new System.Drawing.Size(75, 20);
             this.salesmanRadioButton.TabIndex = 2;
@@ -167,7 +167,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.managerRadioButton.AutoSize = true;
             this.managerRadioButton.Location = new System.Drawing.Point(13, 68);
-            this.managerRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.managerRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.managerRadioButton.Name = "managerRadioButton";
             this.managerRadioButton.Size = new System.Drawing.Size(75, 20);
             this.managerRadioButton.TabIndex = 1;
@@ -179,7 +179,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.adminRadioButton.AutoSize = true;
             this.adminRadioButton.Location = new System.Drawing.Point(13, 23);
-            this.adminRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.adminRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.adminRadioButton.Name = "adminRadioButton";
             this.adminRadioButton.Size = new System.Drawing.Size(64, 20);
             this.adminRadioButton.TabIndex = 0;
@@ -193,10 +193,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.sortByGroupBox.Controls.Add(this.lowButton);
             this.sortByGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortByGroupBox.Location = new System.Drawing.Point(480, 12);
-            this.sortByGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sortByGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.sortByGroupBox.Name = "sortByGroupBox";
-            this.sortByGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.sortByGroupBox.Size = new System.Drawing.Size(150, 129);
+            this.sortByGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.sortByGroupBox.Size = new System.Drawing.Size(194, 129);
             this.sortByGroupBox.TabIndex = 9;
             this.sortByGroupBox.TabStop = false;
             this.sortByGroupBox.Text = "Sort By";
@@ -208,9 +208,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox3.Controls.Add(this.showAllButton);
             this.groupBox3.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(209, 12);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(252, 128);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
@@ -226,7 +226,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.employeeDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EmployeeInformation";
             this.Text = "EmployeeInformation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeInformation_FormClosing);

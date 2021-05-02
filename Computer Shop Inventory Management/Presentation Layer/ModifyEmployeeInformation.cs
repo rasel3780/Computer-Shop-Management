@@ -54,25 +54,43 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            string gender = "";
-            if (MaleRadioButton == true) gender = "Male";
-            else gender = "Female";
-            EmployeeServices employeeServices = new EmployeeServices();
-            int res = employeeServices.UpdateEmployee(NameTextBox,userName,PasswordTextBox,EmailTextBox,AddressTextBox,DateTimePicker,BloodGroupTextBox,gender,TypeTextBox,Convert.ToSingle(SalaryTextBox));
-            if(res> 0)
+            try
             {
-                MessageBox.Show("Employee Updated....");
+                if(nameTextBox.Text == "" || passTextBox.Text == "" || emailTextBox.Text == "" || addressTextBox.Text == "" || bloodgroupTextBox.Text == "" || typeComboBox.Text == "" || salaryTextBox.Text == "")
+                {
+                    MessageBox.Show("Please Fillup Every Information..");
+                }
+                else if(maleRadioButton.Checked == false && femaleRadioButton.Checked == false)
+                {
+                    MessageBox.Show("Please Fillup Every Information..");
+                }
+                else
+                {
+                    string gender = "";
+                    if (MaleRadioButton == true) gender = "Male";
+                    else gender = "Female";
+                    EmployeeServices employeeServices = new EmployeeServices();
+                    int res = employeeServices.UpdateEmployee(NameTextBox, userName, PasswordTextBox, EmailTextBox, AddressTextBox, DateTimePicker, BloodGroupTextBox, gender, TypeTextBox, Convert.ToSingle(SalaryTextBox));
+                    if (res > 0)
+                    {
+                        MessageBox.Show("Employee Updated....");
 
-                UpdateEmployee update = new UpdateEmployee(userName);
-                update.Show();
-                this.Hide();
+                        UpdateEmployee update = new UpdateEmployee(userName);
+                        update.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Could Not Update....");
+                    }
+                }
+
+                
             }
-            else
+            catch(Exception e2)
             {
-                MessageBox.Show("Could Not Update....");
-            }
-
-            
+                MessageBox.Show(e2.Message);
+            }            
         }
 
         private void backButton_Click(object sender, EventArgs e)

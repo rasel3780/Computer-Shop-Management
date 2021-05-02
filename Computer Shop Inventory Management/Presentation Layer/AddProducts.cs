@@ -510,47 +510,64 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private void addProductButton_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(" "+check);
-            Dictionary<string, string> dictionary = new Dictionary<string, string>();
-            for(int i = 0; i < check; i++)
+            try
             {
-                if(i==0) dictionary.Add(Label1, ComboBox1);
-                if (i == 1) dictionary.Add(Label2, ComboBox2);
-                if (i == 2) dictionary.Add(Label3, ComboBox3);
-                if (i == 3) dictionary.Add(Label4, ComboBox4);
-                if (i == 4) dictionary.Add(Label5, ComboBox5);
-            }
-
-            if (picture != null) dictionary.Add("Picture", picture);
-
-            ProductServices productServices = new ProductServices();
-            int addChecking =  productServices.AddProduct(Category,Brand,Convert.ToInt32(Quantity),Convert.ToSingle(Price),Warranty,Description,dictionary);
-
-            if (addChecking > 0)
-            {
-                MessageBox.Show("Product Added Successfully");
-
-                categoryComboBox.Text = null;
-                brandComboBox.Text = null;
-                priceTextBox.Text = "";
-                quantityTextBox.Text = "";
-                descriptionTextBox.Text = "";
-                featureGroupBox.Visible = false;
-                warrentyComboBox.Text = null;
-
-                for(int  i = 0; i<10; i++)
+                if(Convert.ToInt32(priceTextBox.Text)<0)
                 {
-                    checkedListBox1.SetItemChecked(i, false);
+                    MessageBox.Show("Please Enter a Valid Price!!");
                 }
-                pictureBox1.Image = null;
-            }
-            else
-            {
-                MessageBox.Show("Not Added...");
-            }
-            /*AdminHome adminHome = new AdminHome();
-            this.Hide();
-            adminHome.Show();*/
 
+                else if(Convert.ToInt32(quantityTextBox.Text) < 0)
+                {
+                    MessageBox.Show("Quanity Can't be Negative, You Dumbass..");
+                }
+                else
+                {
+                    Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                    for (int i = 0; i < check; i++)
+                    {
+                        if (i == 0) dictionary.Add(Label1, ComboBox1);
+                        if (i == 1) dictionary.Add(Label2, ComboBox2);
+                        if (i == 2) dictionary.Add(Label3, ComboBox3);
+                        if (i == 3) dictionary.Add(Label4, ComboBox4);
+                        if (i == 4) dictionary.Add(Label5, ComboBox5);
+                    }
+
+                    if (picture != null) dictionary.Add("Picture", picture);
+
+                    ProductServices productServices = new ProductServices();
+                    int addChecking = productServices.AddProduct(Category, Brand, Convert.ToInt32(Quantity), Convert.ToSingle(Price), Warranty, Description, dictionary);
+
+                    if (addChecking > 0)
+                    {
+                        MessageBox.Show("Product Added Successfully");
+
+                        categoryComboBox.Text = null;
+                        brandComboBox.Text = null;
+                        priceTextBox.Text = "";
+                        quantityTextBox.Text = "";
+                        descriptionTextBox.Text = "";
+                        featureGroupBox.Visible = false;
+                        warrentyComboBox.Text = null;
+
+                        for (int i = 0; i < 10; i++)
+                        {
+                            checkedListBox1.SetItemChecked(i, false);
+                        }
+                        pictureBox1.Image = null;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not Added...");
+                    }
+                }
+                
+            }
+
+            catch(Exception e1)
+            {
+                MessageBox.Show("There is an empty field!! Please fill that up..");
+            }
 
 
         }
