@@ -36,10 +36,10 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             return null;
         }
         // checkSalesman
-        public List<Employee> ReadSalesman()
+        public List<Employee> ReadSalesman(string userName)
         {
             string xyz = "Salesman";
-            string sql = "SELECT * FROM Employees WHERE EmployeeType = '"+xyz+"'";
+            string sql = "SELECT * FROM Employees WHERE EmployeeType = '"+xyz+"' AND UserName = '"+userName+"'";
             SqlDataReader reader = this.GetData(sql);
             List<Employee> employees = new List<Employee>();
             while (reader.Read())

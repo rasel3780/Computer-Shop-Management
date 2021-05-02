@@ -81,10 +81,10 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return this.employeeDataAccess.ReadEmployee(employee);
         }
         //ReadSalesman
-        public List<Employee> ReadSalesman()
+        public List<Employee> ReadSalesman(string userName)
         {
             this.employeeDataAccess = new EmployeeDataAccess();
-            return this.employeeDataAccess.ReadSalesman();
+            return this.employeeDataAccess.ReadSalesman(userName);
         }
 
         public List<Employee> GetAllEmployeesByType(string empType)

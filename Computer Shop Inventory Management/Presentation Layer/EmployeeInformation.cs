@@ -51,11 +51,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                 EmployeeServices employeeServices = new EmployeeServices();
                 employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
             }
-            else
-            {
-                EmployeeServices employeeServices = new EmployeeServices();
-                employeeDataGridView.DataSource=employeeServices.ReadSalesman();
-            }
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -97,7 +93,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             else
             {
                 EmployeeServices employeeServices1 = new EmployeeServices();
-                employeeDataGridView.DataSource = employeeServices1.ReadSalesman();
+                employeeDataGridView.DataSource = employeeServices1.ReadSalesman(userNameTextBox.Text);
             }
         
         }
