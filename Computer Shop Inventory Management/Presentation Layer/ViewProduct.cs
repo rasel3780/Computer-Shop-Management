@@ -344,19 +344,26 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
                             productServices.RemoveProduct(id);
                         }
 
-                        string now = DateTime.Now.ToString();
-
-                        float price = (Convert.ToSingle(product.Price)) * (Convert.ToSingle(quantityTextBox.Text));
-                        SaleServices saleServices = new SaleServices();
-                        int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, Convert.ToInt32(quantityTextBox.Text), price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, phoneNoTextBox.Text, empName);
-                        if (ans > 0)
+                        if (Convert.ToInt32(quantityTextBox.Text) <= 0)
                         {
-                            MessageBox.Show("Product Sold Successfully..");
-                            productGridView.DataSource = productServices.GetAllProducts();
+                            MessageBox.Show("Quantity must be greater than zero");
                         }
                         else
                         {
-                            MessageBox.Show("Can Not Sell the Product!!");
+                            string now = DateTime.Now.ToString();
+
+                            float price = (Convert.ToSingle(product.Price)) * (Convert.ToSingle(quantityTextBox.Text));
+                            SaleServices saleServices = new SaleServices();
+                            int ans = saleServices.SellProduct(product.ProductId, product.Category, product.Brand, Convert.ToInt32(quantityTextBox.Text), price, product.Warranty, product.Desciption, dictionary, now, buyerNameTextBox.Text, phoneNoTextBox.Text, empName);
+                            if (ans > 0)
+                            {
+                                MessageBox.Show("Product Sold Successfully..");
+                                productGridView.DataSource = productServices.GetAllProducts();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Can Not Sell the Product!!");
+                            }
                         }
                     }
                 }
