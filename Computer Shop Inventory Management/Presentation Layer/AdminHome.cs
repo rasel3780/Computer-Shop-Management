@@ -66,5 +66,12 @@ namespace Computer_Shop_Inventory_Management
             sale.Show();
             this.Hide();
         }
+
+        private void showAllEmployeeButton_Click(object sender, EventArgs e)
+        {
+            EmployeeInformation employeeInformation = new EmployeeInformation();
+            employeeInformation.Show();
+            this.Hide();
+        }
     }
 }
