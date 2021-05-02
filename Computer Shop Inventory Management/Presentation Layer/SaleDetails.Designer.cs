@@ -40,8 +40,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.categoryLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.saleGridView = new System.Windows.Forms.DataGridView();
+            this.sortGroupBox = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.showGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.saleGridView)).BeginInit();
+            this.sortGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // showGroupBox
@@ -174,11 +178,44 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.saleGridView.Size = new System.Drawing.Size(922, 303);
             this.saleGridView.TabIndex = 13;
             // 
+            // sortGroupBox
+            // 
+            this.sortGroupBox.Controls.Add(this.button2);
+            this.sortGroupBox.Controls.Add(this.button1);
+            this.sortGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortGroupBox.Location = new System.Drawing.Point(597, 11);
+            this.sortGroupBox.Name = "sortGroupBox";
+            this.sortGroupBox.Size = new System.Drawing.Size(191, 109);
+            this.sortGroupBox.TabIndex = 18;
+            this.sortGroupBox.TabStop = false;
+            this.sortGroupBox.Text = "Sort by Time";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(29, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 25);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Ascending";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(29, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(133, 25);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Descending";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // SaleDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 466);
+            this.Controls.Add(this.sortGroupBox);
             this.Controls.Add(this.showGroupBox);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saleGridView);
@@ -189,6 +226,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showGroupBox.ResumeLayout(false);
             this.showGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.saleGridView)).EndInit();
+            this.sortGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -206,5 +244,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.DataGridView saleGridView;
         private System.Windows.Forms.Button showAllButton;
+        private System.Windows.Forms.GroupBox sortGroupBox;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
