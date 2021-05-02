@@ -87,3 +87,4 @@ E:\AIUB Semester 08\C#\Final\Project\Computer-Shop-Management\Computer Shop Inve
 G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SaleDetails.resources
 D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.SaleDetails.resources
 G:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.EmployeeInformation.resources
+D:\Computer-Shop-Management\Computer Shop Inventory Management\obj\Debug\Computer_Shop_Inventory_Management.Presentation_Layer.EmployeeInformation.resources

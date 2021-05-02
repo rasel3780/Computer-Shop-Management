@@ -69,7 +69,7 @@ namespace Computer_Shop_Inventory_Management
 
         private void showAllEmployeeButton_Click(object sender, EventArgs e)
         {
-            EmployeeInformation employeeInformation = new EmployeeInformation();
+            EmployeeInformation employeeInformation = new EmployeeInformation("Admin",empName);
             employeeInformation.Show();
             this.Hide();
         }

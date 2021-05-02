@@ -31,11 +31,8 @@ namespace Computer_Shop_Inventory_Management
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (typeComboBox.Text == "")
-            {
-                typeWarning.Visible = true;
-            }
-            else if (nameTextBox.Text == "")
+            
+           if (nameTextBox.Text == "")
             {
                 nameWarning.Visible = true;
             }
@@ -47,42 +44,26 @@ namespace Computer_Shop_Inventory_Management
             {
                 passWarning.Visible = true;
             }
-            else if(typeComboBox.Text=="Admin")
+            else 
             {
                 LoginServices loginServices = new LoginServices();
                 string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
+                LoginServices loginServices1 = new LoginServices();
+                string empType = loginServices1.ReturnEmployeeType(nameTextBox.Text, passTextBox.Text);
                 
-                if (res == nameTextBox.Text)
+                if (res == nameTextBox.Text && empType =="Admin")
                 {
                     AdminHome admin = new AdminHome(nameTextBox.Text);
                     admin.Show();
                     this.Hide();
                 }
-                else
-                {
-                    MessageBox.Show("Invalid Username or Password");
-                }
-            }
-            else if(typeComboBox.Text== "Manager")
-            {
-                LoginServices loginServices = new LoginServices();
-                string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
-                if (res == nameTextBox.Text)
+                else if(res == nameTextBox.Text && empType == "Manager")
                 {
                     ManagerHome managerHome = new ManagerHome(nameTextBox.Text);
                     managerHome.Show();
                     this.Hide();
                 }
-                else
-                {
-                    MessageBox.Show("Invalid Username or Password");
-                }
-            }
-            else if(typeComboBox.Text == "Salesman")
-            {
-                LoginServices loginServices = new LoginServices();
-                string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
-                if (res == nameTextBox.Text)
+                else if(res == nameTextBox.Text && empType == "Salesman")
                 {
                     SalesmanHome salesmanHome = new SalesmanHome(nameTextBox.Text);
                     salesmanHome.Show();
@@ -93,6 +74,8 @@ namespace Computer_Shop_Inventory_Management
                     MessageBox.Show("Invalid Username or Password");
                 }
             }
+           
+            
         }
 
         private void signUpButton_Click(object sender, EventArgs e)
@@ -107,15 +90,7 @@ namespace Computer_Shop_Inventory_Management
             Application.Exit();
         }
 
-        private void typeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(typeWarning.Visible == true)
-            {
-                typeWarning.Visible = false;
-            }
-            
-           
-        }
+       
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
         {

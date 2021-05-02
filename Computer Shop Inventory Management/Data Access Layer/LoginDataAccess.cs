@@ -21,5 +21,16 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             return null;
         }
 
+
+        public string ReturnEmployeeType(Employee employee)
+        {
+            string query = "SELECT * FROM Employees WHERE UserName='" + employee.UserName + "' AND Password='" + employee.Password + "'";
+            SqlDataReader reader = GetData(query);
+            if (reader.Read())
+            {
+                return reader["EmployeeType"].ToString();
+            }
+            return null;
+        }
     }
 }

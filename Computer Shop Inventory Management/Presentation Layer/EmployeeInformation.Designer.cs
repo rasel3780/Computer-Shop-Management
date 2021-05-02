@@ -36,6 +36,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.userNameButton = new System.Windows.Forms.Button();
             this.showAllButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +103,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showAllButton.UseVisualStyleBackColor = true;
             this.showAllButton.Click += new System.EventHandler(this.showAllButton_Click);
             // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(1210, 596);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(93, 36);
+            this.backButton.TabIndex = 7;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // EmployeeInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1474, 673);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.showAllButton);
             this.Controls.Add(this.userNameButton);
             this.Controls.Add(this.userNameTextBox);
@@ -132,5 +144,6 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.Button userNameButton;
         private System.Windows.Forms.Button showAllButton;
+        private System.Windows.Forms.Button backButton;
     }
 }

@@ -25,5 +25,16 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
             return loginDataAccess.LoginValidation(employee);
         }
+
+        public string ReturnEmployeeType(string username, string password)
+        {
+            Employee employee = new Employee()
+            {
+                UserName = username,
+                Password = password
+            };
+
+            return loginDataAccess.ReturnEmployeeType(employee);
+        }
     }
 }

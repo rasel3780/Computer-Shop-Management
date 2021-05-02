@@ -13,9 +13,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 {
     public partial class EmployeeInformation : Form
     {
-        public EmployeeInformation()
+        private string empType;
+        private string empName;
+        public EmployeeInformation(string empType,string empName)
         {
             InitializeComponent();
+            this.empType = empType;
+            this.empName = empName;
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
         }
@@ -29,6 +33,22 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         {
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.GetAllEmployees(); 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            if(empType == "Admin")
+            {
+                AdminHome adminHome = new AdminHome(empName);
+                this.Hide();
+                adminHome.Show();
+            }
+            else if (empType == "Manager")
+            {
+                ManagerHome managerHome = new ManagerHome(empName);
+                this.Hide();
+                managerHome.Show();
+            }          
         }
     }
 }
