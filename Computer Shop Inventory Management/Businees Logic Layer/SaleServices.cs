@@ -211,7 +211,6 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return dailySell;
         }
 
-
         public int MonthlySell()
         {
             int monthlySell = 0;
