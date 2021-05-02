@@ -84,7 +84,7 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
 
         public Employee ReadEmployee(Employee employee)
         {
-            string sql = "SELECT * FROM Employees WHERE EmployeeType = '" + employee.UserName + "'";
+            string sql = "SELECT * FROM Employees WHERE UserName = '" + employee.UserName + "'";
             SqlDataReader reader = this.GetData(sql);
            if (reader.Read())
             {

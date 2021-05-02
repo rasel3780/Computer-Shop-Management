@@ -81,5 +81,10 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             update.Show();
             this.Hide();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
