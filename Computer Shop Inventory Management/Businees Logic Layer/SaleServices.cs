@@ -125,5 +125,265 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return this.saleDataAccess.GetAllSaleByBoth(category,brand);
         }
 
+        public int DailySell()
+        {
+            int dailySell = 0;
+            string today = DateTime.Now.ToString();
+            int i = 0;
+            string d = "", m = "", y = "";
+            int day = -1, month = -1, year = -1;
+            while (true)
+            {
+                while(today[i] != '/')
+                {
+                    d += today[i];
+                    i++;
+                }
+                day = Convert.ToInt32(d);
+                i++;
+                while (today[i] != '/')
+                {
+                    m += today[i];
+                    i++;
+                }
+                month = Convert.ToInt32(m);
+                i++;
+
+                int t = 0;
+                while (t <4)
+                {
+                    y += today[i];
+                    i++;
+                    t++;
+                }
+                year = Convert.ToInt32(y);
+
+                break;
+            }
+
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+
+            foreach(Sale sale in sales)
+            {
+                string value = sale.SaleDate;
+
+
+                int x = 0;
+                string sd = "", sm = "", sy = "";
+                int sday = -1, smonth = -1, syear = -1;
+                while (true)
+                {
+                    while (today[x] != '/')
+                    {
+                        sd += today[x];
+                        x++;
+                    }
+                    sday = Convert.ToInt32(sd);
+                    x++;
+                    while (today[x] != '/')
+                    {
+                        sm += today[x];
+                        x++;
+                    }
+                    smonth = Convert.ToInt32(sm);
+                    x++;
+
+                    int p = 0;
+                    while (p < 4)
+                    {
+                        sy += today[x];
+                        x++;
+                        p++;
+                    }
+                    syear = Convert.ToInt32(sy);
+
+                    break;
+                }
+
+                if(sday == day)
+                {
+                    dailySell++;
+                }
+
+            }
+            return dailySell;
+        }
+
+
+        public int MonthlySell()
+        {
+            int monthlySell = 0;
+            string today = DateTime.Now.ToString();
+            int i = 0;
+            string d = "", m = "", y = "";
+            int day = -1, month = -1, year = -1;
+            while (true)
+            {
+                while (today[i] != '/')
+                {
+                    d += today[i];
+                    i++;
+                }
+                day = Convert.ToInt32(d);
+                i++;
+                while (today[i] != '/')
+                {
+                    m += today[i];
+                    i++;
+                }
+                month = Convert.ToInt32(m);
+                i++;
+
+                int t = 0;
+                while (t < 4)
+                {
+                    y += today[i];
+                    i++;
+                    t++;
+                }
+                year = Convert.ToInt32(y);
+
+                break;
+            }
+
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+
+            foreach (Sale sale in sales)
+            {
+                string value = sale.SaleDate;
+
+
+                int x = 0;
+                string sd = "", sm = "", sy = "";
+                int sday = -1, smonth = -1, syear = -1;
+                while (true)
+                {
+                    while (today[x] != '/')
+                    {
+                        sd += today[x];
+                        x++;
+                    }
+                    sday = Convert.ToInt32(sd);
+                    x++;
+                    while (today[x] != '/')
+                    {
+                        sm += today[x];
+                        x++;
+                    }
+                    smonth = Convert.ToInt32(sm);
+                    x++;
+
+                    int p = 0;
+                    while (p < 4)
+                    {
+                        sy += today[x];
+                        x++;
+                        p++;
+                    }
+                    syear = Convert.ToInt32(sy);
+
+                    break;
+                }
+
+                if (smonth == month)
+                {
+                    monthlySell++;
+                }
+
+            }
+            return monthlySell;
+        }
+
+
+        public int YearlySell()
+        {
+            int yearSell = 0;
+            string today = DateTime.Now.ToString();
+            int i = 0;
+            string d = "", m = "", y = "";
+            int day = -1, month = -1, year = -1;
+            while (true)
+            {
+                while (today[i] != '/')
+                {
+                    d += today[i];
+                    i++;
+                }
+                day = Convert.ToInt32(d);
+                i++;
+                while (today[i] != '/')
+                {
+                    m += today[i];
+                    i++;
+                }
+                month = Convert.ToInt32(m);
+                i++;
+
+                int t = 0;
+                while (t < 4)
+                {
+                    y += today[i];
+                    i++;
+                    t++;
+                }
+                year = Convert.ToInt32(y);
+
+                break;
+            }
+
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+
+            foreach (Sale sale in sales)
+            {
+                string value = sale.SaleDate;
+
+
+                int x = 0;
+                string sd = "", sm = "", sy = "";
+                int sday = -1, smonth = -1, syear = -1;
+                while (true)
+                {
+                    while (today[x] != '/')
+                    {
+                        sd += today[x];
+                        x++;
+                    }
+                    sday = Convert.ToInt32(sd);
+                    x++;
+                    while (today[x] != '/')
+                    {
+                        sm += today[x];
+                        x++;
+                    }
+                    smonth = Convert.ToInt32(sm);
+                    x++;
+
+                    int p = 0;
+                    while (p < 4)
+                    {
+                        sy += today[x];
+                        x++;
+                        p++;
+                    }
+                    syear = Convert.ToInt32(sy);
+
+                    break;
+                }
+
+                if (syear == year)
+                {
+                    yearSell++;
+                }
+
+            }
+            return yearSell;
+        }
+
     }
 }

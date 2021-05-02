@@ -1,4 +1,5 @@
-﻿using Computer_Shop_Inventory_Management.Presentation_Layer;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using Computer_Shop_Inventory_Management.Presentation_Layer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +73,31 @@ namespace Computer_Shop_Inventory_Management
             EmployeeInformation employeeInformation = new EmployeeInformation("Admin",empName);
             employeeInformation.Show();
             this.Hide();
+        }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            if(dailyRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                int dailySell =  saleServices.DailySell();
+                label3.Text = dailySell.ToString();
+                label3.Visible = true;
+            }
+            else if(monthlyRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                int monthlySell = saleServices.MonthlySell();
+                label3.Text = monthlySell.ToString();
+                label3.Visible = true;
+            }
+            else if(yearlyRadioButton.Checked == true)
+            {
+                SaleServices saleServices = new SaleServices();
+                int yearlySell = saleServices.YearlySell();
+                label3.Text = yearlySell.ToString();
+                label3.Visible = true;
+            }
         }
     }
 }
