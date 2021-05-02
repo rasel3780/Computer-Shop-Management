@@ -91,7 +91,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.addProductGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.addProductGroupBox1.Name = "addProductGroupBox1";
             this.addProductGroupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.addProductGroupBox1.Size = new System.Drawing.Size(947, 530);
+            this.addProductGroupBox1.Size = new System.Drawing.Size(947, 519);
             this.addProductGroupBox1.TabIndex = 4;
             this.addProductGroupBox1.TabStop = false;
             this.addProductGroupBox1.Text = "Update Product";
@@ -110,11 +110,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.groupBox1.Controls.Add(this.selectButton);
             this.groupBox1.Controls.Add(this.checkedListBox1);
-            this.groupBox1.Location = new System.Drawing.Point(42, 139);
+            this.groupBox1.Location = new System.Drawing.Point(42, 132);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(238, 265);
+            this.groupBox1.Size = new System.Drawing.Size(238, 272);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Categories";
@@ -163,11 +163,11 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.featureGroupBox.Controls.Add(this.comboBox3);
             this.featureGroupBox.Controls.Add(this.label2);
             this.featureGroupBox.Controls.Add(this.label3);
-            this.featureGroupBox.Location = new System.Drawing.Point(350, 139);
+            this.featureGroupBox.Location = new System.Drawing.Point(306, 132);
             this.featureGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.featureGroupBox.Name = "featureGroupBox";
             this.featureGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.featureGroupBox.Size = new System.Drawing.Size(327, 265);
+            this.featureGroupBox.Size = new System.Drawing.Size(327, 272);
             this.featureGroupBox.TabIndex = 4;
             this.featureGroupBox.TabStop = false;
             this.featureGroupBox.Text = "Features";
@@ -371,9 +371,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.priceLabel.Location = new System.Drawing.Point(347, 42);
             this.priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(35, 16);
+            this.priceLabel.Size = new System.Drawing.Size(55, 16);
             this.priceLabel.TabIndex = 1;
-            this.priceLabel.Text = "Price";
+            this.priceLabel.Text = "Price(/1)";
             // 
             // quantityLabel
             // 
@@ -434,7 +434,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 564);
+            this.ClientSize = new System.Drawing.Size(973, 541);
             this.Controls.Add(this.addProductGroupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UpdateProduct";

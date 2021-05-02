@@ -121,8 +121,8 @@ namespace Computer_Shop_Inventory_Management
             // femaleRadioButton
             // 
             this.femaleRadioButton.AutoSize = true;
-            this.femaleRadioButton.Location = new System.Drawing.Point(212, 324);
-            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.femaleRadioButton.Location = new System.Drawing.Point(212, 322);
+            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.femaleRadioButton.Name = "femaleRadioButton";
             this.femaleRadioButton.Size = new System.Drawing.Size(71, 20);
             this.femaleRadioButton.TabIndex = 43;
@@ -134,7 +134,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.maleRadioButton.AutoSize = true;
             this.maleRadioButton.Location = new System.Drawing.Point(151, 322);
-            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.maleRadioButton.Name = "maleRadioButton";
             this.maleRadioButton.Size = new System.Drawing.Size(57, 20);
             this.maleRadioButton.TabIndex = 42;
