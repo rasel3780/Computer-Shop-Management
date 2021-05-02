@@ -135,7 +135,7 @@ namespace Computer_Shop_Inventory_Management
             this.saleGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saleGroupBox.Name = "saleGroupBox";
             this.saleGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.saleGroupBox.Size = new System.Drawing.Size(693, 162);
+            this.saleGroupBox.Size = new System.Drawing.Size(737, 162);
             this.saleGroupBox.TabIndex = 20;
             this.saleGroupBox.TabStop = false;
             this.saleGroupBox.Text = "Sale Details";
@@ -155,7 +155,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(564, 63);
+            this.label6.Location = new System.Drawing.Point(505, 63);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 24);
@@ -178,7 +178,7 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.lastSaleLabel.AutoSize = true;
             this.lastSaleLabel.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastSaleLabel.Location = new System.Drawing.Point(504, 23);
+            this.lastSaleLabel.Location = new System.Drawing.Point(527, 23);
             this.lastSaleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastSaleLabel.Name = "lastSaleLabel";
             this.lastSaleLabel.Size = new System.Drawing.Size(140, 24);

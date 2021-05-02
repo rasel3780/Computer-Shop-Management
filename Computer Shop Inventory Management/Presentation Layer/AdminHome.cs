@@ -1,4 +1,5 @@
 ﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using Computer_Shop_Inventory_Management.Data_Access_Layer.Entities;
 using Computer_Shop_Inventory_Management.Presentation_Layer;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,17 @@ namespace Computer_Shop_Inventory_Management
     public partial class AdminHome : Form
     {
         private string empName;
+        List<Sale> sales = new List<Sale>();
         public AdminHome(string empName)
         {
             InitializeComponent();
             this.empName = empName;
+
+            SaleServices saleServices = new SaleServices();
+            sales = saleServices.SellSort();
+
+            label6.Text = sales[sales.Count - 1].SaleDate;
+            label6.Visible = true;
         }
 
         private void AdminHome_FormClosing(object sender, FormClosingEventArgs e)
