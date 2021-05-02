@@ -82,7 +82,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(730, 431);
+            this.groupBox1.Size = new System.Drawing.Size(730, 376);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Update Employee";
@@ -91,7 +91,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(8, 394);
+            this.backButton.Location = new System.Drawing.Point(8, 336);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(78, 27);
             this.backButton.TabIndex = 41;
@@ -163,7 +163,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // updateButton
             // 
             this.updateButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.Location = new System.Drawing.Point(314, 389);
+            this.updateButton.Location = new System.Drawing.Point(315, 331);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(116, 32);
             this.updateButton.TabIndex = 22;
@@ -323,9 +323,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 448);
+            this.ClientSize = new System.Drawing.Size(760, 394);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModifyEmployeeInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyEmployeeInformation";

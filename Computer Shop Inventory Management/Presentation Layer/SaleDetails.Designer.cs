@@ -55,19 +55,19 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showGroupBox.Controls.Add(this.brandComboBox);
             this.showGroupBox.Controls.Add(this.categoryLabel);
             this.showGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showGroupBox.Location = new System.Drawing.Point(29, 24);
-            this.showGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showGroupBox.Location = new System.Drawing.Point(29, 11);
+            this.showGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.showGroupBox.Name = "showGroupBox";
-            this.showGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.showGroupBox.Size = new System.Drawing.Size(537, 97);
+            this.showGroupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.showGroupBox.Size = new System.Drawing.Size(550, 110);
             this.showGroupBox.TabIndex = 17;
             this.showGroupBox.TabStop = false;
             this.showGroupBox.Text = "Show";
             // 
             // showAllButton
             // 
-            this.showAllButton.Location = new System.Drawing.Point(441, 20);
-            this.showAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showAllButton.Location = new System.Drawing.Point(441, 28);
+            this.showAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.showAllButton.Name = "showAllButton";
             this.showAllButton.Size = new System.Drawing.Size(92, 59);
             this.showAllButton.TabIndex = 13;
@@ -78,8 +78,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // bothButton
             // 
             this.bothButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bothButton.Location = new System.Drawing.Point(335, 20);
-            this.bothButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bothButton.Location = new System.Drawing.Point(335, 28);
+            this.bothButton.Margin = new System.Windows.Forms.Padding(2);
             this.bothButton.Name = "bothButton";
             this.bothButton.Size = new System.Drawing.Size(92, 59);
             this.bothButton.TabIndex = 12;
@@ -90,8 +90,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // showByBrandButton
             // 
             this.showByBrandButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showByBrandButton.Location = new System.Drawing.Point(228, 56);
-            this.showByBrandButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showByBrandButton.Location = new System.Drawing.Point(228, 64);
+            this.showByBrandButton.Margin = new System.Windows.Forms.Padding(2);
             this.showByBrandButton.Name = "showByBrandButton";
             this.showByBrandButton.Size = new System.Drawing.Size(92, 24);
             this.showByBrandButton.TabIndex = 11;
@@ -102,8 +102,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // showByCategoryButton
             // 
             this.showByCategoryButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showByCategoryButton.Location = new System.Drawing.Point(70, 55);
-            this.showByCategoryButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showByCategoryButton.Location = new System.Drawing.Point(70, 63);
+            this.showByCategoryButton.Margin = new System.Windows.Forms.Padding(2);
             this.showByCategoryButton.Name = "showByCategoryButton";
             this.showByCategoryButton.Size = new System.Drawing.Size(92, 24);
             this.showByCategoryButton.TabIndex = 10;
@@ -114,8 +114,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // categoryComboBox
             // 
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(70, 20);
-            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.categoryComboBox.Location = new System.Drawing.Point(70, 28);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(92, 24);
             this.categoryComboBox.TabIndex = 6;
@@ -124,7 +124,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.brandLabel.AutoSize = true;
             this.brandLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandLabel.Location = new System.Drawing.Point(180, 24);
+            this.brandLabel.Location = new System.Drawing.Point(180, 32);
             this.brandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.brandLabel.Name = "brandLabel";
             this.brandLabel.Size = new System.Drawing.Size(42, 16);
@@ -134,8 +134,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // brandComboBox
             // 
             this.brandComboBox.FormattingEnabled = true;
-            this.brandComboBox.Location = new System.Drawing.Point(226, 20);
-            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brandComboBox.Location = new System.Drawing.Point(226, 28);
+            this.brandComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.brandComboBox.Name = "brandComboBox";
             this.brandComboBox.Size = new System.Drawing.Size(92, 24);
             this.brandComboBox.TabIndex = 7;
@@ -144,7 +144,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.categoryLabel.AutoSize = true;
             this.categoryLabel.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryLabel.Location = new System.Drawing.Point(6, 20);
+            this.categoryLabel.Location = new System.Drawing.Point(6, 28);
             this.categoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.categoryLabel.Name = "categoryLabel";
             this.categoryLabel.Size = new System.Drawing.Size(60, 16);
@@ -155,7 +155,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.backButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.Location = new System.Drawing.Point(29, 432);
-            this.backButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(56, 27);
             this.backButton.TabIndex = 16;
@@ -167,7 +167,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.saleGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.saleGridView.Location = new System.Drawing.Point(29, 125);
-            this.saleGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saleGridView.Margin = new System.Windows.Forms.Padding(2);
             this.saleGridView.Name = "saleGridView";
             this.saleGridView.RowHeadersWidth = 51;
             this.saleGridView.RowTemplate.Height = 24;

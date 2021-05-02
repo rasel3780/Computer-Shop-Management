@@ -304,13 +304,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(203, 97);
+            this.descriptionTextBox.Size = new System.Drawing.Size(203, 121);
             this.descriptionTextBox.TabIndex = 0;
             // 
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(717, 468);
+            this.descriptionLabel.Location = new System.Drawing.Point(717, 482);
             this.descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(71, 16);

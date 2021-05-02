@@ -42,7 +42,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.viewProductButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewProductButton.Location = new System.Drawing.Point(156, 96);
-            this.viewProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewProductButton.Margin = new System.Windows.Forms.Padding(2);
             this.viewProductButton.Name = "viewProductButton";
             this.viewProductButton.Size = new System.Drawing.Size(139, 33);
             this.viewProductButton.TabIndex = 2;
@@ -59,9 +59,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.viewProductButton);
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(11, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(460, 307);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -82,7 +82,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             this.saleInfoButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saleInfoButton.Location = new System.Drawing.Point(156, 149);
-            this.saleInfoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saleInfoButton.Margin = new System.Windows.Forms.Padding(2);
             this.saleInfoButton.Name = "saleInfoButton";
             this.saleInfoButton.Size = new System.Drawing.Size(139, 33);
             this.saleInfoButton.TabIndex = 8;
@@ -104,8 +104,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(369, 270);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoutButton.Location = new System.Drawing.Point(369, 276);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(2);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(91, 31);
             this.logoutButton.TabIndex = 6;
@@ -119,7 +119,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 323);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManagerHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerHome";

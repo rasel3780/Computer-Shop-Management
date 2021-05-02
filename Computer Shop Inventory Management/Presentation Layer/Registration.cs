@@ -126,7 +126,6 @@ namespace Computer_Shop_Inventory_Management
                     {
                         MessageBox.Show("There was an Error could not create the user");
                     }
-
                 }
             }
         }
@@ -146,7 +145,6 @@ namespace Computer_Shop_Inventory_Management
                 typeWarning.Visible = false;
             }
         }
-
 
         private void Registration_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -256,6 +254,5 @@ namespace Computer_Shop_Inventory_Management
         {
 
         }
-    }
-    
+    }    
 }
