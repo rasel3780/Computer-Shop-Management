@@ -57,10 +57,9 @@ namespace Computer_Shop_Inventory_Management
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 40);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(11, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 37);
+            this.button1.Size = new System.Drawing.Size(129, 30);
             this.button1.TabIndex = 1;
             this.button1.Text = "Add Employee";
             this.button1.UseVisualStyleBackColor = true;
@@ -69,10 +68,9 @@ namespace Computer_Shop_Inventory_Management
             // addProductButton
             // 
             this.addProductButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addProductButton.Location = new System.Drawing.Point(15, 44);
-            this.addProductButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addProductButton.Location = new System.Drawing.Point(11, 30);
             this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(172, 37);
+            this.addProductButton.Size = new System.Drawing.Size(129, 30);
             this.addProductButton.TabIndex = 2;
             this.addProductButton.Text = "Add Product";
             this.addProductButton.UseVisualStyleBackColor = true;
@@ -81,10 +79,9 @@ namespace Computer_Shop_Inventory_Management
             // modifyButton
             // 
             this.modifyButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyButton.Location = new System.Drawing.Point(12, 95);
-            this.modifyButton.Margin = new System.Windows.Forms.Padding(4);
+            this.modifyButton.Location = new System.Drawing.Point(11, 75);
             this.modifyButton.Name = "modifyButton";
-            this.modifyButton.Size = new System.Drawing.Size(172, 37);
+            this.modifyButton.Size = new System.Drawing.Size(129, 30);
             this.modifyButton.TabIndex = 4;
             this.modifyButton.Text = "Update Employee";
             this.modifyButton.UseVisualStyleBackColor = true;
@@ -99,11 +96,10 @@ namespace Computer_Shop_Inventory_Management
             this.adminGroupBox.Controls.Add(this.totalSaleLabel);
             this.adminGroupBox.Controls.Add(this.groupBox1);
             this.adminGroupBox.Controls.Add(this.logoutButton);
-            this.adminGroupBox.Location = new System.Drawing.Point(27, 15);
-            this.adminGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.adminGroupBox.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminGroupBox.Location = new System.Drawing.Point(20, 12);
             this.adminGroupBox.Name = "adminGroupBox";
-            this.adminGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.adminGroupBox.Size = new System.Drawing.Size(1024, 524);
+            this.adminGroupBox.Size = new System.Drawing.Size(768, 426);
             this.adminGroupBox.TabIndex = 6;
             this.adminGroupBox.TabStop = false;
             this.adminGroupBox.Text = "Admin";
@@ -113,9 +109,11 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox3.Controls.Add(this.saleInfoButton);
             this.groupBox3.Controls.Add(this.addProductButton);
             this.groupBox3.Controls.Add(this.viewProdcutButton);
-            this.groupBox3.Location = new System.Drawing.Point(7, 47);
+            this.groupBox3.Location = new System.Drawing.Point(6, 21);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(203, 213);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(152, 173);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Product";
@@ -123,10 +121,10 @@ namespace Computer_Shop_Inventory_Management
             // saleInfoButton
             // 
             this.saleInfoButton.Font = new System.Drawing.Font("Maiandra GD", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saleInfoButton.Location = new System.Drawing.Point(15, 160);
-            this.saleInfoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.saleInfoButton.Location = new System.Drawing.Point(11, 124);
+            this.saleInfoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saleInfoButton.Name = "saleInfoButton";
-            this.saleInfoButton.Size = new System.Drawing.Size(172, 37);
+            this.saleInfoButton.Size = new System.Drawing.Size(129, 30);
             this.saleInfoButton.TabIndex = 12;
             this.saleInfoButton.Text = "Sale Details";
             this.saleInfoButton.UseVisualStyleBackColor = true;
@@ -135,10 +133,9 @@ namespace Computer_Shop_Inventory_Management
             // viewProdcutButton
             // 
             this.viewProdcutButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewProdcutButton.Location = new System.Drawing.Point(15, 103);
-            this.viewProdcutButton.Margin = new System.Windows.Forms.Padding(4);
+            this.viewProdcutButton.Location = new System.Drawing.Point(11, 78);
             this.viewProdcutButton.Name = "viewProdcutButton";
-            this.viewProdcutButton.Size = new System.Drawing.Size(172, 37);
+            this.viewProdcutButton.Size = new System.Drawing.Size(129, 30);
             this.viewProdcutButton.TabIndex = 2;
             this.viewProdcutButton.Text = "View Product";
             this.viewProdcutButton.UseVisualStyleBackColor = true;
@@ -149,19 +146,22 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox2.Controls.Add(this.showAllEmployeeButton);
             this.groupBox2.Controls.Add(this.modifyButton);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(8, 266);
+            this.groupBox2.Location = new System.Drawing.Point(6, 207);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(202, 196);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(152, 173);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Employee ";
             // 
             // showAllEmployeeButton
             // 
-            this.showAllEmployeeButton.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showAllEmployeeButton.Location = new System.Drawing.Point(11, 148);
+            this.showAllEmployeeButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showAllEmployeeButton.Location = new System.Drawing.Point(10, 118);
+            this.showAllEmployeeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showAllEmployeeButton.Name = "showAllEmployeeButton";
-            this.showAllEmployeeButton.Size = new System.Drawing.Size(172, 42);
+            this.showAllEmployeeButton.Size = new System.Drawing.Size(129, 34);
             this.showAllEmployeeButton.TabIndex = 13;
             this.showAllEmployeeButton.Text = "Show All Employee";
             this.showAllEmployeeButton.UseVisualStyleBackColor = true;
@@ -170,10 +170,9 @@ namespace Computer_Shop_Inventory_Management
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(605, 72);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(454, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 11;
             this.label3.Text = "label3";
             this.label3.Visible = false;
@@ -181,19 +180,17 @@ namespace Computer_Shop_Inventory_Management
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(513, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(385, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 10;
             // 
             // totalSaleLabel
             // 
             this.totalSaleLabel.AutoSize = true;
-            this.totalSaleLabel.Location = new System.Drawing.Point(513, 72);
-            this.totalSaleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalSaleLabel.Location = new System.Drawing.Point(385, 58);
             this.totalSaleLabel.Name = "totalSaleLabel";
-            this.totalSaleLabel.Size = new System.Drawing.Size(72, 17);
+            this.totalSaleLabel.Size = new System.Drawing.Size(62, 16);
             this.totalSaleLabel.TabIndex = 9;
             this.totalSaleLabel.Text = "Total Sale";
             // 
@@ -204,11 +201,9 @@ namespace Computer_Shop_Inventory_Management
             this.groupBox1.Controls.Add(this.yearlyRadioButton);
             this.groupBox1.Controls.Add(this.monthlyRadioButton);
             this.groupBox1.Controls.Add(this.dailyRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(235, 47);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(176, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(226, 227);
+            this.groupBox1.Size = new System.Drawing.Size(170, 172);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Total Sell";
@@ -216,9 +211,10 @@ namespace Computer_Shop_Inventory_Management
             // totalSellRadioButton
             // 
             this.totalSellRadioButton.AutoSize = true;
-            this.totalSellRadioButton.Location = new System.Drawing.Point(60, 134);
+            this.totalSellRadioButton.Location = new System.Drawing.Point(50, 103);
+            this.totalSellRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalSellRadioButton.Name = "totalSellRadioButton";
-            this.totalSellRadioButton.Size = new System.Drawing.Size(61, 21);
+            this.totalSellRadioButton.Size = new System.Drawing.Size(55, 20);
             this.totalSellRadioButton.TabIndex = 13;
             this.totalSellRadioButton.TabStop = true;
             this.totalSellRadioButton.Text = "Total";
@@ -226,10 +222,9 @@ namespace Computer_Shop_Inventory_Management
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(110, 186);
-            this.selectButton.Margin = new System.Windows.Forms.Padding(4);
+            this.selectButton.Location = new System.Drawing.Point(48, 134);
             this.selectButton.Name = "selectButton";
-            this.selectButton.Size = new System.Drawing.Size(95, 27);
+            this.selectButton.Size = new System.Drawing.Size(71, 25);
             this.selectButton.TabIndex = 12;
             this.selectButton.Text = "Select";
             this.selectButton.UseVisualStyleBackColor = true;
@@ -238,10 +233,9 @@ namespace Computer_Shop_Inventory_Management
             // yearlyRadioButton
             // 
             this.yearlyRadioButton.AutoSize = true;
-            this.yearlyRadioButton.Location = new System.Drawing.Point(60, 105);
-            this.yearlyRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.yearlyRadioButton.Location = new System.Drawing.Point(50, 79);
             this.yearlyRadioButton.Name = "yearlyRadioButton";
-            this.yearlyRadioButton.Size = new System.Drawing.Size(69, 21);
+            this.yearlyRadioButton.Size = new System.Drawing.Size(61, 20);
             this.yearlyRadioButton.TabIndex = 2;
             this.yearlyRadioButton.TabStop = true;
             this.yearlyRadioButton.Text = "Yearly";
@@ -250,10 +244,9 @@ namespace Computer_Shop_Inventory_Management
             // monthlyRadioButton
             // 
             this.monthlyRadioButton.AutoSize = true;
-            this.monthlyRadioButton.Location = new System.Drawing.Point(60, 76);
-            this.monthlyRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.monthlyRadioButton.Location = new System.Drawing.Point(50, 56);
             this.monthlyRadioButton.Name = "monthlyRadioButton";
-            this.monthlyRadioButton.Size = new System.Drawing.Size(78, 21);
+            this.monthlyRadioButton.Size = new System.Drawing.Size(74, 20);
             this.monthlyRadioButton.TabIndex = 1;
             this.monthlyRadioButton.TabStop = true;
             this.monthlyRadioButton.Text = "Monthly";
@@ -262,10 +255,9 @@ namespace Computer_Shop_Inventory_Management
             // dailyRadioButton
             // 
             this.dailyRadioButton.AutoSize = true;
-            this.dailyRadioButton.Location = new System.Drawing.Point(60, 44);
-            this.dailyRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.dailyRadioButton.Location = new System.Drawing.Point(50, 30);
             this.dailyRadioButton.Name = "dailyRadioButton";
-            this.dailyRadioButton.Size = new System.Drawing.Size(60, 21);
+            this.dailyRadioButton.Size = new System.Drawing.Size(54, 20);
             this.dailyRadioButton.TabIndex = 0;
             this.dailyRadioButton.TabStop = true;
             this.dailyRadioButton.Text = "Daily";
@@ -275,10 +267,9 @@ namespace Computer_Shop_Inventory_Management
             // 
             this.logoutButton.BackColor = System.Drawing.SystemColors.Control;
             this.logoutButton.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(895, 480);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
+            this.logoutButton.Location = new System.Drawing.Point(678, 391);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(112, 36);
+            this.logoutButton.Size = new System.Drawing.Size(84, 29);
             this.logoutButton.TabIndex = 7;
             this.logoutButton.Text = "Log Out";
             this.logoutButton.UseVisualStyleBackColor = false;
@@ -286,11 +277,10 @@ namespace Computer_Shop_Inventory_Management
             // 
             // AdminHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 554);
+            this.ClientSize = new System.Drawing.Size(802, 450);
             this.Controls.Add(this.adminGroupBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminHome";
