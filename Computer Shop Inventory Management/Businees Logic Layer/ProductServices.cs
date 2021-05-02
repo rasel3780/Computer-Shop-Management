@@ -143,7 +143,11 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.productDataAccess = new ProductDataAccess();
             return this.productDataAccess.RemoveProduct(productId);
         }
-       
+        public Product ReadProduct(int productId)
+        {
+            this.productDataAccess = new ProductDataAccess();
+            return this.productDataAccess.ReadProduct(productId);
+        }
         public List<Product> ALLProductSortByPriceHighToLow()
         {
             List<Product> products = new List<Product>();
