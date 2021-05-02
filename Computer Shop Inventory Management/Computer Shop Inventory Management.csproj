@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Businees Logic Layer\EmployeeServices.cs" />
+    <Compile Include="Businees Logic Layer\LoginServices.cs" />
     <Compile Include="Businees Logic Layer\ProductList.cs" />
     <Compile Include="Businees Logic Layer\ProductServices.cs" />
     <Compile Include="Businees Logic Layer\SaleServices.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Data Access Layer\Entities\Employee.cs" />
     <Compile Include="Data Access Layer\Entities\Product.cs" />
     <Compile Include="Data Access Layer\Entities\Sale.cs" />
+    <Compile Include="Data Access Layer\LoginDataAccess.cs" />
     <Compile Include="Data Access Layer\ProductDataAccess.cs" />
     <Compile Include="Data Access Layer\SaleDataAccess.cs" />
     <Compile Include="Presentation Layer\AdminHome.cs">

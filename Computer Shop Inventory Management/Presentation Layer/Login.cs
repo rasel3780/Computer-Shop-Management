@@ -1,4 +1,5 @@
-﻿using Computer_Shop_Inventory_Management.Presentation_Layer;
+﻿using Computer_Shop_Inventory_Management.Businees_Logic_Layer;
+using Computer_Shop_Inventory_Management.Presentation_Layer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,21 +49,49 @@ namespace Computer_Shop_Inventory_Management
             }
             else if(typeComboBox.Text=="Admin")
             {
-                AdminHome admin = new AdminHome(nameTextBox.Text);
-                admin.Show();
-                this.Hide();
+                LoginServices loginServices = new LoginServices();
+                string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
+                MessageBox.Show(""+res);
+                if (res == nameTextBox.Text)
+                {
+                    AdminHome admin = new AdminHome(nameTextBox.Text);
+                    admin.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
             }
             else if(typeComboBox.Text== "Manager")
             {
-                ManagerHome managerHome = new ManagerHome(nameTextBox.Text);
-                managerHome.Show();
-                this.Hide();
+                LoginServices loginServices = new LoginServices();
+                string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
+                if (res == nameTextBox.Text)
+                {
+                    ManagerHome managerHome = new ManagerHome(nameTextBox.Text);
+                    managerHome.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
             }
             else if(typeComboBox.Text == "Salesman")
             {
-                SalesmanHome salesmanHome = new SalesmanHome(nameTextBox.Text);
-                salesmanHome.Show();
-                this.Hide();
+                LoginServices loginServices = new LoginServices();
+                string res = loginServices.LoginCheck(nameTextBox.Text, passTextBox.Text);
+                if (res == nameTextBox.Text)
+                {
+                    SalesmanHome salesmanHome = new SalesmanHome(nameTextBox.Text);
+                    salesmanHome.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
             }
         }
 
