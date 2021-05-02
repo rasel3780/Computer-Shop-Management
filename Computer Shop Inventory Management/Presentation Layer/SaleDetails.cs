@@ -74,5 +74,17 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             SaleServices saleServices = new SaleServices();
             saleGridView.DataSource = saleServices.GetAllSale();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource =  saleServices.SellSort();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaleServices saleServices = new SaleServices();
+            saleGridView.DataSource = saleServices.SellSortDescending();
+        }
     }
 }

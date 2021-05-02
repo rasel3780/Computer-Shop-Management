@@ -683,5 +683,20 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
             return sales;
         }
+
+        public List<Sale> SellSortDescending()
+        {
+            List<Sale> sales = new List<Sale>();
+            this.saleDataAccess = new SaleDataAccess();
+            sales = this.saleDataAccess.GetAllSale();
+
+            sales.Sort(delegate (Sale x, Sale y) {
+                return x.SaleDate.CompareTo(y.SaleDate);
+            });
+
+            sales.Reverse();
+
+            return sales;
+        }
     }
 }
