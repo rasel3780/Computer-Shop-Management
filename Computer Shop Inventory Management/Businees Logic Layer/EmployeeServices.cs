@@ -100,6 +100,18 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
             return employees;
         }
+        public List<Employee> ALLEmployeeSortBySalaryLowToHigh()
+        {
+            List<Employee> employees = new List<Employee>();
+            this.employeeDataAccess = new EmployeeDataAccess();
+            employees = this.employeeDataAccess.GetAllEmployees();
+
+            employees.Sort(delegate (Employee x, Employee y) {
+                return x.Salary.CompareTo(y.Salary);
+            });
+
+            return employees;
+        }
 
 
     }

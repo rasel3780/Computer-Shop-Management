@@ -77,6 +77,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.lowButton.TabIndex = 3;
             this.lowButton.Text = "By Salary Low to High";
             this.lowButton.UseVisualStyleBackColor = true;
+            this.lowButton.Click += new System.EventHandler(this.lowButton_Click);
             // 
             // userNameTextBox
             // 
