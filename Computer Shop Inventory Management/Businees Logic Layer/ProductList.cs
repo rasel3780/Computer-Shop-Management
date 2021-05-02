@@ -32,62 +32,43 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
 
         List<string> brand = new List<string>()
         {
-           
 
-            //Casing, PSU
-            "Gamdias",
-            "MaxGreen",
-            "Lian Li",
-
-             //CPU
-            "Intel",
-            "Ryzen",
-
-            //GPU
-            "Zotac",
-            "Sapphire",
-            "XFX",
-
-            //Keyboard, Mouse, Headphone
-            "A4Tech",
-            "Razer",
-            "Fantech",
-            "Logitech",
-            "Rapoo",
-
-            //Laptop
-            "Team",
+            "Acer",
+            "Adata",
             "Apacer",
             "Apple",
-
-            //Motherboard
             "ASRock",
             "ASUS",
-            "Gigabyte",
-            "MSI",
-
-             //Monitor
-            "DELL",
-            "Samsung",
-            "LG",
-            "Philips",
-            "Acer",
+            "A4Tech",
             "Benq",
-            "Walton",
-            "Viewsonic",
-
-            //Ram
             "Corsair",
+            "DELL",
+            "Fantech",
+            "Gamdias",
+            "Gigabyte",
             "G.Skill",
-            "PNY",
-            "Thermaltake",
-
-            //SSD, HDD
-            "Transcend",
             "HP",
+            "Intel",
+            "Lian Li",
+            "LG",
+            "Logitech",
+            "MaxGreen",
+            "MSI",
+            "Philips",
+            "PNY",
+            "Razer",
+            "Rapoo",
+            "Ryzen",
             "Seagate",
-            "Adata",
-            "Twinmos"
+            "Samsung",
+            "Team",
+            "Thermaltake",
+            "Transcend",
+            "Twinmos",
+            "Viewsonic",
+            "Walton",
+            "XFX",
+            "Zotac"
 
             
         };
