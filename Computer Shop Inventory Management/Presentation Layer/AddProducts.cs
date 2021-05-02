@@ -527,7 +527,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
             if (addChecking > 0)
             {
-                MessageBox.Show("Product Add Successfully");
+                MessageBox.Show("Product Added Successfully");
 
                 categoryComboBox.Text = null;
                 brandComboBox.Text = null;
