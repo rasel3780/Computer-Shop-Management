@@ -175,16 +175,16 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                 int sday = -1, smonth = -1, syear = -1;
                 while (true)
                 {
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
-                        sd += today[x];
+                        sd += value[x];
                         x++;
                     }
                     sday = Convert.ToInt32(sd);
                     x++;
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
-                        sm += today[x];
+                        sm += value[x];
                         x++;
                     }
                     smonth = Convert.ToInt32(sm);
@@ -193,7 +193,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                     int p = 0;
                     while (p < 4)
                     {
-                        sy += today[x];
+                        sy += value[x];
                         x++;
                         p++;
                     }
@@ -261,16 +261,16 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                 int sday = -1, smonth = -1, syear = -1;
                 while (true)
                 {
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
-                        sd += today[x];
+                        sd += value[x];
                         x++;
                     }
                     sday = Convert.ToInt32(sd);
                     x++;
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
-                        sm += today[x];
+                        sm += value[x];
                         x++;
                     }
                     smonth = Convert.ToInt32(sm);
@@ -279,7 +279,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                     int p = 0;
                     while (p < 4)
                     {
-                        sy += today[x];
+                        sy += value[x];
                         x++;
                         p++;
                     }
@@ -348,14 +348,14 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                 int sday = -1, smonth = -1, syear = -1;
                 while (true)
                 {
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
                         sd += today[x];
                         x++;
                     }
                     sday = Convert.ToInt32(sd);
                     x++;
-                    while (today[x] != '/')
+                    while (value[x] != '/')
                     {
                         sm += today[x];
                         x++;
@@ -366,7 +366,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
                     int p = 0;
                     while (p < 4)
                     {
-                        sy += today[x];
+                        sy += value[x];
                         x++;
                         p++;
                     }

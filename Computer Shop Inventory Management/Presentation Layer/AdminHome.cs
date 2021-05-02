@@ -77,7 +77,8 @@ namespace Computer_Shop_Inventory_Management
 
         private void selectButton_Click(object sender, EventArgs e)
         {
-            if(dailyRadioButton.Checked == true)
+            
+            if (dailyRadioButton.Checked == true)
             {
                 SaleServices saleServices = new SaleServices();
                 int dailySell =  saleServices.DailySell();
