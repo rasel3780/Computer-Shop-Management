@@ -298,7 +298,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             return monthlySell;
         }
 
-
+        //ok
         public int YearlySell()
         {
             int yearSell = 0;
