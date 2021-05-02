@@ -51,5 +51,12 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             addProducts.Show();
             this.Hide();
         }
+
+        private void viewSalesmanButton_Click(object sender, EventArgs e)
+        {
+            EmployeeInformation employeeInformation = new EmployeeInformation("Manager", empName);
+            this.Hide();
+            employeeInformation.Show();
+        }
     }
 }

@@ -80,5 +80,28 @@ namespace Computer_Shop_Inventory_Management.Data_Access_Layer
             else return null;
         }
 
+        public List<Employee> GetAllEmployeesByType(string empType)
+        {
+            string sql = "SELECT * FROM Employees WHERE EmployeeType = '"+empType+"'";
+            SqlDataReader reader = this.GetData(sql);
+            List<Employee> employees = new List<Employee>();
+            while (reader.Read())
+            {
+                Employee employee = new Employee();
+                employee.Name = reader["Name"].ToString();
+                employee.UserName = reader["UserName"].ToString();
+                employee.Password = reader["Password"].ToString();
+                employee.Email = reader["Email"].ToString();
+                employee.Address = reader["Address"].ToString();
+                employee.DateOfBirth = reader["DateOfBirth"].ToString();
+                employee.BloodGroup = reader["bloodGroup"].ToString();
+                employee.Gender = reader["Gender"].ToString();
+                employee.EmployeeType = reader["EmployeeType"].ToString();
+                employee.Salary = Convert.ToSingle(reader["Salary"]);
+                employees.Add(employee);
+            }
+            return employees;
+        }
+
     }
 }

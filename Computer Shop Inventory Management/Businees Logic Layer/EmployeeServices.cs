@@ -79,5 +79,11 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             };
             return this.employeeDataAccess.ReadEmployee(employee);
         }
+
+        public List<Employee> GetAllEmployeesByType(string empType)
+        {
+            this.employeeDataAccess = new EmployeeDataAccess();
+            return this.employeeDataAccess.GetAllEmployeesByType(empType);
+        }
     }
 }

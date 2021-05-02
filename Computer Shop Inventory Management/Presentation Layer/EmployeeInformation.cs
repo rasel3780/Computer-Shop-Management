@@ -20,8 +20,20 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             InitializeComponent();
             this.empType = empType;
             this.empName = empName;
-            EmployeeServices employeeServices = new EmployeeServices();
-            employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
+            if(empType == "Admin")
+            {
+                EmployeeServices employeeServices = new EmployeeServices();
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
+            }
+            else if(empType == "Manager")
+            {
+                showAllButton.Visible = false;
+                EmployeeServices employeeServices = new EmployeeServices();
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployeesByType("Salesman");
+
+            }
+
+            
         }
 
         private void EmployeeInformation_FormClosing(object sender, FormClosingEventArgs e)
