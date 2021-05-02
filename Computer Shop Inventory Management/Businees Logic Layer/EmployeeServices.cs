@@ -85,5 +85,22 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.GetAllEmployeesByType(empType);
         }
+
+        public List<Employee> ALLEmployeeSortBySalaryHighToLow()
+        {
+            List<Employee> employees = new List<Employee>();
+            this.employeeDataAccess = new EmployeeDataAccess();
+            employees =  this.employeeDataAccess.GetAllEmployees();
+
+            employees.Sort(delegate (Employee x, Employee y) {
+                return x.Salary.CompareTo(y.Salary);
+            });
+
+            employees.Reverse();
+
+            return employees;
+        }
+
+
     }
 }
