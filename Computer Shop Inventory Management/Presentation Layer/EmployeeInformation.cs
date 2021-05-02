@@ -28,6 +28,9 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             else if(empType == "Manager")
             {
                 showAllButton.Visible = false;
+                adminRadioButton.Visible = false;
+                managerRadioButton.Visible = false;
+                sortByGroupBox.Visible = false;
                 EmployeeServices employeeServices = new EmployeeServices();
                 employeeDataGridView.DataSource = employeeServices.GetAllEmployeesByType("Salesman");
 
@@ -43,8 +46,15 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void showAllButton_Click(object sender, EventArgs e)
         {
-            EmployeeServices employeeServices = new EmployeeServices();
-            employeeDataGridView.DataSource = employeeServices.GetAllEmployees(); 
+            if (empType == "Admin")
+            {
+                EmployeeServices employeeServices = new EmployeeServices();
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployees();
+            }
+            else
+            {
+
+            }
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -81,6 +91,23 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             EmployeeServices employeeServices = new EmployeeServices();
             employeeDataGridView.DataSource = employeeServices.EmployeeSearchName(userNameTextBox.Text);
 
+        }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            EmployeeServices employeeServices = new EmployeeServices();
+            if(adminRadioButton.Checked == true)
+            {
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployeesByType("Admin");
+            }
+            else if(managerRadioButton.Checked == true)
+            {
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployeesByType("Manager");
+            }
+            else if(salesmanRadioButton.Checked == true)
+            {
+                employeeDataGridView.DataSource = employeeServices.GetAllEmployeesByType("Salesman");
+            }
         }
     }
 }

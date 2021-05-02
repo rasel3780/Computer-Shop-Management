@@ -38,14 +38,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.showAllButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.adminRadioButton = new System.Windows.Forms.RadioButton();
-            this.managerRadioButton = new System.Windows.Forms.RadioButton();
             this.salesmanRadioButton = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.managerRadioButton = new System.Windows.Forms.RadioButton();
+            this.adminRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortByGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.sortByGroupBox.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,12 +61,13 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // selectButton
             // 
-            this.selectButton.Location = new System.Drawing.Point(0, 133);
+            this.selectButton.Location = new System.Drawing.Point(127, 95);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(91, 26);
             this.selectButton.TabIndex = 1;
             this.selectButton.Text = "Select";
             this.selectButton.UseVisualStyleBackColor = true;
+            this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // highButton
             // 
@@ -90,14 +91,14 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(6, 112);
+            this.userNameTextBox.Location = new System.Drawing.Point(6, 30);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(177, 22);
             this.userNameTextBox.TabIndex = 4;
             // 
             // userNameButton
             // 
-            this.userNameButton.Location = new System.Drawing.Point(6, 141);
+            this.userNameButton.Location = new System.Drawing.Point(6, 59);
             this.userNameButton.Name = "userNameButton";
             this.userNameButton.Size = new System.Drawing.Size(177, 30);
             this.userNameButton.TabIndex = 5;
@@ -107,7 +108,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             // 
             // showAllButton
             // 
-            this.showAllButton.Location = new System.Drawing.Point(6, 47);
+            this.showAllButton.Location = new System.Drawing.Point(6, 105);
             this.showAllButton.Name = "showAllButton";
             this.showAllButton.Size = new System.Drawing.Size(106, 36);
             this.showAllButton.TabIndex = 6;
@@ -133,10 +134,32 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.groupBox1.Controls.Add(this.selectButton);
             this.groupBox1.Location = new System.Drawing.Point(110, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(212, 165);
+            this.groupBox1.Size = new System.Drawing.Size(224, 141);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Show Employee By";
+            // 
+            // salesmanRadioButton
+            // 
+            this.salesmanRadioButton.AutoSize = true;
+            this.salesmanRadioButton.Location = new System.Drawing.Point(6, 68);
+            this.salesmanRadioButton.Name = "salesmanRadioButton";
+            this.salesmanRadioButton.Size = new System.Drawing.Size(91, 21);
+            this.salesmanRadioButton.TabIndex = 2;
+            this.salesmanRadioButton.TabStop = true;
+            this.salesmanRadioButton.Text = "Salesman";
+            this.salesmanRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // managerRadioButton
+            // 
+            this.managerRadioButton.AutoSize = true;
+            this.managerRadioButton.Location = new System.Drawing.Point(6, 103);
+            this.managerRadioButton.Name = "managerRadioButton";
+            this.managerRadioButton.Size = new System.Drawing.Size(85, 21);
+            this.managerRadioButton.TabIndex = 1;
+            this.managerRadioButton.TabStop = true;
+            this.managerRadioButton.Text = "Manager";
+            this.managerRadioButton.UseVisualStyleBackColor = true;
             // 
             // adminRadioButton
             // 
@@ -149,47 +172,25 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.adminRadioButton.Text = "Admin";
             this.adminRadioButton.UseVisualStyleBackColor = true;
             // 
-            // managerRadioButton
+            // sortByGroupBox
             // 
-            this.managerRadioButton.AutoSize = true;
-            this.managerRadioButton.Location = new System.Drawing.Point(6, 65);
-            this.managerRadioButton.Name = "managerRadioButton";
-            this.managerRadioButton.Size = new System.Drawing.Size(85, 21);
-            this.managerRadioButton.TabIndex = 1;
-            this.managerRadioButton.TabStop = true;
-            this.managerRadioButton.Text = "Manager";
-            this.managerRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // salesmanRadioButton
-            // 
-            this.salesmanRadioButton.AutoSize = true;
-            this.salesmanRadioButton.Location = new System.Drawing.Point(6, 93);
-            this.salesmanRadioButton.Name = "salesmanRadioButton";
-            this.salesmanRadioButton.Size = new System.Drawing.Size(91, 21);
-            this.salesmanRadioButton.TabIndex = 2;
-            this.salesmanRadioButton.TabStop = true;
-            this.salesmanRadioButton.Text = "Salesman";
-            this.salesmanRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.highButton);
-            this.groupBox2.Controls.Add(this.lowButton);
-            this.groupBox2.Location = new System.Drawing.Point(466, 38);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 159);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sort By";
+            this.sortByGroupBox.Controls.Add(this.highButton);
+            this.sortByGroupBox.Controls.Add(this.lowButton);
+            this.sortByGroupBox.Location = new System.Drawing.Point(666, 32);
+            this.sortByGroupBox.Name = "sortByGroupBox";
+            this.sortByGroupBox.Size = new System.Drawing.Size(200, 159);
+            this.sortByGroupBox.TabIndex = 9;
+            this.sortByGroupBox.TabStop = false;
+            this.sortByGroupBox.Text = "Sort By";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.userNameButton);
             this.groupBox3.Controls.Add(this.userNameTextBox);
             this.groupBox3.Controls.Add(this.showAllButton);
-            this.groupBox3.Location = new System.Drawing.Point(787, 20);
+            this.groupBox3.Location = new System.Drawing.Point(389, 32);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 177);
+            this.groupBox3.Size = new System.Drawing.Size(200, 159);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Show";
@@ -200,7 +201,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1474, 673);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.sortByGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.employeeDataGridView);
@@ -210,7 +211,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.sortByGroupBox.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -231,7 +232,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
         private System.Windows.Forms.RadioButton salesmanRadioButton;
         private System.Windows.Forms.RadioButton managerRadioButton;
         private System.Windows.Forms.RadioButton adminRadioButton;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox sortByGroupBox;
         private System.Windows.Forms.GroupBox groupBox3;
     }
 }
