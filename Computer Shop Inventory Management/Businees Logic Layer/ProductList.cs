@@ -11,21 +11,22 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
         List<string> category = new List<string>()
         {
             "CPU",
-            "Motherborad",
-            "RAM",
-            "HDD",
-            "SSD",
-            "Graphics card",
-            "Power Supply",
             "Casing",
-            "Monitor",
-            "Keyboard",
-            "Mouse",
+            "Graphics card",
             "Headphone",
-            "UPS",
+            "HDD",
+            "Keyboard",
+            "Laptop",
+            "Motherborad",
+            "Monitor",
+            "Mouse",
+            "Power Supply",
             "Printer",
             "Pendrive",
-            "Laptop"
+            "RAM",
+            "SSD",
+            "UPS"
+           
         };
 
         List<string> brand = new List<string>()
