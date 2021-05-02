@@ -80,6 +80,12 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.ReadEmployee(employee);
         }
+        //ReadSalesman
+        public List<Employee> ReadSalesman()
+        {
+            this.employeeDataAccess = new EmployeeDataAccess();
+            return this.employeeDataAccess.ReadSalesman();
+        }
 
         public List<Employee> GetAllEmployeesByType(string empType)
         {
@@ -122,6 +128,7 @@ namespace Computer_Shop_Inventory_Management.Businees_Logic_Layer
             this.employeeDataAccess = new EmployeeDataAccess();
             return this.employeeDataAccess.EmployeeSearchName(employee);
         }
+    
 
     }
 }

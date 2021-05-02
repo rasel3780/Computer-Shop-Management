@@ -53,7 +53,8 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             }
             else
             {
-
+                EmployeeServices employeeServices = new EmployeeServices();
+                employeeDataGridView.DataSource=employeeServices.ReadSalesman();
             }
         }
 
@@ -87,10 +88,18 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
         private void userNameButton_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("" + userNameTextBox.Text);
-            EmployeeServices employeeServices = new EmployeeServices();
-            employeeDataGridView.DataSource = employeeServices.EmployeeSearchName(userNameTextBox.Text);
-
+            if (empType == "Admin")
+            {
+                //MessageBox.Show("" + userNameTextBox.Text);
+                EmployeeServices employeeServices = new EmployeeServices();
+                employeeDataGridView.DataSource = employeeServices.EmployeeSearchName(userNameTextBox.Text);
+            }
+            else
+            {
+                EmployeeServices employeeServices1 = new EmployeeServices();
+                employeeDataGridView.DataSource = employeeServices1.ReadSalesman();
+            }
+        
         }
 
         private void selectButton_Click(object sender, EventArgs e)
