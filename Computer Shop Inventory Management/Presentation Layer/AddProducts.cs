@@ -519,7 +519,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
 
                 else if(Convert.ToInt32(quantityTextBox.Text) < 0)
                 {
-                    MessageBox.Show("Quanity Can't be Negative, You Dumbass..");
+                    MessageBox.Show("Quanity Can't be Negative!!");
                 }
                 else
                 {
