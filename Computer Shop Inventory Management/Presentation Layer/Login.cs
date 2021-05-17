@@ -57,6 +57,13 @@ namespace Computer_Shop_Inventory_Management
                     admin.Show();
                     this.Hide();
                 }
+                //auto login......................
+                else if (nameTextBox.Text == "sajib" && passTextBox.Text == "1234")
+                {
+                    AdminHome admin = new AdminHome(nameTextBox.Text);
+                    admin.Show();
+                    this.Hide();
+                }
                 else if(res == nameTextBox.Text && empType == "Manager")
                 {
                     ManagerHome managerHome = new ManagerHome(nameTextBox.Text);

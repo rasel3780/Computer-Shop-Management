@@ -220,7 +220,7 @@ namespace Computer_Shop_Inventory_Management.Presentation_Layer
             {
                 MessageBox.Show("Enter a valid Product id");
             }
-        }
+}
 
         private void updateTextBox_Click(object sender, EventArgs e)
         {
